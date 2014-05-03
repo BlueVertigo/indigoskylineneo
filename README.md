@@ -1,4 +1,4 @@
-THE SPACE PIRATE
+THE SPACE PIRATE NEO
 =
 
-Greeting! This is the development stuff for the Space Pirate. Spoilers await within!
+Development for the Zandronum port of TSP, titled "The Space Pirate Neo". Spoilers await within!
