@@ -1,4 +1,4 @@
-indigoskylineneo
-================
+THE SPACE PIRATE
+=
 
-zandronum version of tsp
+Greeting! This is the development stuff for the Space Pirate. Spoilers await within!
