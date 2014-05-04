@@ -1,0 +1,3341 @@
+//Poison cloud sprites pre-scaled since zand doesn't support a_setscale or aprop_scale 
+//0.1
+
+Sprite SPB1D0, 71, 36
+{
+	Offset 33,17
+	Patch SPBGD0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite SPB1E0, 86, 49
+{
+	Offset 40,24 
+	Patch SPBGE0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite SPB1F0, 97, 50
+{
+	Offset 46,24 
+	Patch SPBGF0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite SPB1G0, 94, 53
+{
+	Offset 41,26
+	Patch SPBGG0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite SPB1H0, 96, 55
+{
+	Offset 42,28
+	Patch SPBGH0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite SPB1I0, 101, 54
+{
+	Offset 47,28
+	Patch SPBGI0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+//0.2
+
+Sprite SPB2D0, 71, 36
+{
+	Offset 33,17
+	Patch SPBGD0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite SPB2E0, 86, 49
+{
+	Offset 40,24 
+	Patch SPBGE0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite SPB2F0, 97, 50
+{
+	Offset 46,24 
+	Patch SPBGF0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite SPB2G0, 94, 53
+{
+	Offset 41,26
+	Patch SPBGG0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite SPB2H0, 96, 55
+{
+	Offset 42,28
+	Patch SPBGH0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite SPB2I0, 101, 54
+{
+	Offset 47,28
+	Patch SPBGI0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+//0.3
+
+Sprite SPB3D0, 71, 36
+{
+	Offset 33,17
+	Patch SPBGD0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite SPB3E0, 86, 49
+{
+	Offset 40,24 
+	Patch SPBGE0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite SPB3F0, 97, 50
+{
+	Offset 46,24 
+	Patch SPBGF0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite SPB3G0, 94, 53
+{
+	Offset 41,26
+	Patch SPBGG0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite SPB3H0, 96, 55
+{
+	Offset 42,28
+	Patch SPBGH0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite SPB3I0, 101, 54
+{
+	Offset 47,28
+	Patch SPBGI0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+//0.4
+
+Sprite SPB4D0, 71, 36
+{
+	Offset 33,17
+	Patch SPBGD0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite SPB4E0, 86, 49
+{
+	Offset 40,24 
+	Patch SPBGE0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite SPB4F0, 97, 50
+{
+	Offset 46,24 
+	Patch SPBGF0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite SPB4G0, 94, 53
+{
+	Offset 41,26
+	Patch SPBGG0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite SPB4H0, 96, 55
+{
+	Offset 42,28
+	Patch SPBGH0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite SPB4I0, 101, 54
+{
+	Offset 47,28
+	Patch SPBGI0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+//0.5
+
+Sprite SPB5D0, 71, 36
+{
+	Offset 33,17
+	Patch SPBGD0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite SPB5E0, 86, 49
+{
+	Offset 40,24 
+	Patch SPBGE0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite SPB5F0, 97, 50
+{
+	Offset 46,24 
+	Patch SPBGF0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite SPB5G0, 94, 53
+{
+	Offset 41,26
+	Patch SPBGG0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite SPB5H0, 96, 55
+{
+	Offset 42,28
+	Patch SPBGH0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite SPB5I0, 101, 54
+{
+	Offset 47,28
+	Patch SPBGI0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+//0.6
+
+Sprite SPB6D0, 71, 36
+{
+	Offset 33,17
+	Patch SPBGD0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite SPB6E0, 86, 49
+{
+	Offset 40,24 
+	Patch SPBGE0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite SPB6F0, 97, 50
+{
+	Offset 46,24 
+	Patch SPBGF0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite SPB6G0, 94, 53
+{
+	Offset 41,26
+	Patch SPBGG0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite SPB6H0, 96, 55
+{
+	Offset 42,28
+	Patch SPBGH0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite SPB6I0, 101, 54
+{
+	Offset 47,28
+	Patch SPBGI0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+//0.7
+
+Sprite SPB7D0, 71, 36
+{
+	Offset 33,17
+	Patch SPBGD0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite SPB7E0, 86, 49
+{
+	Offset 40,24 
+	Patch SPBGE0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite SPB7F0, 97, 50
+{
+	Offset 46,24 
+	Patch SPBGF0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite SPB7G0, 94, 53
+{
+	Offset 41,26
+	Patch SPBGG0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite SPB7H0, 96, 55
+{
+	Offset 42,28
+	Patch SPBGH0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite SPB7I0, 101, 54
+{
+	Offset 47,28
+	Patch SPBGI0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+//0.8
+
+Sprite SPB8D0, 71, 36
+{
+	Offset 33,17
+	Patch SPBGD0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite SPB8E0, 86, 49
+{
+	Offset 40,24 
+	Patch SPBGE0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite SPB8F0, 97, 50
+{
+	Offset 46,24 
+	Patch SPBGF0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite SPB8G0, 94, 53
+{
+	Offset 41,26
+	Patch SPBGG0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite SPB8H0, 96, 55
+{
+	Offset 42,28
+	Patch SPBGH0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite SPB8I0, 101, 54
+{
+	Offset 47,28
+	Patch SPBGI0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+//0.9
+
+Sprite SPB9D0, 71, 36
+{
+	Offset 33,17
+	Patch SPBGD0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite SPB9E0, 86, 49
+{
+	Offset 40,24 
+	Patch SPBGE0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite SPB9F0, 97, 50
+{
+	Offset 46,24 
+	Patch SPBGF0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite SPB9G0, 94, 53
+{
+	Offset 41,26
+	Patch SPBGG0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite SPB9H0, 96, 55
+{
+	Offset 42,28
+	Patch SPBGH0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite SPB9I0, 101, 54
+{
+	Offset 47,28
+	Patch SPBGI0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+//Poison cloud sprites with offsets to simulate bobbing effect of a_poisonbagdamage
+//1
+
+Sprite S1BGD0, 71, 36
+{
+	Offset 33,16
+	Patch SPBGD0, 0, 0
+}
+
+Sprite S1BGE0, 86, 49
+{
+	Offset 40,23 
+	Patch SPBGE0, 0, 0
+}
+
+Sprite S1BGF0, 97, 50
+{
+	Offset 46,23 
+	Patch SPBGF0, 0, 0
+}
+
+Sprite S1BGG0, 94, 53
+{
+	Offset 41,25
+	Patch SPBGG0, 0, 0
+}
+
+Sprite S1BGH0, 96, 55
+{
+	Offset 42,27
+	Patch SPBGH0, 0, 0
+}
+
+Sprite S1BGI0, 101, 54
+{
+	Offset 47,27
+	Patch SPBGI0, 0, 0
+}
+
+//2
+Sprite S2BGD0, 71, 36
+{
+	Offset 33,15
+	Patch SPBGD0, 0, 0
+}
+
+Sprite S2BGE0, 86, 49
+{
+	Offset 40,22 
+	Patch SPBGE0, 0, 0
+}
+
+Sprite S2BGF0, 97, 50
+{
+	Offset 46,22 
+	Patch SPBGF0, 0, 0
+}
+
+Sprite S2BGG0, 94, 53
+{
+	Offset 41,24
+	Patch SPBGG0, 0, 0
+}
+
+Sprite S2BGH0, 96, 55
+{
+	Offset 42,26
+	Patch SPBGH0, 0, 0
+}
+
+Sprite S2BGI0, 101, 54
+{
+	Offset 47,26
+	Patch SPBGI0, 0, 0
+}
+
+//3
+
+Sprite S3BGD0, 71, 36
+{
+	Offset 33,14
+	Patch SPBGD0, 0, 0
+}
+
+Sprite S3BGE0, 86, 49
+{
+	Offset 40,21 
+	Patch SPBGE0, 0, 0
+}
+
+Sprite S3BGF0, 97, 50
+{
+	Offset 46,21 
+	Patch SPBGF0, 0, 0
+}
+
+Sprite S3BGG0, 94, 53
+{
+	Offset 41,23
+	Patch SPBGG0, 0, 0
+}
+
+Sprite S3BGH0, 96, 55
+{
+	Offset 42,25
+	Patch SPBGH0, 0, 0
+}
+
+Sprite S3BGI0, 101, 54
+{
+	Offset 47,25
+	Patch SPBGI0, 0, 0
+}
+
+//-1
+Sprite 1SBGD0, 71, 36
+{
+	Offset 33,18
+	Patch SPBGD0, 0, 0
+}
+
+Sprite 1SBGE0, 86, 49
+{
+	Offset 40,25 
+	Patch SPBGE0, 0, 0
+}
+
+Sprite 1SBGF0, 97, 50
+{
+	Offset 46,25 
+	Patch SPBGF0, 0, 0
+}
+
+Sprite 1SBGG0, 94, 53
+{
+	Offset 41,27
+	Patch SPBGG0, 0, 0
+}
+
+Sprite 1SBGH0, 96, 55
+{
+	Offset 42,29
+	Patch SPBGH0, 0, 0
+}
+
+Sprite 1SBGI0, 101, 54
+{
+	Offset 47,29
+	Patch SPBGI0, 0, 0
+}
+
+//-2
+Sprite 2SBGD0, 71, 36
+{
+	Offset 33,19
+	Patch SPBGD0, 0, 0
+}
+
+Sprite 2SBGE0, 86, 49
+{
+	Offset 40,26 
+	Patch SPBGE0, 0, 0
+}
+
+Sprite 2SBGF0, 97, 50
+{
+	Offset 46,26
+	Patch SPBGF0, 0, 0
+}
+
+Sprite 2SBGG0, 94, 53
+{
+	Offset 41,28
+	Patch SPBGG0, 0, 0
+}
+
+Sprite 2SBGH0, 96, 55
+{
+	Offset 42,30
+	Patch SPBGH0, 0, 0
+}
+
+Sprite 2SBGI0, 101, 54
+{
+	Offset 47,30
+	Patch SPBGI0, 0, 0
+}
+
+//-3
+Sprite 3SBGD0, 71, 36
+{
+	Offset 33,20
+	Patch SPBGD0, 0, 0
+}
+
+Sprite 3SBGE0, 86, 49
+{
+	Offset 40,27
+	Patch SPBGE0, 0, 0
+}
+
+Sprite 3SBGF0, 97, 50
+{
+	Offset 46,27 
+	Patch SPBGF0, 0, 0
+}
+
+Sprite 3SBGG0, 94, 53
+{
+	Offset 41,29
+	Patch SPBGG0, 0, 0
+}
+
+Sprite 3SBGH0, 96, 55
+{
+	Offset 42,31
+	Patch SPBGH0, 0, 0
+}
+
+Sprite 3SBGI0, 101, 54
+{
+	Offset 47,31
+	Patch SPBGI0, 0, 0
+}
+
+//Scaled and Offset poison cloud sprites
+
+//1 .1
+
+Sprite S1B1D0, 71, 36
+{
+	Offset 33,16
+	Patch SPB1D0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite S1B1E0, 86, 49
+{
+	Offset 40,23 
+	Patch SPB1E0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite S1B1F0, 97, 50
+{
+	Offset 46,23 
+	Patch SPB1F0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite S1B1G0, 94, 53
+{
+	Offset 41,25
+	Patch SPB1G0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite S1B1H0, 96, 55
+{
+	Offset 42,27
+	Patch SPB1H0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite S1B1I0, 101, 54
+{
+	Offset 47,27
+	Patch SPB1I0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+//2 .1
+Sprite S2B1D0, 71, 36
+{
+	Offset 33,15
+	Patch SPB1D0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite S2B1E0, 86, 49
+{
+	Offset 40,22 
+	Patch SPB1E0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite S2B1F0, 97, 50
+{
+	Offset 46,22 
+	Patch SPB1F0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite S2B1G0, 94, 53
+{
+	Offset 41,24
+	Patch SPB1G0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite S2B1H0, 96, 55
+{
+	Offset 42,26
+	Patch SPB1H0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite S2B1I0, 101, 54
+{
+	Offset 47,26
+	Patch SPB1I0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+//3 .1
+
+Sprite S3B1D0, 71, 36
+{
+	Offset 33,14
+	Patch SPB1D0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite S3B1E0, 86, 49
+{
+	Offset 40,21 
+	Patch SPB1E0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite S3B1F0, 97, 50
+{
+	Offset 46,21 
+	Patch SPB1F0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite S3B1G0, 94, 53
+{
+	Offset 41,23
+	Patch SPB1G0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite S3B1H0, 96, 55
+{
+	Offset 42,25
+	Patch SPB1H0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite S3B1I0, 101, 54
+{
+	Offset 47,25
+	Patch SPB1I0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+//-1 .1
+Sprite 1SB1D0, 71, 36
+{
+	Offset 33,18
+	Patch SPB1D0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite 1SB1E0, 86, 49
+{
+	Offset 40,25 
+	Patch SPB1E0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite 1SB1F0, 97, 50
+{
+	Offset 46,25 
+	Patch SPB1F0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite 1SB1G0, 94, 53
+{
+	Offset 41,27
+	Patch SPB1G0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite 1SB1H0, 96, 55
+{
+	Offset 42,29
+	Patch SPB1H0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite 1SB1I0, 101, 54
+{
+	Offset 47,29
+	Patch SPB1I0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+//-2 .1
+Sprite 2SB1D0, 71, 36
+{
+	Offset 33,19
+	Patch SPB1D0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite 2SB1E0, 86, 49
+{
+	Offset 40,26 
+	Patch SPB1E0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite 2SB1F0, 97, 50
+{
+	Offset 46,26
+	Patch SPB1F0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite 2SB1G0, 94, 53
+{
+	Offset 41,28
+	Patch SPB1G0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite 2SB1H0, 96, 55
+{
+	Offset 42,30
+	Patch SPB1H0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite 2SB1I0, 101, 54
+{
+	Offset 47,30
+	Patch SPB1I0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+//-3 .1
+Sprite 3SB1D0, 71, 36
+{
+	Offset 33,20
+	Patch SPB1D0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite 3SB1E0, 86, 49
+{
+	Offset 40,27
+	Patch SPB1E0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite 3SB1F0, 97, 50
+{
+	Offset 46,27 
+	Patch SPB1F0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite 3SB1G0, 94, 53
+{
+	Offset 41,29
+	Patch SPB1G0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite 3SB1H0, 96, 55
+{
+	Offset 42,31
+	Patch SPB1H0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+Sprite 3SB1I0, 101, 54
+{
+	Offset 47,31
+	Patch SPB1I0, 0, 0
+	XScale 10
+	YScale 10
+}
+
+//1 .2
+
+Sprite S1B2D0, 71, 36
+{
+	Offset 33,16
+	Patch SPB2D0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite S1B2E0, 86, 49
+{
+	Offset 40,23 
+	Patch SPB2E0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite S1B2F0, 97, 50
+{
+	Offset 46,23 
+	Patch SPB2F0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite S1B2G0, 94, 53
+{
+	Offset 41,25
+	Patch SPB2G0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite S1B2H0, 96, 55
+{
+	Offset 42,27
+	Patch SPB2H0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite S1B2I0, 101, 54
+{
+	Offset 47,27
+	Patch SPB2I0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+//2 .2
+Sprite S2B2D0, 71, 36
+{
+	Offset 33,15
+	Patch SPB2D0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite S2B2E0, 86, 49
+{
+	Offset 40,22 
+	Patch SPB2E0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite S2B2F0, 97, 50
+{
+	Offset 46,22 
+	Patch SPB2F0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite S2B2G0, 94, 53
+{
+	Offset 41,24
+	Patch SPB2G0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite S2B2H0, 96, 55
+{
+	Offset 42,26
+	Patch SPB2H0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite S2B2I0, 101, 54
+{
+	Offset 47,26
+	Patch SPB2I0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+//3 .2
+
+Sprite S3B2D0, 71, 36
+{
+	Offset 33,14
+	Patch SPB2D0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite S3B2E0, 86, 49
+{
+	Offset 40,21 
+	Patch SPB2E0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite S3B2F0, 97, 50
+{
+	Offset 46,21 
+	Patch SPB2F0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite S3B2G0, 94, 53
+{
+	Offset 41,23
+	Patch SPB2G0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite S3B2H0, 96, 55
+{
+	Offset 42,25
+	Patch SPB2H0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite S3B2I0, 101, 54
+{
+	Offset 47,25
+	Patch SPB2I0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+//-1 .2
+Sprite 1SB2D0, 71, 36
+{
+	Offset 33,18
+	Patch SPB2D0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite 1SB2E0, 86, 49
+{
+	Offset 40,25 
+	Patch SPB2E0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite 1SB2F0, 97, 50
+{
+	Offset 46,25 
+	Patch SPB2F0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite 1SB2G0, 94, 53
+{
+	Offset 41,27
+	Patch SPB2G0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite 1SB2H0, 96, 55
+{
+	Offset 42,29
+	Patch SPB2H0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite 1SB2I0, 101, 54
+{
+	Offset 47,29
+	Patch SPB2I0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+//-2 .2
+Sprite 2SB2D0, 71, 36
+{
+	Offset 33,19
+	Patch SPB2D0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite 2SB2E0, 86, 49
+{
+	Offset 40,26 
+	Patch SPB2E0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite 2SB2F0, 97, 50
+{
+	Offset 46,26
+	Patch SPB2F0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite 2SB2G0, 94, 53
+{
+	Offset 41,28
+	Patch SPB2G0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite 2SB2H0, 96, 55
+{
+	Offset 42,30
+	Patch SPB2H0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite 2SB2I0, 101, 54
+{
+	Offset 47,30
+	Patch SPB2I0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+//-3 .2
+Sprite 3SB2D0, 71, 36
+{
+	Offset 33,20
+	Patch SPB2D0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite 3SB2E0, 86, 49
+{
+	Offset 40,27
+	Patch SPB2E0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite 3SB2F0, 97, 50
+{
+	Offset 46,27 
+	Patch SPB2F0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite 3SB2G0, 94, 53
+{
+	Offset 41,29
+	Patch SPB2G0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite 3SB2H0, 96, 55
+{
+	Offset 42,31
+	Patch SPB2H0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+Sprite 3SB2I0, 101, 54
+{
+	Offset 47,31
+	Patch SPB2I0, 0, 0
+	XScale 5
+	YScale 5
+}
+
+//1 .3
+
+Sprite S1B3D0, 71, 36
+{
+	Offset 33,16
+	Patch SPB3D0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite S1B3E0, 86, 49
+{
+	Offset 40,23 
+	Patch SPB3E0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite S1B3F0, 97, 50
+{
+	Offset 46,23 
+	Patch SPB3F0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite S1B3G0, 94, 53
+{
+	Offset 41,25
+	Patch SPB3G0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite S1B3H0, 96, 55
+{
+	Offset 42,27
+	Patch SPB3H0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite S1B3I0, 101, 54
+{
+	Offset 47,27
+	Patch SPB3I0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+//2 .3
+Sprite S2B3D0, 71, 36
+{
+	Offset 33,15
+	Patch SPB3D0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite S2B3E0, 86, 49
+{
+	Offset 40,22 
+	Patch SPB3E0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite S2B3F0, 97, 50
+{
+	Offset 46,22 
+	Patch SPB3F0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite S2B3G0, 94, 53
+{
+	Offset 41,24
+	Patch SPB3G0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite S2B3H0, 96, 55
+{
+	Offset 42,26
+	Patch SPB3H0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite S2B3I0, 101, 54
+{
+	Offset 47,26
+	Patch SPB3I0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+//3 .3
+
+Sprite S3B3D0, 71, 36
+{
+	Offset 33,14
+	Patch SPB3D0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite S3B3E0, 86, 49
+{
+	Offset 40,21 
+	Patch SPB3E0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite S3B3F0, 97, 50
+{
+	Offset 46,21 
+	Patch SPB3F0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite S3B3G0, 94, 53
+{
+	Offset 41,23
+	Patch SPB3G0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite S3B3H0, 96, 55
+{
+	Offset 42,25
+	Patch SPB3H0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite S3B3I0, 101, 54
+{
+	Offset 47,25
+	Patch SPB3I0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+//-1 .3
+Sprite 1SB3D0, 71, 36
+{
+	Offset 33,18
+	Patch SPB3D0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite 1SB3E0, 86, 49
+{
+	Offset 40,25 
+	Patch SPB3E0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite 1SB3F0, 97, 50
+{
+	Offset 46,25 
+	Patch SPB3F0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite 1SB3G0, 94, 53
+{
+	Offset 41,27
+	Patch SPB3G0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite 1SB3H0, 96, 55
+{
+	Offset 42,29
+	Patch SPB3H0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite 1SB3I0, 101, 54
+{
+	Offset 47,29
+	Patch SPB3I0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+//-2 .3
+Sprite 2SB3D0, 71, 36
+{
+	Offset 33,19
+	Patch SPB3D0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite 2SB3E0, 86, 49
+{
+	Offset 40,26 
+	Patch SPB3E0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite 2SB3F0, 97, 50
+{
+	Offset 46,26
+	Patch SPB3F0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite 2SB3G0, 94, 53
+{
+	Offset 41,28
+	Patch SPB3G0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite 2SB3H0, 96, 55
+{
+	Offset 42,30
+	Patch SPB3H0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite 2SB3I0, 101, 54
+{
+	Offset 47,30
+	Patch SPB3I0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+//-3 .3
+Sprite 3SB3D0, 71, 36
+{
+	Offset 33,20
+	Patch SPB3D0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite 3SB3E0, 86, 49
+{
+	Offset 40,27
+	Patch SPB3E0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite 3SB3F0, 97, 50
+{
+	Offset 46,27 
+	Patch SPB3F0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite 3SB3G0, 94, 53
+{
+	Offset 41,29
+	Patch SPB3G0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite 3SB3H0, 96, 55
+{
+	Offset 42,31
+	Patch SPB3H0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+Sprite 3SB3I0, 101, 54
+{
+	Offset 47,31
+	Patch SPB3I0, 0, 0
+	XScale 3.33333333333333
+	YScale 3.33333333333333
+}
+
+//1 .4
+
+Sprite S1B4D0, 71, 36
+{
+	Offset 33,16
+	Patch SPB4D0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite S1B4E0, 86, 49
+{
+	Offset 40,23 
+	Patch SPB4E0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite S1B4F0, 97, 50
+{
+	Offset 46,23 
+	Patch SPB4F0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite S1B4G0, 94, 53
+{
+	Offset 41,25
+	Patch SPB4G0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite S1B4H0, 96, 55
+{
+	Offset 42,27
+	Patch SPB4H0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite S1B4I0, 101, 54
+{
+	Offset 47,27
+	Patch SPB4I0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+//2 .4
+Sprite S2B4D0, 71, 36
+{
+	Offset 33,15
+	Patch SPB4D0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite S2B4E0, 86, 49
+{
+	Offset 40,22 
+	Patch SPB4E0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite S2B4F0, 97, 50
+{
+	Offset 46,22 
+	Patch SPB4F0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite S2B4G0, 94, 53
+{
+	Offset 41,24
+	Patch SPB4G0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite S2B4H0, 96, 55
+{
+	Offset 42,26
+	Patch SPB4H0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite S2B4I0, 101, 54
+{
+	Offset 47,26
+	Patch SPB4I0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+//3 .4
+
+Sprite S3B4D0, 71, 36
+{
+	Offset 33,14
+	Patch SPB4D0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite S3B4E0, 86, 49
+{
+	Offset 40,21 
+	Patch SPB4E0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite S3B4F0, 97, 50
+{
+	Offset 46,21 
+	Patch SPB4F0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite S3B4G0, 94, 53
+{
+	Offset 41,23
+	Patch SPB4G0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite S3B4H0, 96, 55
+{
+	Offset 42,25
+	Patch SPB4H0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite S3B4I0, 101, 54
+{
+	Offset 47,25
+	Patch SPB4I0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+//-1 .4
+Sprite 1SB4D0, 71, 36
+{
+	Offset 33,18
+	Patch SPB4D0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite 1SB4E0, 86, 49
+{
+	Offset 40,25 
+	Patch SPB4E0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite 1SB4F0, 97, 50
+{
+	Offset 46,25 
+	Patch SPB4F0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite 1SB4G0, 94, 53
+{
+	Offset 41,27
+	Patch SPB4G0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite 1SB4H0, 96, 55
+{
+	Offset 42,29
+	Patch SPB4H0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite 1SB4I0, 101, 54
+{
+	Offset 47,29
+	Patch SPB4I0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+//-2 .4
+Sprite 2SB4D0, 71, 36
+{
+	Offset 33,19
+	Patch SPB4D0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite 2SB4E0, 86, 49
+{
+	Offset 40,26 
+	Patch SPB4E0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite 2SB4F0, 97, 50
+{
+	Offset 46,26
+	Patch SPB4F0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite 2SB4G0, 94, 53
+{
+	Offset 41,28
+	Patch SPB4G0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite 2SB4H0, 96, 55
+{
+	Offset 42,30
+	Patch SPB4H0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite 2SB4I0, 101, 54
+{
+	Offset 47,30
+	Patch SPB4I0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+//-3 .4
+Sprite 3SB4D0, 71, 36
+{
+	Offset 33,20
+	Patch SPB4D0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite 3SB4E0, 86, 49
+{
+	Offset 40,27
+	Patch SPB4E0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite 3SB4F0, 97, 50
+{
+	Offset 46,27 
+	Patch SPB4F0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite 3SB4G0, 94, 53
+{
+	Offset 41,29
+	Patch SPB4G0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite 3SB4H0, 96, 55
+{
+	Offset 42,31
+	Patch SPB4H0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+Sprite 3SB4I0, 101, 54
+{
+	Offset 47,31
+	Patch SPB4I0, 0, 0
+	XScale 2.5
+	YScale 2.5
+}
+
+//1 .5
+
+Sprite S1B5D0, 71, 36
+{
+	Offset 33,16
+	Patch SPB5D0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite S1B5E0, 86, 49
+{
+	Offset 40,23 
+	Patch SPB5E0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite S1B5F0, 97, 50
+{
+	Offset 46,23 
+	Patch SPB5F0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite S1B5G0, 94, 53
+{
+	Offset 41,25
+	Patch SPB5G0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite S1B5H0, 96, 55
+{
+	Offset 42,27
+	Patch SPB5H0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite S1B5I0, 101, 54
+{
+	Offset 47,27
+	Patch SPB5I0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+//2 .5
+Sprite S2B5D0, 71, 36
+{
+	Offset 33,15
+	Patch SPB5D0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite S2B5E0, 86, 49
+{
+	Offset 40,22 
+	Patch SPB5E0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite S2B5F0, 97, 50
+{
+	Offset 46,22 
+	Patch SPB5F0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite S2B5G0, 94, 53
+{
+	Offset 41,24
+	Patch SPB5G0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite S2B5H0, 96, 55
+{
+	Offset 42,26
+	Patch SPB5H0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite S2B5I0, 101, 54
+{
+	Offset 47,26
+	Patch SPB5I0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+//3 .5
+
+Sprite S3B5D0, 71, 36
+{
+	Offset 33,14
+	Patch SPB5D0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite S3B5E0, 86, 49
+{
+	Offset 40,21 
+	Patch SPB5E0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite S3B5F0, 97, 50
+{
+	Offset 46,21 
+	Patch SPB5F0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite S3B5G0, 94, 53
+{
+	Offset 41,23
+	Patch SPB5G0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite S3B5H0, 96, 55
+{
+	Offset 42,25
+	Patch SPB5H0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite S3B5I0, 101, 54
+{
+	Offset 47,25
+	Patch SPB5I0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+//-1 .5
+Sprite 1SB5D0, 71, 36
+{
+	Offset 33,18
+	Patch SPB5D0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite 1SB5E0, 86, 49
+{
+	Offset 40,25 
+	Patch SPB5E0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite 1SB5F0, 97, 50
+{
+	Offset 46,25 
+	Patch SPB5F0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite 1SB5G0, 94, 53
+{
+	Offset 41,27
+	Patch SPB5G0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite 1SB5H0, 96, 55
+{
+	Offset 42,29
+	Patch SPB5H0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite 1SB5I0, 101, 54
+{
+	Offset 47,29
+	Patch SPB5I0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+//-2 .5
+Sprite 2SB5D0, 71, 36
+{
+	Offset 33,19
+	Patch SPB5D0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite 2SB5E0, 86, 49
+{
+	Offset 40,26 
+	Patch SPB5E0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite 2SB5F0, 97, 50
+{
+	Offset 46,26
+	Patch SPB5F0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite 2SB5G0, 94, 53
+{
+	Offset 41,28
+	Patch SPB5G0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite 2SB5H0, 96, 55
+{
+	Offset 42,30
+	Patch SPB5H0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite 2SB5I0, 101, 54
+{
+	Offset 47,30
+	Patch SPB5I0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+//-3 .5
+Sprite 3SB5D0, 71, 36
+{
+	Offset 33,20
+	Patch SPB5D0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite 3SB5E0, 86, 49
+{
+	Offset 40,27
+	Patch SPB5E0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite 3SB5F0, 97, 50
+{
+	Offset 46,27 
+	Patch SPB5F0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite 3SB5G0, 94, 53
+{
+	Offset 41,29
+	Patch SPB5G0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite 3SB5H0, 96, 55
+{
+	Offset 42,31
+	Patch SPB5H0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+Sprite 3SB5I0, 101, 54
+{
+	Offset 47,31
+	Patch SPB5I0, 0, 0
+	XScale 2
+	YScale 2
+}
+
+//1 .6
+
+Sprite S1B6D0, 71, 36
+{
+	Offset 33,16
+	Patch SPB6D0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite S1B6E0, 86, 49
+{
+	Offset 40,23 
+	Patch SPB6E0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite S1B6F0, 97, 50
+{
+	Offset 46,23 
+	Patch SPB6F0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite S1B6G0, 94, 53
+{
+	Offset 41,25
+	Patch SPB6G0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite S1B6H0, 96, 55
+{
+	Offset 42,27
+	Patch SPB6H0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite S1B6I0, 101, 54
+{
+	Offset 47,27
+	Patch SPB6I0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+//2 .6
+Sprite S2B6D0, 71, 36
+{
+	Offset 33,15
+	Patch SPB6D0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite S2B6E0, 86, 49
+{
+	Offset 40,22 
+	Patch SPB6E0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite S2B6F0, 97, 50
+{
+	Offset 46,22 
+	Patch SPB6F0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite S2B6G0, 94, 53
+{
+	Offset 41,24
+	Patch SPB6G0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite S2B6H0, 96, 55
+{
+	Offset 42,26
+	Patch SPB6H0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite S2B6I0, 101, 54
+{
+	Offset 47,26
+	Patch SPB6I0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+//3 .6
+
+Sprite S3B6D0, 71, 36
+{
+	Offset 33,14
+	Patch SPB6D0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite S3B6E0, 86, 49
+{
+	Offset 40,21 
+	Patch SPB6E0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite S3B6F0, 97, 50
+{
+	Offset 46,21 
+	Patch SPB6F0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite S3B6G0, 94, 53
+{
+	Offset 41,23
+	Patch SPB6G0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite S3B6H0, 96, 55
+{
+	Offset 42,25
+	Patch SPB6H0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite S3B6I0, 101, 54
+{
+	Offset 47,25
+	Patch SPB6I0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+//-1 .6
+Sprite 1SB6D0, 71, 36
+{
+	Offset 33,18
+	Patch SPB6D0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite 1SB6E0, 86, 49
+{
+	Offset 40,25 
+	Patch SPB6E0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite 1SB6F0, 97, 50
+{
+	Offset 46,25 
+	Patch SPB6F0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite 1SB6G0, 94, 53
+{
+	Offset 41,27
+	Patch SPB6G0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite 1SB6H0, 96, 55
+{
+	Offset 42,29
+	Patch SPB6H0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite 1SB6I0, 101, 54
+{
+	Offset 47,29
+	Patch SPB6I0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+//-2 .6
+Sprite 2SB6D0, 71, 36
+{
+	Offset 33,19
+	Patch SPB6D0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite 2SB6E0, 86, 49
+{
+	Offset 40,26 
+	Patch SPB6E0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite 2SB6F0, 97, 50
+{
+	Offset 46,26
+	Patch SPB6F0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite 2SB6G0, 94, 53
+{
+	Offset 41,28
+	Patch SPB6G0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite 2SB6H0, 96, 55
+{
+	Offset 42,30
+	Patch SPB6H0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite 2SB6I0, 101, 54
+{
+	Offset 47,30
+	Patch SPB6I0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+//-3 .6
+Sprite 3SB6D0, 71, 36
+{
+	Offset 33,20
+	Patch SPB6D0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite 3SB6E0, 86, 49
+{
+	Offset 40,27
+	Patch SPB6E0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite 3SB6F0, 97, 50
+{
+	Offset 46,27 
+	Patch SPB6F0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite 3SB6G0, 94, 53
+{
+	Offset 41,29
+	Patch SPB6G0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite 3SB6H0, 96, 55
+{
+	Offset 42,31
+	Patch SPB6H0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+Sprite 3SB6I0, 101, 54
+{
+	Offset 47,31
+	Patch SPB6I0, 0, 0
+	XScale 1.666666666
+	YScale 1.666666666
+}
+
+//1 .7
+
+Sprite S1B7D0, 71, 36
+{
+	Offset 33,16
+	Patch SPB7D0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite S1B7E0, 86, 49
+{
+	Offset 40,23 
+	Patch SPB7E0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite S1B7F0, 97, 50
+{
+	Offset 46,23 
+	Patch SPB7F0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite S1B7G0, 94, 53
+{
+	Offset 41,25
+	Patch SPB7G0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite S1B7H0, 96, 55
+{
+	Offset 42,27
+	Patch SPB7H0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite S1B7I0, 101, 54
+{
+	Offset 47,27
+	Patch SPB7I0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+//2 .7
+Sprite S2B7D0, 71, 36
+{
+	Offset 33,15
+	Patch SPB7D0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite S2B7E0, 86, 49
+{
+	Offset 40,22 
+	Patch SPB7E0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite S2B7F0, 97, 50
+{
+	Offset 46,22 
+	Patch SPB7F0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite S2B7G0, 94, 53
+{
+	Offset 41,24
+	Patch SPB7G0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite S2B7H0, 96, 55
+{
+	Offset 42,26
+	Patch SPB7H0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite S2B7I0, 101, 54
+{
+	Offset 47,26
+	Patch SPB7I0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+//3 .7
+
+Sprite S3B7D0, 71, 36
+{
+	Offset 33,14
+	Patch SPB7D0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite S3B7E0, 86, 49
+{
+	Offset 40,21 
+	Patch SPB7E0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite S3B7F0, 97, 50
+{
+	Offset 46,21 
+	Patch SPB7F0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite S3B7G0, 94, 53
+{
+	Offset 41,23
+	Patch SPB7G0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite S3B7H0, 96, 55
+{
+	Offset 42,25
+	Patch SPB7H0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite S3B7I0, 101, 54
+{
+	Offset 47,25
+	Patch SPB7I0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+//-1 .7
+Sprite 1SB7D0, 71, 36
+{
+	Offset 33,18
+	Patch SPB7D0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite 1SB7E0, 86, 49
+{
+	Offset 40,25 
+	Patch SPB7E0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite 1SB7F0, 97, 50
+{
+	Offset 46,25 
+	Patch SPB7F0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite 1SB7G0, 94, 53
+{
+	Offset 41,27
+	Patch SPB7G0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite 1SB7H0, 96, 55
+{
+	Offset 42,29
+	Patch SPB7H0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite 1SB7I0, 101, 54
+{
+	Offset 47,29
+	Patch SPB7I0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+//-2 .7
+Sprite 2SB7D0, 71, 36
+{
+	Offset 33,19
+	Patch SPB7D0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite 2SB7E0, 86, 49
+{
+	Offset 40,26 
+	Patch SPB7E0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite 2SB7F0, 97, 50
+{
+	Offset 46,26
+	Patch SPB7F0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite 2SB7G0, 94, 53
+{
+	Offset 41,28
+	Patch SPB7G0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite 2SB7H0, 96, 55
+{
+	Offset 42,30
+	Patch SPB7H0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite 2SB7I0, 101, 54
+{
+	Offset 47,30
+	Patch SPB7I0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+//-3 .7
+Sprite 3SB7D0, 71, 36
+{
+	Offset 33,20
+	Patch SPB7D0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite 3SB7E0, 86, 49
+{
+	Offset 40,27
+	Patch SPB7E0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite 3SB7F0, 97, 50
+{
+	Offset 46,27 
+	Patch SPB7F0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite 3SB7G0, 94, 53
+{
+	Offset 41,29
+	Patch SPB7G0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite 3SB7H0, 96, 55
+{
+	Offset 42,31
+	Patch SPB7H0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+Sprite 3SB7I0, 101, 54
+{
+	Offset 47,31
+	Patch SPB7I0, 0, 0
+	XScale 1.428571429
+	YScale 1.428571429
+}
+
+//1 .8
+
+Sprite S1B8D0, 71, 36
+{
+	Offset 33,16
+	Patch SPB8D0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite S1B8E0, 86, 49
+{
+	Offset 40,23 
+	Patch SPB8E0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite S1B8F0, 97, 50
+{
+	Offset 46,23 
+	Patch SPB8F0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite S1B8G0, 94, 53
+{
+	Offset 41,25
+	Patch SPB8G0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite S1B8H0, 96, 55
+{
+	Offset 42,27
+	Patch SPB8H0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite S1B8I0, 101, 54
+{
+	Offset 47,27
+	Patch SPB8I0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+//2 .8
+Sprite S2B8D0, 71, 36
+{
+	Offset 33,15
+	Patch SPB8D0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite S2B8E0, 86, 49
+{
+	Offset 40,22 
+	Patch SPB8E0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite S2B8F0, 97, 50
+{
+	Offset 46,22 
+	Patch SPB8F0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite S2B8G0, 94, 53
+{
+	Offset 41,24
+	Patch SPB8G0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite S2B8H0, 96, 55
+{
+	Offset 42,26
+	Patch SPB8H0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite S2B8I0, 101, 54
+{
+	Offset 47,26
+	Patch SPB8I0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+//3 .8
+
+Sprite S3B8D0, 71, 36
+{
+	Offset 33,14
+	Patch SPB8D0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite S3B8E0, 86, 49
+{
+	Offset 40,21 
+	Patch SPB8E0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite S3B8F0, 97, 50
+{
+	Offset 46,21 
+	Patch SPB8F0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite S3B8G0, 94, 53
+{
+	Offset 41,23
+	Patch SPB8G0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite S3B8H0, 96, 55
+{
+	Offset 42,25
+	Patch SPB8H0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite S3B8I0, 101, 54
+{
+	Offset 47,25
+	Patch SPB8I0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+//-1 .8
+Sprite 1SB8D0, 71, 36
+{
+	Offset 33,18
+	Patch SPB8D0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite 1SB8E0, 86, 49
+{
+	Offset 40,25 
+	Patch SPB8E0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite 1SB8F0, 97, 50
+{
+	Offset 46,25 
+	Patch SPB8F0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite 1SB8G0, 94, 53
+{
+	Offset 41,27
+	Patch SPB8G0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite 1SB8H0, 96, 55
+{
+	Offset 42,29
+	Patch SPB8H0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite 1SB8I0, 101, 54
+{
+	Offset 47,29
+	Patch SPB8I0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+//-2 .8
+Sprite 2SB8D0, 71, 36
+{
+	Offset 33,19
+	Patch SPB8D0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite 2SB8E0, 86, 49
+{
+	Offset 40,26 
+	Patch SPB8E0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite 2SB8F0, 97, 50
+{
+	Offset 46,26
+	Patch SPB8F0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite 2SB8G0, 94, 53
+{
+	Offset 41,28
+	Patch SPB8G0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite 2SB8H0, 96, 55
+{
+	Offset 42,30
+	Patch SPB8H0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite 2SB8I0, 101, 54
+{
+	Offset 47,30
+	Patch SPB8I0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+//-3 .8
+Sprite 3SB8D0, 71, 36
+{
+	Offset 33,20
+	Patch SPB8D0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite 3SB8E0, 86, 49
+{
+	Offset 40,27
+	Patch SPB8E0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite 3SB8F0, 97, 50
+{
+	Offset 46,27 
+	Patch SPB8F0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite 3SB8G0, 94, 53
+{
+	Offset 41,29
+	Patch SPB8G0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite 3SB8H0, 96, 55
+{
+	Offset 42,31
+	Patch SPB8H0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+Sprite 3SB8I0, 101, 54
+{
+	Offset 47,31
+	Patch SPB8I0, 0, 0
+	XScale 1.25
+	YScale 1.25
+}
+
+//1 .9
+
+Sprite S1B9D0, 71, 36
+{
+	Offset 33,16
+	Patch SPB9D0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite S1B9E0, 86, 49
+{
+	Offset 40,23 
+	Patch SPB9E0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite S1B9F0, 97, 50
+{
+	Offset 46,23 
+	Patch SPB9F0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite S1B9G0, 94, 53
+{
+	Offset 41,25
+	Patch SPB9G0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite S1B9H0, 96, 55
+{
+	Offset 42,27
+	Patch SPB9H0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite S1B9I0, 101, 54
+{
+	Offset 47,27
+	Patch SPB9I0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+//2 .9
+Sprite S2B9D0, 71, 36
+{
+	Offset 33,15
+	Patch SPB9D0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite S2B9E0, 86, 49
+{
+	Offset 40,22 
+	Patch SPB9E0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite S2B9F0, 97, 50
+{
+	Offset 46,22 
+	Patch SPB9F0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite S2B9G0, 94, 53
+{
+	Offset 41,24
+	Patch SPB9G0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite S2B9H0, 96, 55
+{
+	Offset 42,26
+	Patch SPB9H0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite S2B9I0, 101, 54
+{
+	Offset 47,26
+	Patch SPB9I0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+//3 .9
+
+Sprite S3B9D0, 71, 36
+{
+	Offset 33,14
+	Patch SPB9D0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite S3B9E0, 86, 49
+{
+	Offset 40,21 
+	Patch SPB9E0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite S3B9F0, 97, 50
+{
+	Offset 46,21 
+	Patch SPB9F0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite S3B9G0, 94, 53
+{
+	Offset 41,23
+	Patch SPB9G0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite S3B9H0, 96, 55
+{
+	Offset 42,25
+	Patch SPB9H0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite S3B9I0, 101, 54
+{
+	Offset 47,25
+	Patch SPB9I0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+//-1 .9
+Sprite 1SB9D0, 71, 36
+{
+	Offset 33,18
+	Patch SPB9D0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite 1SB9E0, 86, 49
+{
+	Offset 40,25 
+	Patch SPB9E0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite 1SB9F0, 97, 50
+{
+	Offset 46,25 
+	Patch SPB9F0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite 1SB9G0, 94, 53
+{
+	Offset 41,27
+	Patch SPB9G0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite 1SB9H0, 96, 55
+{
+	Offset 42,29
+	Patch SPB9H0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite 1SB9I0, 101, 54
+{
+	Offset 47,29
+	Patch SPB9I0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+//-2 .9
+Sprite 2SB9D0, 71, 36
+{
+	Offset 33,19
+	Patch SPB9D0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite 2SB9E0, 86, 49
+{
+	Offset 40,26 
+	Patch SPB9E0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite 2SB9F0, 97, 50
+{
+	Offset 46,26
+	Patch SPB9F0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite 2SB9G0, 94, 53
+{
+	Offset 41,28
+	Patch SPB9G0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite 2SB9H0, 96, 55
+{
+	Offset 42,30
+	Patch SPB9H0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite 2SB9I0, 101, 54
+{
+	Offset 47,30
+	Patch SPB9I0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+//-3 .9
+Sprite 3SB9D0, 71, 36
+{
+	Offset 33,20
+	Patch SPB9D0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite 3SB9E0, 86, 49
+{
+	Offset 40,27
+	Patch SPB9E0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite 3SB9F0, 97, 50
+{
+	Offset 46,27 
+	Patch SPB9F0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite 3SB9G0, 94, 53
+{
+	Offset 41,29
+	Patch SPB9G0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite 3SB9H0, 96, 55
+{
+	Offset 42,31
+	Patch SPB9H0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}
+
+Sprite 3SB9I0, 101, 54
+{
+	Offset 47,31
+	Patch SPB9I0, 0, 0
+	XScale 1.11111111111111
+	YScale 1.11111111111111
+}

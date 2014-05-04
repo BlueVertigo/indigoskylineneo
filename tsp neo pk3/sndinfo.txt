@@ -82,11 +82,127 @@ mel/strongmeleeyell4 melsha4
 mel/strongmeleeyell5 melsha5
 mel/strongmeleeyell6 melsha6
 
+////////////////////
+//Mel's Pickup Lines
+////////////////////
+
+flavpickup/Kushiel					MELPGLV
+$random flavpickup/persephone { flavpickup/persphone1 flavpickup/persphone2 flavpickup/persphone3 flavpickup/persphone4 }
+flavpickup/persphone1               MELPBZK1
+flavpickup/persphone2               MELPBZK2
+flavpickup/persphone3               MELPBZK3
+flavpickup/persphone4               MELPBZK4
+flavpickup/Pistol					MELPPST
+flavpickup/Deagle                   MELPDEAG
+flavpickup/zekeshotgun				MELPSHT
+flavpickup/Crossbow					MELPCBOW
+flavpickup/Ammobox50				MELPCUZI
+$random flavpickup/RocketNailgunLauncher {flavpickup/RocketLauncher1 flavpickup/RocketLauncher2}
+flavpickup/RocketLauncher1			MELPCNL
+flavpickup/RocketLauncher2			MELPCRL
+$random flavpickup/flamethrower {flavpickup/Flamethrower1 flavpickup/Flamethrower2}
+flavpickup/Flamethrower1			MELPCFL1
+flavpickup/Flamethrower2			MELPCFL2
+$random flavpickup/caster { flavpickup/caster1 flavpickup/caster2 flavpickup/caster3 }
+flavpickup/caster1                  MELPCAS1
+flavpickup/caster2                  MELPCAS2
+flavpickup/caster3                  MELPCAS3
+
+//////////////////
+//Mel Caster Lines
+//////////////////
+$random melcaster/badshell { melcaster/badshell1 melcaster/badshell2 melcaster/badshell3 melcaster/badshell4 melcaster/badshell5 }
+melcaster/badshell1                 MELCSBD1
+melcaster/badshell2                 MELCSBD2
+melcaster/badshell3                 MELCSBD3
+melcaster/badshell4                 MELCSBD4
+melcaster/badshell5                 MELCSBD5
+$random melcaster/mehshell { melcaster/mehshell1 melcaster/mehshell2 melcaster/mehshell3}
+melcaster/mehshell1                 MELCSEH1
+melcaster/mehshell2                 MELCSEH2
+melcaster/mehshell3                 MELCSEH3
+$random melcaster/goodshell { melcaster/goodshell1 melcaster/goodshell2 melcaster/goodshell3 melcaster/goodshell4 }
+melcaster/goodshell1                MELCSGD1
+melcaster/goodshell2                MELCSGD2
+melcaster/goodshell3                MELCSGD3
+melcaster/goodshell4                MELCSGD4
+$random melcaster/rareshell { melcaster/rareshell1 melcaster/rareshell2 melcaster/rareshell3 melcaster/rareshell4 melcaster/rareshell5 }
+melcaster/rareshell1                MELCSRE1
+melcaster/rareshell2                MELCSRE2
+melcaster/rareshell3                MELCSRE3
+melcaster/rareshell4                MELCSRE4
+melcaster/rareshell5                MELCSRE5
+melcaster/number9                   MELCSN91
+melcaster/number11                  MELCSN11
+$random melcaster/number13 { melcaster/number131 melcaster/number132 }
+melcaster/number131                 MELCS131
+melcaster/number132                 MELCS132
+$random melcaster/dud { melcaster/dud1 melcaster/dud2 }
+melcaster/dud1                      MELCSDD1
+melcaster/dud2                      MELCSDD2
+$random melcaster/line { melcaster/line1 melcaster/line2 melcaster/line3 melcaster/line4 melcaster/line5 melcaster/line6 melcaster/line7 }
+melcaster/line1                     MELCSHT1
+melcaster/line2                     MELCSHT2
+melcaster/line3                     MELCSHT3
+melcaster/line4                     MELCSHT4
+melcaster/line5                     MELCSHT5
+melcaster/line6                     MELCSHT6
+melcaster/line7                     MELCSHT7
+
 //////////////////
 //Mel Taunts
 //////////////////
 
-mel/meleetaunt melolm1
+//Kushiel Taunts
+$random mel/kushieltaunt { mel/kushieltaunt1 mel/kushieltaunt2 mel/kushieltaunt3 mel/kushieltaunt4 }
+mel/kushieltaunt1                   MELOLK1
+mel/kushieltaunt2                   MELOLK2
+mel/kushieltaunt3                   MELOLK3
+mel/kushieltaunt4                   MELOLK4
+//Melee Taunts
+$random mel/meleetaunt { mel/meleetaunt1 mel/meleetaunt2 mel/meleetaunt3 mel/meleetaunt4 mel/meleetaunt5 }
+mel/meleetaunt1 melolm1
+mel/meleetaunt2 melolm2
+mel/meleetaunt3 melolm3
+mel/meleetaunt4 melolm4
+mel/meleetaunt5 melolm5
+//Generic Taunts
+$random mel/generictaunt { mel/generictaunt1 mel/generictaunt2 mel/generictaunt3 mel/generictaunt4 mel/generictaunt5 mel/generictaunt6 mel/generictaunt7 mel/generictaunt8 mel/generictaunt9 mel/generictaunt10 mel/generictaunt11 mel/generictaunt12 mel/generictaunt13 mel/generictaunt14 mel/generictaunt15 mel/generictaunt16 mel/generictaunt17 mel/generictaunt18 mel/generictaunt19 mel/generictaunt20 mel/generictaunt21 mel/generictaunt22 mel/generictaunt23 mel/generictaunt24 mel/generictaunt25 mel/generictaunt26 mel/generictaunt27 mel/generictaunt28 mel/generictaunt29 }
+mel/generictaunt1 melolg1
+mel/generictaunt2 melolg2
+mel/generictaunt3 melolg3
+mel/generictaunt4 melolg4
+mel/generictaunt5 melolg5
+mel/generictaunt6 melolg6
+mel/generictaunt7 melolg7
+mel/generictaunt8 melolg8
+mel/generictaunt9 melolg9
+mel/generictaunt10 melolg10
+mel/generictaunt11 melolg11
+mel/generictaunt12 melolg12
+mel/generictaunt13 melolg13
+mel/generictaunt14 melolg14
+mel/generictaunt15 melolg15
+mel/generictaunt16 melolg16
+mel/generictaunt17 melolg17
+mel/generictaunt18 melolg18
+mel/generictaunt19 melolg19
+mel/generictaunt20 melolg20
+mel/generictaunt21 melolg21
+mel/generictaunt22 melolg22
+mel/generictaunt23 melolg23
+mel/generictaunt24 melolg24
+mel/generictaunt25 melolg25
+mel/generictaunt26 melolg26
+mel/generictaunt27 melolg27
+mel/generictaunt28 melolg28
+mel/generictaunt29 melolg29
+//AAAAAAAA Taunts
+$random mel/revanenttaunt { mel/revanenttaunt1 mel/revanenttaunt2 }
+mel/revanenttaunt1 melolr1
+mel/revanenttaunt2 melolr2
+//Cultist Taunt
+mel/cultisttaunt melolc1
 
 //////////////////////
 // Robo Mel Player Sounds
@@ -171,6 +287,23 @@ robomel/strongmeleeyell3 relsha3
 robomel/strongmeleeyell4 relsha4
 robomel/strongmeleeyell5 relsha5
 robomel/strongmeleeyell6 relsha6
+
+/////////////////////////
+//Robo Mel's Pickup Lines
+/////////////////////////
+
+flavpickuprobo/Kushiel					RELPGLV
+flavpickuprobo/Pistol					RELPPST
+flavpickuprobo/zekeshotgun				RELPSHT
+flavpickuprobo/Crossbow					RELPCBOW
+flavpickuprobo/Ammobox50				RELPCUZI
+$random flavpickuprobo/RocketNailgunLauncher {flavpickuprobo/RocketLauncher1 flavpickuprobo/RocketLauncher2}
+flavpickuprobo/RocketLauncher1			RELPCNL
+flavpickuprobo/RocketLauncher2			RELPCRL
+$random flavpickuprobo/Flamethrower {flavpickuprobo/Flamethrower1 flavpickuprobo/Flamethrower2}
+flavpickuprobo/Flamethrower1			RELPCFL1
+flavpickuprobo/Flamethrower2			RELPCFL2
+
 
 
 //Universal Melee Sounds
@@ -263,9 +396,34 @@ zekeshotgun/load3 zekload3
 zekeshotgun/up zekup1
 zekeshotgun/down zekdown
 
+zekeshotgun/unload1 zekunl1
+zekeshotgun/unload2 zekunl2
+
 zekeshotgun/elfire zekelsht
 zekeshotgun/pofire zekposht
 zekeshotgun/hefire zekfrsht
+
+//Dahlia Crossbow
+$random dahlia/fire { dahlia/fire1 dahlia/fire2 dahlia/fire3 }
+dahlia/fire1 crsbwfr1
+dahlia/fire2 crsbwfr2
+dahlia/fire3 crsbwfr3
+dahlia/up crsbup
+dahlia/down crsbdown
+$random dahlia/load { dahlia/load1 dahlia/load2 dahlia/load3 }
+dahlia/load1 crsbld1
+dahlia/load2 crsbld2
+dahlia/load3 crsbld3
+dahlia/ammo2 crsbam2
+dahlia/ammo1 crsbam1
+
+dahlia/beep SWBEEP
+
+$limit dahlia/impact 0
+$random dahlia/impact { dahlia/impact1 dahlia/impact2 dahlia/impact3 }
+dahlia/impact1 CRSBIPW1
+dahlia/impact2 CRSBIPW2
+dahlia/impact3 CRSBIPW3
 
 //Ammo Box 50
 $random ammobox/fire { ammobox/fire1 ammobox/fire2 ammobox/fire3 }
@@ -277,6 +435,19 @@ ammobox/in aboxcin
 ammobox/pull aboxpull
 ammobox/up ab50up
 ammobox/down ab50down
+
+//Hmm
+mp40/pickup mp40pck
+$random mipfowty/fire { mp40/fire1 mp40/fire2 mp40/fire3 }
+mp40/fire1 mp40fr1
+mp40/fire2 mp40fr2
+mp40/fire3 mp40fr3
+mipfowty/out mp40out
+mipfowty/in  mp40in
+mipfowty/bolt1 mp40bt1
+mipfowty/bolt2 mp40bt2
+mipfowty/up mp40up
+mipfowty/down mp40down
 
 //Kirratech Orion
 orion/start kostart
@@ -298,8 +469,43 @@ toolbox/on RLNGUP
 toolbox/off RLNGDOWN
 toolbox/prime RLNGSTC
 toolbox/rocket RLNGRLST
+toolbox/grind RLNGRND
 toolbox/nailgun RLNGNGST
 toolbox/empty RLNGNO
+toolbox/reload1 RLNGLD1
+toolbox/reload2 RLNGLD2
+
+toolbox/ammo1 RLNGAM1
+toolbox/ammo2 RLNGAM2
+
+$limit toolbox/nailgunimpact 0
+$random toolbox/nailgunimpact { toolbox/nailgunimpact1 toolbox/nailgunimpact2 toolbox/nailgunimpact3 toolbox/nailgunimpact4 toolbox/nailgunimpact5 toolbox/nailgunimpact6 toolbox/nailgunimpact6 toolbox/nailgunimpact7 toolbox/nailgunimpact8 }
+toolbox/nailgunimpact1 RLNGIMW1
+toolbox/nailgunimpact2 RLNGIMW2
+toolbox/nailgunimpact3 RLNGIMW3
+toolbox/nailgunimpact4 RLNGIMW4
+toolbox/nailgunimpact5 RLNGIMW5
+toolbox/nailgunimpact6 RLNGIMW6
+toolbox/nailgunimpact7 RLNGIMW7
+toolbox/nailgunimpact8 RLNGIMW8
+
+$limit toolbox/nailgunflesh 0
+$random toolbox/nailgunflesh { toolbox/nailgunflesh1 toolbox/nailgunflesh2 toolbox/nailgunflesh3 }
+toolbox/nailgunflesh1 RLNGIMF1
+toolbox/nailgunflesh2 RLNGIMF2
+toolbox/nailgunflesh3 RLNGIMF3
+
+$limit toolbox/rocketimpact 0
+$random toolbox/rocketimpact { toolbox/rocketimpact1 toolbox/rocketimpact2 toolbox/rocketimpact3 }
+toolbox/rocketimpact1 RLNGEXP1
+toolbox/rocketimpact2 RLNGEXP2
+toolbox/rocketimpact3 RLNGEXP3
+
+$limit toolbox/rocketfly 0
+$random toolbox/rocketfly { toolbox/rocketfly1 toolbox/rocketfly2 toolbox/rocketfly3 }
+toolbox/rocketfly1 RLNGFLY1
+toolbox/rocketfly2 RLNGFLY2
+toolbox/rocketfly3 RLNGFLY3
 
 //Weapon Junk
 $random weapons/casing  { weapons/casing1 weapons/casing2 weapons/casing3 }
@@ -330,7 +536,6 @@ menu/clear clear
 menu/quit1 quit
 $random menu/quit2 { secretmessage menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 menu/quit1 }//menu/quit2 quit
 secretmessage quit2
-
 
 //Zombie Rifle Sound
 rifle/fire dsarfire
@@ -426,6 +631,7 @@ fzombie/death1             fzdeath1
 fzombie/death2             fzdeath2
 fzombie/death3             fzdeath3
 fzombie/death4             fzdeath4
+
 
 //Zombie Commando Sounds
 $random czombie/sight {czombie/sight1 czombie/sight2 czombie/sight3 czombie/sight4 czombie/sight5 czombie/sight6 czombie/sight7 czombie/sight8 czombie/sight9 czombie/sight10 czombie/sight11 czombie/sight12 czombie/sight13 czombie/sight14}
@@ -572,6 +778,29 @@ xmimp/death9             impde9
 xmimp/death10             impde10
 xmimp/death11             impde11
 
+//Lost Soul Sounds
+$Random Forgotten/Sight { 3FORSIG1 3FORSIG2 3FORSIG3 }
+3FORSIG1	3FORSIG1
+3FORSIG2	3FORSIG2
+3FORSIG3	3FORSIG3
+$Random Forgotten/Active { 3FORACT1 3FORACT2 3FORACT3 }
+3FORACT1	3FORACT1
+3FORACT2	3FORACT2
+3FORACT3	3FORACT3
+3FORACT4	3FORACT4
+$Random Forgotten/Pain { 3FORPAI1 3FORPAI2 3FORPAI3 }
+3FORPAI1	3FORPAI1
+3FORPAI2	3FORPAI2
+3FORPAI3	3FORPAI3
+$Random Forgotten/Death { 3FORDEA1 3FORDEA2 3FORDEA3 }
+3FORDEA1	3FORDEA1
+3FORDEA2	3FORDEA2
+3FORDEA3	3FORDEA3
+$Random LostSoul/Explode { SOULEXP1 SOULEXP2 SOULEXP3 }
+SOULEXP1    SOULEXP1
+SOULEXP2    SOULEXP2
+SOULEXP3    SOULEXP3
+
 //Armor Pickups
 
 armor/lightarmor         larmpck1
@@ -585,28 +814,50 @@ health/medkit            MDKPCK1
 health/stimpack          STMPPCK
 health/healthbonus       HLBNPCK
 
-//Weapon Pickup Flavor
+//Shotgun sounds (half life 1 sounds)
 
-flavpickup/zekeshotgun				MELPSHT
-flavpickup/Crossbow					MELPCBOW
-$random flavpickup/RocketNailgunLauncher {flavpickup/RocketLauncher1 flavpickup/RocketLauncher2}
-flavpickup/RocketLauncher1			MELPCNL
-flavpickup/RocketLauncher2			MELPCRL
-flavpickup/Ammobox50				MELPCUZI
-flavpickup/Kushiel					MELPGLV
-$random Flamethrower {flavpickup/Flamethrower1 flavpickup/Flamethrower2}
-flavpickup/Flamethrower1			MELPCFL1
-flavpickup/Flamethrower2			MELPCFL2
-flavpickup/Pistol					MELPPST
+$limit Weapons/ShockShell 0
+$random Weapons/ShockShell {Weapons/ShockShell1 Weapons/ShockShell2 Weapons/ShockShell3}
+Weapons/ShockShell1	spark1
+Weapons/ShockShell2	spark2
+Weapons/ShockShell3	spark3
+Weapons/ShockShell4	spark4
 
-flavpickuprobo/zekeshotgun				RELPSHT
-flavpickuprobo/Crossbow					RELPCBOW
-$random flavpickuprobo/RocketNailgunLauncher {flavpickuprobo/RocketLauncher1 flavpickuprobo/RocketLauncher2}
-flavpickuprobo/RocketLauncher1			RELPCNL
-flavpickuprobo/RocketLauncher2			RELPCRL
-flavpickuprobo/Ammobox50				RELPCUZI
-flavpickuprobo/Kushiel					RELPGLV
-$random Flamethrower {flavpickuprobo/Flamethrower1 flavpickuprobo/Flamethrower2}
-flavpickuprobo/Flamethrower1			RELPCFL1
-flavpickuprobo/Flamethrower2			RELPCFL2
-flavpickuprobo/Pistol					RELPPST
+$limit Weapons/ShockArc 0
+$random Weapons/ShockArc {Weapons/ShockArc1 Weapons/ShockArc2 Weapons/ShockArc3 Weapons/ShockArc4 Weapons/ShockArc5 Weapons/ShockArc6 Weapons/ShockArc7 Weapons/ShockArc8 Weapons/ShockArc9 Weapons/ShockArc10 Weapons/ShockArc11 Weapons/ShockArc12 Weapons/ShockArc13 Weapons/ShockArc14 Weapons/ShockArc15 Weapons/ShockArc16}
+
+Weapons/ShockArc1	DSHOCK01
+Weapons/ShockArc2	DSHOCK02
+Weapons/ShockArc3	DSHOCK03
+Weapons/ShockArc4	DSHOCK04
+Weapons/ShockArc5	DSHOCK05
+Weapons/ShockArc6	DSHOCK06
+Weapons/ShockArc7	DSHOCK07
+Weapons/ShockArc8	DSHOCK08
+Weapons/ShockArc9	DSHOCK09
+Weapons/ShockArc10	DSHOCK10
+Weapons/ShockArc11	DSHOCK11
+Weapons/ShockArc12	DSHOCK12
+Weapons/ShockArc13	DSHOCK13
+Weapons/ShockArc14	DSHOCK14
+Weapons/ShockArc15	DSHOCK15
+Weapons/ShockArc16	DSHOCK16
+
+$limit Weapons/PoisonShell 0
+Weapons/PoisonShell	HL1STEAM
+
+//Shotgun sounds (hexen sounds)
+
+$limit Weapons/HellShell 0
+Weapons/HellShell	HELL
+
+$limit Weapons/HellShell2 0
+$random Weapons/HellShell2 {Weapons/ShockShell3 Weapons/HellShell4 Weapons/HellShell5 Weapons/HellShell6}
+
+Weapons/HellShell3	HELL3
+Weapons/HellShell4	HELL4
+Weapons/HellShell5	HELL5
+Weapons/HellShell6	HELL6
+
+$limit Weapons/HellShell7 0
+Weapons/HellShell7	HELL7
