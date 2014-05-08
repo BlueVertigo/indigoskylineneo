@@ -1,0 +1,376 @@
+#include "zcommon.acs"
+#library "tspacs"
+
+script 855 ENTER clientside
+{
+	if(GetActorProperty( 0, APROP_Health) >= 101)
+    {
+        GiveInventory("Over100Health",1);
+		Delay(6);
+		Restart;
+    }
+    else
+    {
+        TakeInventory("Over100Health",1);
+		Delay(6);
+		Restart;
+    }
+}
+
+script 856 OPEN 
+{ 
+	if (!GetCVar("tsp_toaster")) 
+	{ 
+		ConsoleCommand("set tsp_toaster 0"); 
+		ConsoleCommand("archivecvar tsp_toaster");
+	}
+	if (!GetCVar("tsp_leavehud")) 
+	{ 
+		ConsoleCommand("set tsp_leavehud 0"); 
+		ConsoleCommand("archivecvar tsp_leavehud");
+	}
+}
+
+script 857 (int which, int a1, int a2) clientside //shamelessly copied from samsara's bloody hell scripts
+{
+    int result;
+	
+	switch (which)
+    {
+	  case 1:
+        hudmessage (s:"[Altfire Again To Cycle Through Ammo Types]";HUDMSG_PLAIN,2,CR_GREEN,1.5,0.375,1.0);
+        Terminate;
+      case 2:
+        hudmessage (s:"[No Alternate Shell Ammo]";HUDMSG_PLAIN,2,CR_GREEN,1.5,0.375,0.42857);
+        Terminate;
+      case 3:
+        hudmessage (s:"[Current Ammo Depleted, Switching To Buckshot]";HUDMSG_PLAIN,2,CR_RED,1.5,0.375,1.5);
+        Terminate;
+      case 4:
+        hudmessage (s:"[Current Ammo Depleted, Switching To Shock Shells]";HUDMSG_PLAIN,2,CR_LIGHTBLUE,1.5,0.375,1.5);
+        Terminate;
+      case 5:
+        hudmessage (s:"[Current Ammo Depleted, Switching To HellFire Shells]";HUDMSG_PLAIN,2,CR_GOLD,1.5,0.375,1.5);
+        Terminate;
+      case 6:
+        hudmessage (s:"[Current Ammo Depleted, Switching To Poison Shells]";HUDMSG_PLAIN,2,CR_DARKGREEN,1.5,0.375,1.5);
+        Terminate;
+      case 7:
+        hudmessage (s:"[Buckshot Shells Selected]";HUDMSG_PLAIN,2,CR_RED,1.5,0.375,0.7142857143);
+        Terminate;
+      case 8:
+        hudmessage (s:"[Shock Shells Selected]";HUDMSG_PLAIN,2,CR_LIGHTBLUE,1.5,0.375,0.7142857143);
+        Terminate;
+      case 9:
+        hudmessage (s:"[HellFire Shells Selected]";HUDMSG_PLAIN,2,CR_GOLD,1.5,0.375,0.7142857143);
+        Terminate;
+      case 10:
+        hudmessage (s:"[Poison Shells Selected]";HUDMSG_PLAIN,2,CR_DARKGREEN,1.5,0.375,0.7142857143);
+        Terminate;
+	  case 11:
+        result = GetCVar("tsp_toaster");
+        break;
+      case 12:
+        if(GetCvar("tsp_toaster") == 1) { SetActorState(0,"Toaster1"); }
+        if(GetCvar("tsp_toaster") == 2) { SetActorState(0,"Toaster2"); }
+        break;   
+    }
+    SetResultValue(result);
+}
+
+script 858 ENTER
+{
+	if(GameType() == GAME_NET_COOPERATIVE)
+    {
+		GiveInventory("GameIsCoop", 1);
+	}
+
+	//Print(s:"Blue Vertigo Presents: The Space Pirate\n \nCvars:\n \ntsp_shellpool - If set to true/1 (default), all shell types share the same ammo pool. IF set to false/0, they do not and each has a separate ammo pool.");
+	hudmessage (s:"Blue Vertigo Presents: The Space Pirate\n\nTo turn off the scaled (large) HUD type 'hud_scale 0'\nTo prevent TSP from scaling it again type 'tsp_leavehud 1'\n\nCvars:\n\ntsp_toaster - If set to 0 (default), all effect actors are displayed. If set to 1, less effect actors are displayed. If set to 2, even less actors are displayed. For those with slower computers.\n\n\ntsp_leavehud - If set to 0/false (default), TSP will turn on the scaled (large) HUD at startup. If set to 1/true TSP will not change HUD scaling setting.";HUDMSG_PLAIN|HUDMSG_LOG,2,CR_GREEN,1.5,0.375,0.1);
+	//Print(s:" ");
+	TakeInventory("PlayingPickupSound", 1);
+	if(GetCvar("tsp_leavehud") == 0)
+    {
+		ConsoleCommand("hud_scale 1");
+	}
+	Terminate;
+}
+
+script 859 (void)
+{
+	if(CheckInventory("PlayingPickupSound") > 0)
+	{
+		TakeInventory("PistolJustPickedUp", 1);
+		TakeInventory("ShotgunJustPickedUp", 1);
+		TakeInventory("DahliaJustPickedUp", 1);
+		TakeInventory("AmmoBoxJustPickedUp", 1);
+		TakeInventory("ToolBoxJustPickedUp", 1);
+		Terminate;
+	}
+	else
+	{
+		GiveInventory("PlayingPickupSound", 1);
+		if(CheckInventory("IsMel") > 0)
+		{
+			if(GetPlayerInfo(PlayerNumber(), PLAYERINFO_GENDER) == 2)
+			{
+				if(CheckInventory("PistolJustPickedUp") > 0)
+				{
+					LocalAmbientSound("melflavpickuprobo/Pistol",127);
+					TakeInventory("PistolJustPickedUp", 1);
+					TakeInventory("ShotgunJustPickedUp", 1);
+					TakeInventory("DahliaJustPickedUp", 1);
+					TakeInventory("AmmoBoxJustPickedUp", 1);
+					TakeInventory("ToolBoxJustPickedUp", 1);			
+					Delay(41);
+					TakeInventory("PlayingPickupSound", 1);
+					Terminate;
+				}
+				if(CheckInventory("ShotgunJustPickedUp") > 0)
+				{
+					LocalAmbientSound("melflavpickuprobo/ZekeShotgun",127);
+					TakeInventory("PistolJustPickedUp", 1);
+					TakeInventory("ShotgunJustPickedUp", 1);
+					TakeInventory("DahliaJustPickedUp", 1);
+					TakeInventory("AmmoBoxJustPickedUp", 1);
+					TakeInventory("ToolBoxJustPickedUp", 1);
+					Delay(49);
+					TakeInventory("PlayingPickupSound", 1);
+					Terminate;
+				}
+				if(CheckInventory("DahliaJustPickedUp") > 0)
+				{
+					LocalAmbientSound("melflavpickuprobo/Crossbow",127);
+					TakeInventory("PistolJustPickedUp", 1);
+					TakeInventory("ShotgunJustPickedUp", 1);
+					TakeInventory("DahliaJustPickedUp", 1);
+					TakeInventory("AmmoBoxJustPickedUp", 1);
+					TakeInventory("ToolBoxJustPickedUp", 1);
+					Delay(35);
+					TakeInventory("PlayingPickupSound", 1);
+					Terminate;
+				}
+				if(CheckInventory("AmmoBoxJustPickedUp") > 0)
+				{
+					LocalAmbientSound("melflavpickuprobo/Ammobox50",127);
+					TakeInventory("PistolJustPickedUp", 1);
+					TakeInventory("ShotgunJustPickedUp", 1);
+					TakeInventory("DahliaJustPickedUp", 1);
+					TakeInventory("AmmoBoxJustPickedUp", 1);
+					TakeInventory("ToolBoxJustPickedUp", 1);
+					Delay(123);
+					TakeInventory("PlayingPickupSound", 1);
+					Terminate;
+				}
+				if(CheckInventory("ToolBoxJustPickedUp") > 0)
+				{
+					LocalAmbientSound("melflavpickuprobo/RocketNailgunLauncher",127);
+					TakeInventory("PistolJustPickedUp", 1);
+					TakeInventory("ShotgunJustPickedUp", 1);
+					TakeInventory("DahliaJustPickedUp", 1);
+					TakeInventory("AmmoBoxJustPickedUp", 1);
+					TakeInventory("ToolBoxJustPickedUp", 1);
+					Delay(67);
+					TakeInventory("PlayingPickupSound", 1);
+					Terminate;
+				}
+			}
+			else
+			{
+				if(CheckInventory("PistolJustPickedUp") > 0)
+				{
+					LocalAmbientSound("melflavpickup/Pistol",127);
+					TakeInventory("PistolJustPickedUp", 1);
+					TakeInventory("ShotgunJustPickedUp", 1);
+					TakeInventory("DahliaJustPickedUp", 1);
+					TakeInventory("AmmoBoxJustPickedUp", 1);
+					TakeInventory("ToolBoxJustPickedUp", 1);		
+					Delay(46);
+					TakeInventory("PlayingPickupSound", 1);
+					Terminate;
+				}
+				if(CheckInventory("ShotgunJustPickedUp") > 0)
+				{
+					LocalAmbientSound("melflavpickup/ZekeShotgun",127);
+					TakeInventory("PistolJustPickedUp", 1);
+					TakeInventory("ShotgunJustPickedUp", 1);
+					TakeInventory("DahliaJustPickedUp", 1);
+					TakeInventory("AmmoBoxJustPickedUp", 1);
+					TakeInventory("ToolBoxJustPickedUp", 1);
+					Delay(60);
+					TakeInventory("PlayingPickupSound", 1);
+					Terminate;
+				}
+				if(CheckInventory("DahliaJustPickedUp") > 0)
+				{
+					LocalAmbientSound("melflavpickup/Crossbow",127);
+					TakeInventory("PistolJustPickedUp", 1);
+					TakeInventory("ShotgunJustPickedUp", 1);
+					TakeInventory("DahliaJustPickedUp", 1);
+					TakeInventory("AmmoBoxJustPickedUp", 1);
+					TakeInventory("ToolBoxJustPickedUp", 1);
+					Delay(53);
+					TakeInventory("PlayingPickupSound", 1);
+					Terminate;
+				}
+				if(CheckInventory("AmmoBoxJustPickedUp") > 0)
+				{
+					LocalAmbientSound("melflavpickup/Ammobox50",127);
+					TakeInventory("PistolJustPickedUp", 1);
+					TakeInventory("ShotgunJustPickedUp", 1);
+					TakeInventory("DahliaJustPickedUp", 1);
+					TakeInventory("AmmoBoxJustPickedUp", 1);
+					TakeInventory("ToolBoxJustPickedUp", 1);
+					Delay(144);
+					TakeInventory("PlayingPickupSound", 1);
+					Terminate;
+				}
+				if(CheckInventory("ToolBoxJustPickedUp") > 0)
+				{
+					LocalAmbientSound("melflavpickup/RocketNailgunLauncher",127);
+					TakeInventory("PistolJustPickedUp", 1);
+					TakeInventory("ShotgunJustPickedUp", 1);
+					TakeInventory("DahliaJustPickedUp", 1);
+					TakeInventory("AmmoBoxJustPickedUp", 1);
+					TakeInventory("ToolBoxJustPickedUp", 1);
+					Delay(69);
+					TakeInventory("PlayingPickupSound", 1);
+					Terminate;
+				}
+			}
+		}
+		else if(CheckInventory("IsVexler") > 0)
+		{
+			if(GetPlayerInfo(PlayerNumber(), PLAYERINFO_GENDER) == 2)
+			{
+				if(CheckInventory("PistolJustPickedUp") > 0)
+				{
+					LocalAmbientSound("secretmessage",127); //"vexflavpickuprobo/Pistol",127);  Did it this way so it'd be easy to undo
+					TakeInventory("PistolJustPickedUp", 1);
+					TakeInventory("ShotgunJustPickedUp", 1);
+					TakeInventory("DahliaJustPickedUp", 1);
+					TakeInventory("AmmoBoxJustPickedUp", 1);
+					TakeInventory("ToolBoxJustPickedUp", 1);			
+					Delay(41);
+					TakeInventory("PlayingPickupSound", 1);
+					Terminate;
+				}
+				if(CheckInventory("ShotgunJustPickedUp") > 0)
+				{
+					LocalAmbientSound("secretmessage",127); //"vexflavpickuprobo/ZekeShotgun",127);
+					TakeInventory("PistolJustPickedUp", 1);
+					TakeInventory("ShotgunJustPickedUp", 1);
+					TakeInventory("DahliaJustPickedUp", 1);
+					TakeInventory("AmmoBoxJustPickedUp", 1);
+					TakeInventory("ToolBoxJustPickedUp", 1);
+					Delay(49);
+					TakeInventory("PlayingPickupSound", 1);
+					Terminate;
+				}
+				if(CheckInventory("DahliaJustPickedUp") > 0)
+				{
+					LocalAmbientSound("secretmessage",127); //"vexflavpickuprobo/Crossbow",127);
+					TakeInventory("PistolJustPickedUp", 1);
+					TakeInventory("ShotgunJustPickedUp", 1);
+					TakeInventory("DahliaJustPickedUp", 1);
+					TakeInventory("AmmoBoxJustPickedUp", 1);
+					TakeInventory("ToolBoxJustPickedUp", 1);
+					Delay(35);
+					TakeInventory("PlayingPickupSound", 1);
+					Terminate;
+				}
+				if(CheckInventory("AmmoBoxJustPickedUp") > 0)
+				{
+					LocalAmbientSound("secretmessage",127); //"vexflavpickuprobo/Ammobox50",127);
+					TakeInventory("PistolJustPickedUp", 1);
+					TakeInventory("ShotgunJustPickedUp", 1);
+					TakeInventory("DahliaJustPickedUp", 1);
+					TakeInventory("AmmoBoxJustPickedUp", 1);
+					TakeInventory("ToolBoxJustPickedUp", 1);
+					Delay(123);
+					TakeInventory("PlayingPickupSound", 1);
+					Terminate;
+				}
+				if(CheckInventory("ToolBoxJustPickedUp") > 0)
+				{
+					LocalAmbientSound("secretmessage",127); //"vexflavpickuprobo/RocketNailgunLauncher",127);
+					TakeInventory("PistolJustPickedUp", 1);
+					TakeInventory("ShotgunJustPickedUp", 1);
+					TakeInventory("DahliaJustPickedUp", 1);
+					TakeInventory("AmmoBoxJustPickedUp", 1);
+					TakeInventory("ToolBoxJustPickedUp", 1);
+					Delay(67);
+					TakeInventory("PlayingPickupSound", 1);
+					Terminate;
+				}
+			}
+			else
+			{
+				if(CheckInventory("PistolJustPickedUp") > 0)
+				{
+					LocalAmbientSound("secretmessage",127); //"vexflavpickup/Pistol",127);
+					TakeInventory("PistolJustPickedUp", 1);
+					TakeInventory("ShotgunJustPickedUp", 1);
+					TakeInventory("DahliaJustPickedUp", 1);
+					TakeInventory("AmmoBoxJustPickedUp", 1);
+					TakeInventory("ToolBoxJustPickedUp", 1);		
+					Delay(46);
+					TakeInventory("PlayingPickupSound", 1);
+					Terminate;
+				}
+				if(CheckInventory("ShotgunJustPickedUp") > 0)
+				{
+					LocalAmbientSound("secretmessage",127); //"vexflavpickup/ZekeShotgun",127);
+					TakeInventory("PistolJustPickedUp", 1);
+					TakeInventory("ShotgunJustPickedUp", 1);
+					TakeInventory("DahliaJustPickedUp", 1);
+					TakeInventory("AmmoBoxJustPickedUp", 1);
+					TakeInventory("ToolBoxJustPickedUp", 1);
+					Delay(60);
+					TakeInventory("PlayingPickupSound", 1);
+					Terminate;
+				}
+				if(CheckInventory("DahliaJustPickedUp") > 0)
+				{
+					LocalAmbientSound("secretmessage",127); //"vexflavpickup/Crossbow",127);
+					TakeInventory("PistolJustPickedUp", 1);
+					TakeInventory("ShotgunJustPickedUp", 1);
+					TakeInventory("DahliaJustPickedUp", 1);
+					TakeInventory("AmmoBoxJustPickedUp", 1);
+					TakeInventory("ToolBoxJustPickedUp", 1);
+					Delay(53);
+					TakeInventory("PlayingPickupSound", 1);
+					Terminate;
+				}
+				if(CheckInventory("AmmoBoxJustPickedUp") > 0)
+				{
+					LocalAmbientSound("secretmessage",127); //"vexflavpickup/Ammobox50",127);
+					TakeInventory("PistolJustPickedUp", 1);
+					TakeInventory("ShotgunJustPickedUp", 1);
+					TakeInventory("DahliaJustPickedUp", 1);
+					TakeInventory("AmmoBoxJustPickedUp", 1);
+					TakeInventory("ToolBoxJustPickedUp", 1);
+					Delay(144);
+					TakeInventory("PlayingPickupSound", 1);
+					Terminate;
+				}
+				if(CheckInventory("ToolBoxJustPickedUp") > 0)
+				{
+					LocalAmbientSound("secretmessage",127); //"vexflavpickup/RocketNailgunLauncher",127);
+					TakeInventory("PistolJustPickedUp", 1);
+					TakeInventory("ShotgunJustPickedUp", 1);
+					TakeInventory("DahliaJustPickedUp", 1);
+					TakeInventory("AmmoBoxJustPickedUp", 1);
+					TakeInventory("ToolBoxJustPickedUp", 1);
+					Delay(69);
+					TakeInventory("PlayingPickupSound", 1);
+					Terminate;
+				}
+			}
+		}
+		else
+		{
+			Terminate;
+		}
+	}
+}

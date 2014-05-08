@@ -1,0 +1,33 @@
+gameinfo
+{
+	dimcolor = "#000000"
+	dimamount = "0.5"
+	titlemusic = "TSPTitle"
+	creditpage = "SP_CRED"
+	titlepage = "SP_TITLE" 
+	intermissioncounter = false
+	PlayerClasses = "SpacePirate"//, "Vexler"
+	//armoricons = "FLRMA0", 0.5, "PSRMA0"
+	pausesign = "SP_PAUSE"
+	cursorpic = "M_SPCRS1"
+	menufontcolor_title = "GREEN"
+    menufontcolor_label = "GREEN"
+    menufontcolor_value = "GREEN"
+    menufontcolor_action = "GREEN"
+    menufontcolor_header = "GREEN"
+    menufontcolor_highlight = "GREEN"
+    menufontcolor_selection = "GREEN"
+}
+
+//Song is "King of the Streets" by LazerHawk
+
+//skill dante
+//{
+//  damagefactor = 255
+//  monsterhealth = 0.001
+//  spawnfilter = Hard
+//  name = "Death to Pirates"
+//  textcolor = blue
+//  mustconfirm = "Everything dies in one hit, including you! Ready for this?"
+//}
+//This will probably coming soon.

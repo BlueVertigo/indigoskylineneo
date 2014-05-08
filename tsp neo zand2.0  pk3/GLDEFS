@@ -1,0 +1,419 @@
+//PointLight HazmatZombieAttack
+//{
+//Color 0.0 0.0 1.0
+//Size 28
+//}
+
+//Object HazmatZombie
+//{
+//Frame HMZPF { Light HazmatZombieAttack }
+//}
+
+//Shotgun 
+pointlight ShockShellArcLight
+{
+    color 0.1 0.1 0.2
+    size 12
+    dontlightself 1
+}
+
+pointlight PoisonShellLight
+{
+    color 0.1 0.2 0
+    size 12
+}
+
+pointlight HellFireShellLight
+{
+    color 0.3 0.1 0
+    size 32
+    dontlightself 1
+}
+
+pointlight SmallHellFireShellLight
+{
+    color 0.3 0.1 0
+    size 24
+    dontlightself 1
+}
+
+pointlight TinyFireShellLight
+{
+    color 0.3 0.1 0
+    size 10
+    dontlightself 1
+}
+
+Object ShockScatter
+{
+Frame PLSEBCDE { Light RictusFire }
+Frame PLSE { Light RictusFire }
+Frame PLSE { Light RictusFire }
+Frame PLSE { Light RictusFire }
+Frame CFCFE { Light RictusFire }
+Frame CFCFF { Light RictusFire }
+Frame CFCFG { Light RictusFire }
+Frame CFCFH { Light RictusFire }
+Frame CFCFI { Light RictusFire }
+Frame CFCFJ { Light RictusFire }
+Frame CFCFK { Light RictusFire }
+Frame CFCFL { Light RictusFire }
+Frame CFCFM { Light RictusFire }
+Frame CFCFN { Light RictusFire2 }
+Frame CFCFO { Light RictusFire3 }
+Frame CFCFP { Light RictusFire4 }
+}
+
+Object ShockScatter
+{
+Frame PLSEB { Light ShockShellArcLight }
+Frame PLSEC { Light ShockShellArcLight }
+Frame PLSED { Light ShockShellArcLight }
+Frame PLSEE { Light ShockShellArcLight }
+}
+
+Object ShockScatterCoop
+{
+Frame PLSEB { Light ShockShellArcLight }
+Frame PLSEC { Light ShockShellArcLight }
+Frame PLSED { Light ShockShellArcLight }
+Frame PLSEE { Light ShockShellArcLight }
+}
+
+Object ShockScatterArc
+{
+Frame SARCA { Light ShockShellArcLight }
+}
+
+Object ShockScatterArcDummy
+{
+Frame SARCA { Light ShockShellArcLight }
+}
+
+Object ShockScatterArcEnd
+{
+Frame SARCA { Light ShockShellArcLight }
+}
+
+Object PoisonPellet
+{
+Frame SPSNB { Light PoisonShellLight }
+}
+
+Object PoisonPelletCoop
+{
+Frame SPSNB { Light PoisonShellLight }
+}
+
+Object HellFirePellet
+{
+Frame FX12A { Light HellFireShellLight }
+Frame FX12B { Light HellFireShellLight }
+}
+
+Object HellFirePelletCoop
+{
+Frame FX12A { Light HellFireShellLight }
+Frame FX12B { Light HellFireShellLight }
+}
+
+Object HellFireBurstPellet
+{
+Frame SMK2A { Light SmallHellFireShellLight }
+Frame SMK2B { Light SmallHellFireShellLight }
+Frame SM30A { Light SmallHellFireShellLight }
+Frame SM30B { Light SmallHellFireShellLight }
+Frame SM25A { Light SmallHellFireShellLight }
+Frame SM25B { Light SmallHellFireShellLight }
+Frame SM20A { Light SmallHellFireShellLight }
+Frame SM20B { Light SmallHellFireShellLight }
+Frame SM15A { Light SmallHellFireShellLight }
+Frame SM15B { Light SmallHellFireShellLight }
+Frame SM10A { Light SmallHellFireShellLight }
+Frame SM10B { Light SmallHellFireShellLight }
+Frame SM05A { Light SmallHellFireShellLight }
+Frame SM05B { Light SmallHellFireShellLight }
+Frame SM00A { Light SmallHellFireShellLight }
+Frame SM00B { Light SmallHellFireShellLight }
+}
+
+Object HellFireBurstPelletCoop
+{
+Frame SMK2A { Light SmallHellFireShellLight }
+Frame SMK2B { Light SmallHellFireShellLight }
+Frame SM30A { Light SmallHellFireShellLight }
+Frame SM30B { Light SmallHellFireShellLight }
+Frame SM25A { Light SmallHellFireShellLight }
+Frame SM25B { Light SmallHellFireShellLight }
+Frame SM20A { Light SmallHellFireShellLight }
+Frame SM20B { Light SmallHellFireShellLight }
+Frame SM15A { Light SmallHellFireShellLight }
+Frame SM15B { Light SmallHellFireShellLight }
+Frame SM10A { Light SmallHellFireShellLight }
+Frame SM10B { Light SmallHellFireShellLight }
+Frame SM05A { Light SmallHellFireShellLight }
+Frame SM05B { Light SmallHellFireShellLight }
+Frame SM00A { Light SmallHellFireShellLight }
+Frame SM00B { Light SmallHellFireShellLight }
+}
+
+Object WussyHellFireBurstPellet
+{
+Frame PUFFA { Light SmallHellFireShellLight }
+Frame PUFFB { Light SmallHellFireShellLight }
+}
+
+Object WussyHellFireBurstPelletCoop
+{
+Frame PUFFA { Light SmallHellFireShellLight }
+Frame PUFFB { Light SmallHellFireShellLight }
+}
+
+Object ToolboxShrapnelMissile
+{
+Frame TNT1A { Light SmallHellFireShellLight }
+}
+
+Object ToolboxShrapnelMissileCoop
+{
+Frame TNT1A { Light SmallHellFireShellLight }
+}
+
+Object CrossbowBoltRed
+{
+Frame SHZZA { Light HellFireShellLight }
+}
+
+Object CrossbowBoltRedCoop
+{
+Frame SHZZA { Light HellFireShellLight }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Rictus
+Flickerlight2 RictusFire
+{
+Color 1.0 0.8 0.0
+Size 20
+SecondarySize 25
+Interval 1
+Offset 0 0 0
+}
+
+Pointlight RictusFire2
+{
+Color 0.7 0.5 0.0
+Size 20
+}
+
+Pointlight RictusFire3
+{
+Color 0.5 0.3 0.0
+Size 15
+}
+
+Pointlight RictusFire4
+{
+Color 0.3 0.1 0.0
+Size 10
+}
+
+Object RictusFire //I know there's more scaled actor sprites but having that many lights is just dumb, this way it will flicker.
+{
+Frame CFCFA { Light RictusFire }
+Frame CFCFB { Light RictusFire }
+Frame CFCFC { Light RictusFire }
+Frame CFCFD { Light RictusFire }
+Frame CFCFE { Light RictusFire }
+Frame CFCFF { Light RictusFire }
+Frame CFCFG { Light RictusFire }
+Frame CFCFH { Light RictusFire }
+Frame CFCFI { Light RictusFire }
+Frame CFCFJ { Light RictusFire }
+Frame CFCFK { Light RictusFire }
+Frame CFCFL { Light RictusFire }
+Frame CFCFM { Light RictusFire }
+Frame CFCFN { Light RictusFire2 }
+Frame CFCFO { Light RictusFire3 }
+Frame CFCFP { Light RictusFire4 }
+
+Frame CFC9A { Light RictusFire }
+Frame CFC9B { Light RictusFire }
+Frame CFC9C { Light RictusFire }
+Frame CFC9D { Light RictusFire }
+Frame CFC9E { Light RictusFire }
+Frame CFC9F { Light RictusFire }
+Frame CFC9G { Light RictusFire }
+Frame CFC9H { Light RictusFire }
+Frame CFC9I { Light RictusFire }
+Frame CFC9J { Light RictusFire }
+Frame CFC9K { Light RictusFire }
+Frame CFC9L { Light RictusFire }
+Frame CFC9M { Light RictusFire }
+Frame CFC9N { Light RictusFire2 }
+Frame CFC9O { Light RictusFire3 }
+Frame CFC9P { Light RictusFire4 }
+
+Frame CFC8A { Light RictusFire }
+Frame CFC8B { Light RictusFire }
+Frame CFC8C { Light RictusFire }
+Frame CFC8D { Light RictusFire }
+Frame CFC8E { Light RictusFire }
+Frame CFC8F { Light RictusFire }
+Frame CFC8G { Light RictusFire }
+Frame CFC8H { Light RictusFire }
+Frame CFC8I { Light RictusFire }
+Frame CFC8J { Light RictusFire }
+Frame CFC8K { Light RictusFire }
+Frame CFC8L { Light RictusFire }
+Frame CFC8M { Light RictusFire }
+Frame CFC8N { Light RictusFire2 }
+Frame CFC8O { Light RictusFire3 }
+Frame CFC8P { Light RictusFire4 }
+}
+
+Object RictusFireA
+{
+Frame CFCFA { Light RictusFire }
+Frame CFCFB { Light RictusFire }
+Frame CFCFC { Light RictusFire }
+Frame CFCFD { Light RictusFire }
+Frame CFCFE { Light RictusFire }
+Frame CFCFF { Light RictusFire }
+Frame CFCFG { Light RictusFire }
+Frame CFCFH { Light RictusFire }
+Frame CFCFI { Light RictusFire }
+Frame CFCFJ { Light RictusFire }
+Frame CFCFK { Light RictusFire }
+Frame CFCFL { Light RictusFire }
+Frame CFCFM { Light RictusFire }
+Frame CFCFN { Light RictusFire2 }
+Frame CFCFO { Light RictusFire3 }
+Frame CFCFP { Light RictusFire4 }
+
+Frame CFC9A { Light RictusFire }
+Frame CFC9B { Light RictusFire }
+Frame CFC9C { Light RictusFire }
+Frame CFC9D { Light RictusFire }
+Frame CFC9E { Light RictusFire }
+Frame CFC9F { Light RictusFire }
+Frame CFC9G { Light RictusFire }
+Frame CFC9H { Light RictusFire }
+Frame CFC9I { Light RictusFire }
+Frame CFC9J { Light RictusFire }
+Frame CFC9K { Light RictusFire }
+Frame CFC9L { Light RictusFire }
+Frame CFC9M { Light RictusFire }
+Frame CFC9N { Light RictusFire2 }
+Frame CFC9O { Light RictusFire3 }
+Frame CFC9P { Light RictusFire4 }
+
+Frame CFC8A { Light RictusFire }
+Frame CFC8B { Light RictusFire }
+Frame CFC8C { Light RictusFire }
+Frame CFC8D { Light RictusFire }
+Frame CFC8E { Light RictusFire }
+Frame CFC8F { Light RictusFire }
+Frame CFC8G { Light RictusFire }
+Frame CFC8H { Light RictusFire }
+Frame CFC8I { Light RictusFire }
+Frame CFC8J { Light RictusFire }
+Frame CFC8K { Light RictusFire }
+Frame CFC8L { Light RictusFire }
+Frame CFC8M { Light RictusFire }
+Frame CFC8N { Light RictusFire2 }
+Frame CFC8O { Light RictusFire3 }
+Frame CFC8P { Light RictusFire4 }
+}
+
+Object RictusFireB
+{
+Frame CFCFA { Light RictusFire }
+Frame CFCFB { Light RictusFire }
+Frame CFCFC { Light RictusFire }
+Frame CFCFD { Light RictusFire }
+Frame CFCFE { Light RictusFire }
+Frame CFCFF { Light RictusFire }
+Frame CFCFG { Light RictusFire }
+Frame CFCFH { Light RictusFire }
+Frame CFCFI { Light RictusFire }
+Frame CFCFJ { Light RictusFire }
+Frame CFCFK { Light RictusFire }
+Frame CFCFL { Light RictusFire }
+Frame CFCFM { Light RictusFire }
+Frame CFCFN { Light RictusFire2 }
+Frame CFCFO { Light RictusFire3 }
+Frame CFCFP { Light RictusFire4 }
+
+Frame CFC9A { Light RictusFire }
+Frame CFC9B { Light RictusFire }
+Frame CFC9C { Light RictusFire }
+Frame CFC9D { Light RictusFire }
+Frame CFC9E { Light RictusFire }
+Frame CFC9F { Light RictusFire }
+Frame CFC9G { Light RictusFire }
+Frame CFC9H { Light RictusFire }
+Frame CFC9I { Light RictusFire }
+Frame CFC9J { Light RictusFire }
+Frame CFC9K { Light RictusFire }
+Frame CFC9L { Light RictusFire }
+Frame CFC9M { Light RictusFire }
+Frame CFC9N { Light RictusFire2 }
+Frame CFC9O { Light RictusFire3 }
+Frame CFC9P { Light RictusFire4 }
+
+Frame CFC8A { Light RictusFire }
+Frame CFC8B { Light RictusFire }
+Frame CFC8C { Light RictusFire }
+Frame CFC8D { Light RictusFire }
+Frame CFC8E { Light RictusFire }
+Frame CFC8F { Light RictusFire }
+Frame CFC8G { Light RictusFire }
+Frame CFC8H { Light RictusFire }
+Frame CFC8I { Light RictusFire }
+Frame CFC8J { Light RictusFire }
+Frame CFC8K { Light RictusFire }
+Frame CFC8L { Light RictusFire }
+Frame CFC8M { Light RictusFire }
+Frame CFC8N { Light RictusFire2 }
+Frame CFC8O { Light RictusFire3 }
+Frame CFC8P { Light RictusFire4 }
+}
+
+Flickerlight2 MiniRictusFire
+{
+Color 1.0 0.8 0.0
+Size 15
+SecondarySize 20
+Interval 1
+Offset 0 0 0
+}
+
+Pointlight MiniRictusFire2
+{
+Color 0.7 0.5 0.0
+Size 15
+}
+
+Pointlight MiniRictusFire3
+{
+Color 0.5 0.3 0.0
+Size 10
+}
+
+Pointlight MiniRictusFire4
+{
+Color 0.3 0.1 0.0
+Size 5
+}

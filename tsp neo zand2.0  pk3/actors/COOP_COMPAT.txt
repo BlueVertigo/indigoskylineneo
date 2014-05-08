@@ -1,0 +1,1743 @@
+Actor Boolean2 : Inventory
+{
+    Inventory.MaxAmount 1
+    +UNDROPPABLE
+    -INVBAR
+}
+
+Actor GameIsCoop : Boolean2 {}
+
+Actor IsPlayer00 : Boolean2 {}
+Actor IsPlayer01 : Boolean2 {}
+Actor IsPlayer02 : Boolean2 {}
+Actor IsPlayer03 : Boolean2 {}
+Actor IsPlayer04 : Boolean2 {}
+Actor IsPlayer05 : Boolean2 {}
+Actor IsPlayer06 : Boolean2 {}
+Actor IsPlayer07 : Boolean2 {}
+Actor IsPlayer08 : Boolean2 {}
+Actor IsPlayer09 : Boolean2 {}
+
+ACTOR TSPPlayer00DamageProtection : PowerProtection
+{
+  DamageFactor "Player00Damage", 0
+  +INVENTORY.PERSISTENTPOWER
+}
+
+ACTOR TSPPlayer01DamageProtection : PowerProtection
+{
+  DamageFactor "Player01Damage", 0
+  +INVENTORY.PERSISTENTPOWER
+}
+
+ACTOR TSPPlayer02DamageProtection : PowerProtection
+{
+  DamageFactor "Player02Damage", 0
+  +INVENTORY.PERSISTENTPOWER
+}
+
+ACTOR TSPPlayer03DamageProtection : PowerProtection
+{
+  DamageFactor "Player03Damage", 0
+  +INVENTORY.PERSISTENTPOWER
+}
+
+ACTOR TSPPlayer04DamageProtection : PowerProtection
+{
+  DamageFactor "Player04Damage", 0
+  +INVENTORY.PERSISTENTPOWER
+}
+
+ACTOR TSPPlayer05DamageProtection : PowerProtection
+{
+  DamageFactor "Player05Damage", 0
+  +INVENTORY.PERSISTENTPOWER
+}
+
+ACTOR TSPPlayer06DamageProtection : PowerProtection
+{
+  DamageFactor "Player06Damage", 0
+  +INVENTORY.PERSISTENTPOWER
+}
+
+ACTOR TSPPlayer07DamageProtection : PowerProtection
+{
+  DamageFactor "Player07Damage", 0
+  +INVENTORY.PERSISTENTPOWER
+}
+
+ACTOR TSPPlayer08DamageProtection : PowerProtection
+{
+  DamageFactor "Player08Damage", 0
+  +INVENTORY.PERSISTENTPOWER
+}
+
+ACTOR TSPPlayer09DamageProtection : PowerProtection
+{
+  DamageFactor "Player09Damage", 0
+  +INVENTORY.PERSISTENTPOWER
+}
+
+ACTOR TSPPlayer00DPG : PowerupGiver
+{
+  Inventory.MaxAmount 1
+  Powerup.Type "TSPPlayer00DamageProtection"
+  Powerup.Duration 0x7FFFFFFF
+  +INVENTORY.AUTOACTIVATE
+  +INVENTORY.PERSISTENTPOWER
+}
+
+ACTOR TSPPlayer01DPG : PowerupGiver
+{
+  Inventory.MaxAmount 1
+  Powerup.Type "TSPPlayer01DamageProtection"
+  Powerup.Duration 0x7FFFFFFF
+  +INVENTORY.AUTOACTIVATE
+  +INVENTORY.PERSISTENTPOWER
+}
+
+ACTOR TSPPlayer02DPG : PowerupGiver
+{
+  Inventory.MaxAmount 1
+  Powerup.Type "TSPPlayer02DamageProtection"
+  Powerup.Duration 0x7FFFFFFF
+  +INVENTORY.AUTOACTIVATE
+  +INVENTORY.PERSISTENTPOWER
+}
+
+ACTOR TSPPlayer03DPG : PowerupGiver
+{
+  Inventory.MaxAmount 1
+  Powerup.Type "TSPPlayer03DamageProtection"
+  Powerup.Duration 0x7FFFFFFF
+  +INVENTORY.AUTOACTIVATE
+  +INVENTORY.PERSISTENTPOWER
+}
+
+ACTOR TSPPlayer04DPG : PowerupGiver
+{
+  Inventory.MaxAmount 1
+  Powerup.Type "TSPPlayer04DamageProtection"
+  Powerup.Duration 0x7FFFFFFF
+  +INVENTORY.AUTOACTIVATE
+  +INVENTORY.PERSISTENTPOWER
+}
+
+ACTOR TSPPlayer05DPG : PowerupGiver
+{
+  Inventory.MaxAmount 1
+  Powerup.Type "TSPPlayer05DamageProtection"
+  Powerup.Duration 0x7FFFFFFF
+  +INVENTORY.AUTOACTIVATE
+  +INVENTORY.PERSISTENTPOWER
+}
+
+ACTOR TSPPlayer06DPG : PowerupGiver
+{
+  Inventory.MaxAmount 1
+  Powerup.Type "TSPPlayer06DamageProtection"
+  Powerup.Duration 0x7FFFFFFF
+  +INVENTORY.AUTOACTIVATE
+  +INVENTORY.PERSISTENTPOWER
+}
+
+ACTOR TSPPlayer07DPG : PowerupGiver
+{
+  Inventory.MaxAmount 1
+  Powerup.Type "TSPPlayer07DamageProtection"
+  Powerup.Duration 0x7FFFFFFF
+  +INVENTORY.AUTOACTIVATE
+  +INVENTORY.PERSISTENTPOWER
+}
+
+ACTOR TSPPlayer08DPG : PowerupGiver
+{
+  Inventory.MaxAmount 1
+  Powerup.Type "TSPPlayer08DamageProtection"
+  Powerup.Duration 0x7FFFFFFF
+  +INVENTORY.AUTOACTIVATE
+  +INVENTORY.PERSISTENTPOWER
+}
+
+ACTOR TSPPlayer09DPG : PowerupGiver
+{
+  Inventory.MaxAmount 1
+  Powerup.Type "TSPPlayer09DamageProtection"
+  Powerup.Duration 0x7FFFFFFF
+  +INVENTORY.AUTOACTIVATE
+  +INVENTORY.PERSISTENTPOWER
+}
+
+////////////////////////
+//Shock Shell Projectiles
+////////////////////////
+
+actor ShockPelletPlayer00 : ShockPellet
+{
+  DamageType "Player00Damage"
+  Species "Player"
+  +THRUSPECIES
+  States
+  {
+  Death:
+	TNT1 A 0
+	PLSE B 1 Bright
+	PLSE C 1 Bright
+	PLSE D 1 Bright
+	PLSE E 1 Bright
+	TNT1 A 0 A_ClearTarget
+	TNT1 A 0 A_PlaySound("Weapons/ShockShell",0)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer00",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer00",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer00",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer00",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer00",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer00",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer00",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer00",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 2
+	stop
+    }
+}
+
+actor ShockScatterPlayer00 : ShockScatter
+{
+  DamageType "Player00Damage"
+  States
+  {
+  Spawn:
+	TNT1 A 0
+	TNT1 A 0
+	TNT1 A 0 A_SpawnItemEx("ShockScatterArcEndPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 0 A_GiveInventory("ShockCanDie",1)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer00",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	Stop
+	}
+}
+
+actor ShockScatterArcPlayer00 : ShockScatterArc
+{
+  DamageType "Player00Damage"
+}
+
+actor ShockScatterArcEndPlayer00 : ShockScatterArcEnd
+{
+  DamageType "Player00Damage"
+}
+
+actor ShockPelletPlayer01 : ShockPellet
+{
+  DamageType "Player01Damage"
+  Species "Player"
+  +THRUSPECIES
+  States
+  {
+  Death:
+	TNT1 A 0
+	PLSE B 1 Bright
+	PLSE C 1 Bright
+	PLSE D 1 Bright
+	PLSE E 1 Bright
+	TNT1 A 0 A_ClearTarget
+	TNT1 A 0 A_PlaySound("Weapons/ShockShell",0)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer01",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer01",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer01",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer01",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer01",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer01",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer01",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer01",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 2
+	stop
+    }
+}
+
+actor ShockScatterPlayer01 : ShockScatter
+{
+  DamageType "Player01Damage"
+  States
+  {
+  Spawn:
+	TNT1 A 0
+	TNT1 A 0
+	TNT1 A 0 A_SpawnItemEx("ShockScatterArcEndPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 0 A_GiveInventory("ShockCanDie",1)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer01",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	Stop
+	}
+}
+
+actor ShockScatterArcPlayer01 : ShockScatterArc
+{
+  DamageType "Player01Damage"
+}
+
+actor ShockScatterArcEndPlayer01 : ShockScatterArcEnd
+{
+  DamageType "Player01Damage"
+}
+
+actor ShockPelletPlayer02 : ShockPellet
+{
+  DamageType "Player02Damage"
+  Species "Player"
+  +THRUSPECIES
+  States
+  {
+  Death:
+	TNT1 A 0
+	PLSE B 1 Bright
+	PLSE C 1 Bright
+	PLSE D 1 Bright
+	PLSE E 1 Bright
+	TNT1 A 0 A_ClearTarget
+	TNT1 A 0 A_PlaySound("Weapons/ShockShell",0)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer02",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer02",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer02",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer02",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer02",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer02",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer02",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer02",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 2
+	stop
+    }
+}
+
+actor ShockScatterPlayer02 : ShockScatter
+{
+  DamageType "Player02Damage"
+  States
+  {
+  Spawn:
+	TNT1 A 0
+	TNT1 A 0
+	TNT1 A 0 A_SpawnItemEx("ShockScatterArcEndPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 0 A_GiveInventory("ShockCanDie",1)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer02",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	Stop
+	}
+}
+
+actor ShockScatterArcPlayer02 : ShockScatterArc
+{
+  DamageType "Player02Damage"
+}
+
+actor ShockScatterArcEndPlayer02 : ShockScatterArcEnd
+{
+  DamageType "Player02Damage"
+}
+
+actor ShockPelletPlayer03 : ShockPellet
+{
+  DamageType "Player03Damage"
+  Species "Player"
+  +THRUSPECIES
+  States
+  {
+  Death:
+	TNT1 A 0
+	PLSE B 1 Bright
+	PLSE C 1 Bright
+	PLSE D 1 Bright
+	PLSE E 1 Bright
+	TNT1 A 0 A_ClearTarget
+	TNT1 A 0 A_PlaySound("Weapons/ShockShell",0)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer03",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer03",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer03",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer03",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer03",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer03",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer03",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer03",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 2
+	stop
+    }
+}
+
+actor ShockScatterPlayer03 : ShockScatter
+{
+  DamageType "Player03Damage"
+  States
+  {
+  Spawn:
+	TNT1 A 0
+	TNT1 A 0
+	TNT1 A 0 A_SpawnItemEx("ShockScatterArcEndPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 0 A_GiveInventory("ShockCanDie",1)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer03",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	Stop
+	}
+}
+
+actor ShockScatterArcPlayer03 : ShockScatterArc
+{
+  DamageType "Player03Damage"
+}
+
+actor ShockScatterArcEndPlayer03 : ShockScatterArcEnd
+{
+  DamageType "Player03Damage"
+}
+
+actor ShockPelletPlayer04 : ShockPellet
+{
+  DamageType "Player04Damage"
+  Species "Player"
+  +THRUSPECIES
+  States
+  {
+  Death:
+	TNT1 A 0
+	PLSE B 1 Bright
+	PLSE C 1 Bright
+	PLSE D 1 Bright
+	PLSE E 1 Bright
+	TNT1 A 0 A_ClearTarget
+	TNT1 A 0 A_PlaySound("Weapons/ShockShell",0)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer04",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer04",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer04",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer04",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer04",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer04",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer04",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer04",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 2
+	stop
+    }
+}
+
+actor ShockScatterPlayer04 : ShockScatter
+{
+  DamageType "Player04Damage"
+  States
+  {
+  Spawn:
+	TNT1 A 0
+	TNT1 A 0
+	TNT1 A 0 A_SpawnItemEx("ShockScatterArcEndPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 0 A_GiveInventory("ShockCanDie",1)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer04",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	Stop
+	}
+}
+
+actor ShockScatterArcPlayer04 : ShockScatterArc
+{
+  DamageType "Player04Damage"
+}
+
+actor ShockScatterArcEndPlayer04 : ShockScatterArcEnd
+{
+  DamageType "Player04Damage"
+}
+
+actor ShockPelletPlayer05 : ShockPellet
+{
+  DamageType "Player05Damage"
+  Species "Player"
+  +THRUSPECIES
+  States
+  {
+  Death:
+	TNT1 A 0
+	PLSE B 1 Bright
+	PLSE C 1 Bright
+	PLSE D 1 Bright
+	PLSE E 1 Bright
+	TNT1 A 0 A_ClearTarget
+	TNT1 A 0 A_PlaySound("Weapons/ShockShell",0)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer05",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer05",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer05",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer05",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer05",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer05",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer05",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer05",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 2
+	stop
+    }
+}
+
+actor ShockScatterPlayer05 : ShockScatter
+{
+  DamageType "Player05Damage"
+  States
+  {
+  Spawn:
+	TNT1 A 0
+	TNT1 A 0
+	TNT1 A 0 A_SpawnItemEx("ShockScatterArcEndPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 0 A_GiveInventory("ShockCanDie",1)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer05",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	Stop
+	}
+}
+
+actor ShockScatterArcPlayer05 : ShockScatterArc
+{
+  DamageType "Player05Damage"
+}
+
+actor ShockScatterArcEndPlayer05 : ShockScatterArcEnd
+{
+  DamageType "Player05Damage"
+}
+
+actor ShockPelletPlayer06 : ShockPellet
+{
+  DamageType "Player06Damage"
+  Species "Player"
+  +THRUSPECIES
+  States
+  {
+  Death:
+	TNT1 A 0
+	PLSE B 1 Bright
+	PLSE C 1 Bright
+	PLSE D 1 Bright
+	PLSE E 1 Bright
+	TNT1 A 0 A_ClearTarget
+	TNT1 A 0 A_PlaySound("Weapons/ShockShell",0)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer06",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer06",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer06",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer06",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer06",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer06",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer06",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer06",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 2
+	stop
+    }
+}
+
+actor ShockScatterPlayer06 : ShockScatter
+{
+  DamageType "Player06Damage"
+  States
+  {
+  Spawn:
+	TNT1 A 0
+	TNT1 A 0
+	TNT1 A 0 A_SpawnItemEx("ShockScatterArcEndPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 0 A_GiveInventory("ShockCanDie",1)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer06",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	Stop
+	}
+}
+
+actor ShockScatterArcPlayer06 : ShockScatterArc
+{
+  DamageType "Player06Damage"
+}
+
+actor ShockScatterArcEndPlayer06 : ShockScatterArcEnd
+{
+  DamageType "Player06Damage"
+}
+
+actor ShockPelletPlayer07 : ShockPellet
+{
+  DamageType "Player07Damage"
+  Species "Player"
+  +THRUSPECIES
+  States
+  {
+  Death:
+	TNT1 A 0
+	PLSE B 1 Bright
+	PLSE C 1 Bright
+	PLSE D 1 Bright
+	PLSE E 1 Bright
+	TNT1 A 0 A_ClearTarget
+	TNT1 A 0 A_PlaySound("Weapons/ShockShell",0)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer07",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer07",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer07",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer07",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer07",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer07",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer07",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer07",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 2
+	stop
+    }
+}
+
+actor ShockScatterPlayer07 : ShockScatter
+{
+  DamageType "Player07Damage"
+  States
+  {
+  Spawn:
+	TNT1 A 0
+	TNT1 A 0
+	TNT1 A 0 A_SpawnItemEx("ShockScatterArcEndPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 0 A_GiveInventory("ShockCanDie",1)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer07",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	Stop
+	}
+}
+
+actor ShockScatterArcPlayer07 : ShockScatterArc
+{
+  DamageType "Player07Damage"
+}
+
+actor ShockScatterArcEndPlayer07 : ShockScatterArcEnd
+{
+  DamageType "Player07Damage"
+}
+
+actor ShockPelletPlayer08 : ShockPellet
+{
+  DamageType "Player08Damage"
+  Species "Player"
+  +THRUSPECIES
+  States
+  {
+  Death:
+	TNT1 A 0
+	PLSE B 1 Bright
+	PLSE C 1 Bright
+	PLSE D 1 Bright
+	PLSE E 1 Bright
+	TNT1 A 0 A_ClearTarget
+	TNT1 A 0 A_PlaySound("Weapons/ShockShell",0)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer08",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer08",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer08",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer08",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer08",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer08",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer08",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer08",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 2
+	stop
+    }
+}
+
+actor ShockScatterPlayer08 : ShockScatter
+{
+  DamageType "Player08Damage"
+  States
+  {
+  Spawn:
+	TNT1 A 0
+	TNT1 A 0
+	TNT1 A 0 A_SpawnItemEx("ShockScatterArcEndPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 0 A_GiveInventory("ShockCanDie",1)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer08",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	Stop
+	}
+}
+
+actor ShockScatterArcPlayer08 : ShockScatterArc
+{
+  DamageType "Player08Damage"
+}
+
+actor ShockScatterArcEndPlayer08 : ShockScatterArcEnd
+{
+  DamageType "Player08Damage"
+}
+
+actor ShockPelletPlayer09 : ShockPellet
+{
+  DamageType "Player09Damage"
+  Species "Player"
+  +THRUSPECIES
+  States
+  {
+  Death:
+	TNT1 A 0
+	PLSE B 1 Bright
+	PLSE C 1 Bright
+	PLSE D 1 Bright
+	PLSE E 1 Bright
+	TNT1 A 0 A_ClearTarget
+	TNT1 A 0 A_PlaySound("Weapons/ShockShell",0)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer09",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer09",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer09",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer09",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer09",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer09",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer09",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 0 A_SpawnItemEx("ShockScatterPlayer09",0,0,0,random(-1,1),random(-1,1),random(-1,1),random(-180, 180),SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+	TNT1 A 2
+	stop
+    }
+}
+
+actor ShockScatterPlayer09 : ShockScatter
+{
+  DamageType "Player09Damage"
+  States
+  {
+  Spawn:
+	TNT1 A 0
+	TNT1 A 0
+	TNT1 A 0 A_SpawnItemEx("ShockScatterArcEndPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 0 A_GiveInventory("ShockCanDie",1)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	TNT1 A 0 A_ChangeVelocity (random(-1,1), random(-1,1), random(-1,1), 0)
+	TNT1 A 0 A_ScaleVelocity(0.9)
+	TNT1 A 1 A_SpawnItemEx("ShockScatterArcPlayer09",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
+	Stop
+	}
+}
+
+actor ShockScatterArcPlayer09 : ShockScatterArc
+{
+  DamageType "Player09Damage"
+}
+
+actor ShockScatterArcEndPlayer09 : ShockScatterArcEnd
+{
+  DamageType "Player09Damage"
+}
