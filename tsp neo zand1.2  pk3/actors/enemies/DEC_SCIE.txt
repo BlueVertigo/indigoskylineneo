@@ -27,7 +27,7 @@ ACTOR FemaleScientist
   Radius 19
   Height 52
   painchance 200
-  PainChance "GasShellDamage", 20
+  PainChance "GasShellDamagePlayer", 20
 	SeeSound "fzombie/sight"
 	PainSound "fzombie/pain"
 	DeathSound "fzombie/death"
@@ -83,7 +83,7 @@ ACTOR FemaleScientist2
   Radius 19
   Height 52
   painchance 200
-  PainChance "GasShellDamage", 20
+  PainChance "GasShellDamagePlayer", 20
 	SeeSound "fzombie/sight"
 	PainSound "fzombie/pain"
 	DeathSound "fzombie/death"
@@ -139,7 +139,7 @@ ACTOR FemaleScientist3
   Radius 19
   Height 52
   painchance 200
-  PainChance "GasShellDamage", 20
+  PainChance "GasShellDamagePlayer", 20
 	SeeSound "fzombie/sight"
 	PainSound "fzombie/pain"
 	DeathSound "fzombie/death"
@@ -195,7 +195,7 @@ ACTOR FemaleScientist4
   Radius 19
   Height 52
   painchance 200
-  PainChance "GasShellDamage", 20
+  PainChance "GasShellDamagePlayer", 20
 	SeeSound "fzombie/sight"
 	PainSound "fzombie/pain"
 	DeathSound "fzombie/death"
@@ -389,7 +389,7 @@ ACTOR ZombieScientist
   Radius 19
   Height 52
   painchance 200
-  PainChance "GasShellDamage", 20
+  PainChance "GasShellDamagePlayer", 20
 	SeeSound "zombie/sight"
 	PainSound "zombie/pain"
 	DeathSound "zombie/death"
@@ -445,7 +445,7 @@ ACTOR ZombieScientist2
   Radius 19
   Height 52
   painchance 200
-  PainChance "GasShellDamage", 20
+  PainChance "GasShellDamagePlayer", 20
   seesound "grunt/sight"
   painsound "grunt/pain"
   deathsound "grunt/death"
@@ -501,7 +501,7 @@ ACTOR ZombieScientist3
   Radius 19
   Height 52
   painchance 200
-  PainChance "GasShellDamage", 20
+  PainChance "GasShellDamagePlayer", 20
 	SeeSound "zombie/sight"
 	PainSound "zombie/pain"
 	DeathSound "zombie/death"
@@ -557,7 +557,7 @@ ACTOR ZombieScientist4
   Radius 19
   Height 52
   painchance 200
-  PainChance "GasShellDamage", 20
+  PainChance "GasShellDamagePlayer", 20
 	SeeSound "zombie/sight"
 	PainSound "zombie/pain"
 	DeathSound "zombie/death"
@@ -683,8 +683,8 @@ ACTOR HazmatZombie
   Radius 19
   Height 52
   painchance 200
-  //PainChance "GasShellDamage", 20
-  DamageFactor "GasShellDamage", 0 //because mask
+  //PainChance "GasShellDamagePlayer", 20
+  DamageFactor "GasShellDamagePlayer", 0 //because mask
 	SeeSound "zombie/sight"
 	PainSound "zombie/pain"
 	DeathSound "zombie/death"

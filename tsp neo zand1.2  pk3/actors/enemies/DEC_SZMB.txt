@@ -35,7 +35,7 @@ ACTOR ShotgunGuyVanilla //: ShotgunGuy
 	AttackSound "zekeshotgun/fire"
 	PainChance "Melee", 235
 	PainChance "Sling", 255
-	PainChance "GasShellDamage", 17
+	PainChance "GasShellDamagePlayer", 17
 	Obituary "%o was blasted by a shotgun-wielding zombie."
 	DropItem BuckshotShellThrown 50
 	DropItem BuckshotShellThrown 50

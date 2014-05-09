@@ -33,7 +33,7 @@ actor PistolZombie //: ZombieMan
       Mass 100
       Speed 2
       Painchance 200
-	  PainChance "GasShellDamage", 20
+	  PainChance "GasShellDamagePlayer", 20
 	  PainChance "Melee", 235
 	  PainChance "Sling", 255
 	  SeeSound "zombie/sight"
@@ -130,7 +130,7 @@ ACTOR RifleZombieVanilla //: ZombieMan
 	Painchance 200
     Painchance "Melee", 235
 	PainChance "Sling", 255
-	PainChance "GasShellDamage", 20
+	PainChance "GasShellDamagePlayer", 20
 	SeeSound "zombie/sight"
 	PainSound "zombie/pain"
 	DeathSound "zombie/death"
@@ -219,7 +219,7 @@ ACTOR RifleZombieV1 //: ZombieMan
     PainChance 180
 	PainChance "Melee", 235
 	PainChance "Sling", 255
-	PainChance "GasShellDamage", 18
+	PainChance "GasShellDamagePlayer", 18
 	DropItem TSPPistolAmmo 255
 	Dropitem "AmmoBoxAmmo" 30
 	SeeSound "zombie/sight"
@@ -308,7 +308,7 @@ ACTOR RifleZombieV2 //: ZombieMan
     PainChance 180
 	PainChance "Melee", 235
 	PainChance "Sling", 255
-	PainChance "GasShellDamage", 18
+	PainChance "GasShellDamagePlayer", 18
 	DropItem TSPPistolAmmo 255
 	Dropitem "AmmoBoxAmmo" 30
 	SeeSound "zombie/sight"
@@ -401,7 +401,7 @@ ACTOR RifleZombieV3 //: ZombieMan
     PainChance 180
 	PainChance "Melee", 235
 	PainChance "Sling", 255
-	PainChance "GasShellDamage", 18
+	PainChance "GasShellDamagePlayer", 18
 	DropItem TSPPistolAmmo 255
 	Dropitem "AmmoBoxAmmo" 30
 	SeeSound "zombie/sight"
@@ -494,7 +494,7 @@ ACTOR RifleZombieV4 //: ZombieMan
     PainChance 180
 	PainChance "Melee", 235
 	PainChance "Sling", 255
-	PainChance "GasShellDamage", 18
+	PainChance "GasShellDamagePlayer", 18
 	DropItem TSPPistolAmmo 255
 	Dropitem "AmmoBoxAmmo" 30
 	SeeSound "zombie/sight"
@@ -584,7 +584,7 @@ ACTOR RifleZombieV5 //: ZombieMan
     PainChance 180
 	PainChance "Melee", 235
 	PainChance "Sling", 255
-	PainChance "GasShellDamage", 18
+	PainChance "GasShellDamagePlayer", 18
 	DropItem TSPPistolAmmo 255
 	Dropitem "AmmoBoxAmmo" 30
 	SeeSound "zombie/sight"
@@ -673,7 +673,7 @@ ACTOR FemaleZombieV1 //: ZombieMan
     PainChance 200
 	PainChance "Melee", 235
 	PainChance "Sling", 255
-	PainChance "GasShellDamage", 20
+	PainChance "GasShellDamagePlayer", 20
 	DropItem TSPPistolAmmo 255
 	Dropitem "AmmoBoxAmmo" 30
 	SeeSound "fzombie/sight"
@@ -763,7 +763,7 @@ ACTOR Cultist //: ZombieMan
     PainChance 180
 	PainChance "Melee", 235
 	PainChance "Sling", 255
-	PainChance "GasShellDamage", 18
+	PainChance "GasShellDamagePlayer", 18
 	DropItem TSPPistolAmmo 255
 	Dropitem "AmmoBoxAmmo" 30
 	SeeSound "cultist/sight"
@@ -849,8 +849,8 @@ ACTOR JudgmentZombie //: ZombieMan
     PainChance 200
 	PainChance "Melee", 200
 	PainChance "Sling", 255
-	//PainChance "GasShellDamage", 5
-	DamageFactor "GasShellDamage", 0 //because mask
+	//PainChance "GasShellDamagePlayer", 5
+	DamageFactor "GasShellDamagePlayer", 0 //because mask
 	DropItem TSPPistolAmmo 255
 	DropItem TSPPistolAmmo 255
 	Dropitem "AmmoBoxAmmo" 30

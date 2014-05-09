@@ -32,7 +32,7 @@ ACTOR SPChaingunner //: Chaingunguy
 	dropitem TSPArmorBonus 255
 	dropitem TSPArmorBonus 255
 	Dropitem "AmmoBox50DroppedPickup"
-	PainChance "GasShellDamage", 17
+	PainChance "GasShellDamagePlayer", 17
 	SeeSound "czombie/sight"
 	PainSound "czombie/pain"
 	DeathSound "czombie/death"

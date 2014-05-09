@@ -1141,11 +1141,11 @@ actor ToolboxShrapnelMissile : FastProjectile
 	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,-(cos(-pitch+Random(-15,15))*3),0,-(sin(-pitch+Random(-15,15))*3),90+Random(-15,15),SXF_NOCHECKPOSITION)
 	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,-(cos(-pitch+Random(-15,15))*3),0,-(sin(-pitch+Random(-15,15))*3),-90+Random(-15,15),SXF_NOCHECKPOSITION)
 
-	TNT1 A 0 A_Explode(1,130)
-	TNT1 A 0 A_Explode(1,130)
-	TNT1 A 0 A_Explode(1,130)
-	TNT1 A 0 A_Explode(1,130)
-	TNT1 A 2 A_Explode(1,130)  //Light("SmallHellFireShellLight")
+	TNT1 A 0 A_Explode(2,130)
+	TNT1 A 0 A_Explode(2,130)
+	TNT1 A 0 A_Explode(2,130)
+	TNT1 A 0 A_Explode(2,130)
+	TNT1 A 2 A_Explode(2,130)  //Light("SmallHellFireShellLight")
 	TNT1 A 0 A_PlaySound("toolbox/nailgunimpact")
 	stop
    XDeath:
@@ -1181,11 +1181,11 @@ actor ToolboxShrapnelMissile : FastProjectile
 	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,-(cos(-pitch+Random(-15,15))*3),0,-(sin(-pitch+Random(-15,15))*3),90+Random(-15,15),SXF_NOCHECKPOSITION)
 	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,-(cos(-pitch+Random(-15,15))*3),0,-(sin(-pitch+Random(-15,15))*3),-90+Random(-15,15),SXF_NOCHECKPOSITION)
 
-	TNT1 A 0 A_Explode(1,130)
-	TNT1 A 0 A_Explode(1,130)
-	TNT1 A 0 A_Explode(1,130)
-	TNT1 A 0 A_Explode(1,130)
-	TNT1 A 2 A_Explode(1,130)  //Light("SmallHellFireShellLight")
+	TNT1 A 0 A_Explode(2,130)
+	TNT1 A 0 A_Explode(2,130)
+	TNT1 A 0 A_Explode(2,130)
+	TNT1 A 0 A_Explode(2,130)
+	TNT1 A 2 A_Explode(2,130)  //Light("SmallHellFireShellLight")
 	TNT1 A 0 A_PlaySound("toolbox/nailgunflesh")
 	stop
 

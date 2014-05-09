@@ -3,8 +3,8 @@
 
 ACTOR TSPSuperArchvile Replaces Archvile
 {
-  PainChance "GasShellDamage", 0
-  DamageFactor "GasShellDamage", 0.52
+  PainChance "GasShellDamagePlayer", 0
+  DamageFactor "GasShellDamagePlayer", 0.52
   Health 700
   Radius 20
   Height 56

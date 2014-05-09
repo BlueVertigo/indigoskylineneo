@@ -39,7 +39,7 @@ actor ImpVanilla //: DoomImp
 	  ActiveSound "xmimp/idle"
 	  Painchance "Melee", 235
 	  PainChance "Sling", 255
-	  PainChance "GasShellDamage", 20
+	  PainChance "GasShellDamagePlayer", 20
       States
       {
       Spawn:
@@ -123,7 +123,7 @@ Actor ImpVariant1 //: DoomImp
 	ActiveSound "xmimp/idle"
 	PainChance "Melee", 235
 	PainChance "Sling", 255
-	PainChance "GasShellDamage", 20
+	PainChance "GasShellDamagePlayer", 20
     obituary "%o was caught by a devilish Imp!"
 	HitObituary "%o's heart was clawed out by an Imp!"
     States
@@ -202,7 +202,7 @@ Actor ImpVariant2 //: DoomImp
 	ActiveSound "xmimp/idle"
 	PainChance "Melee", 235
 	PainChance "Sling", 255
-	PainChance "GasShellDamage", 20
+	PainChance "GasShellDamagePlayer", 20
     obituary "%o was caught by a devilish Imp!"
 	HitObituary "%o's heart was clawed out by an Imp!"
     States
@@ -281,7 +281,7 @@ Actor ImpVariant3 //: DoomImp
 	ActiveSound "xmimp/idle"
 	PainChance "Melee", 235
 	PainChance "Sling", 255
-	PainChance "GasShellDamage", 20
+	PainChance "GasShellDamagePlayer", 20
     obituary "%o was caught by a devilish Imp!"
 	HitObituary "%o's heart was clawed out by an Imp!"
     States

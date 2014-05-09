@@ -33,6 +33,7 @@ ACTOR SpacePirate : DoomPlayer
 	//+THRUSPECIES
 	DamageFactor "Poison", 2.0
 	PainChance "Sling", 255
+	DamageFactor "GasShellDamagePlayer", 0
 	//DamageFactor "GasShellDamage", 1.5
 	//DamageFactor "Shrapnel", 0.5
     States

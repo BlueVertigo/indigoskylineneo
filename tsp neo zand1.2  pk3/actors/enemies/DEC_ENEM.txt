@@ -3,7 +3,7 @@
 ACTOR TSPCaco replaces Cacodemon
 {
   BloodColor "00 00 FF"
-  PainChance "GasShellDamage", 13
+  PainChance "GasShellDamagePlayer", 13
   //+SEEINVISIBLE
   Health 400
   Radius 31
@@ -72,7 +72,7 @@ ACTOR TSPCaco replaces Cacodemon
 ACTOR TSPBaron replaces BaronOfHell
 {
   BloodColor "00 66 00"
-  PainChance "GasShellDamage", 5
+  PainChance "GasShellDamagePlayer", 5
   //+SEEINVISIBLE
   Health 1000
   Radius 24
@@ -144,7 +144,7 @@ ACTOR TSPBaron replaces BaronOfHell
 ACTOR TSPKnight : TSPBaron replaces HellKnight
 {
   BloodColor "00 66 00"
-  PainChance "GasShellDamage", 5
+  PainChance "GasShellDamagePlayer", 5
   PainChance "Melee", 180
   PainChance "Sling", 255
   //+SEEINVISIBLE
@@ -208,7 +208,7 @@ ACTOR TSPKnight : TSPBaron replaces HellKnight
 
 ACTOR TSPDemon Replaces Demon
 {
-  PainChance "GasShellDamage", 18
+  PainChance "GasShellDamagePlayer", 18
   Health 150
   PainChance 180
   PainChance "Melee", 225
@@ -273,7 +273,7 @@ ACTOR TSPDemon Replaces Demon
 
 ACTOR TSPSpectre : TSPDemon Replaces Spectre
 {
-  PainChance "GasShellDamage", 18
+  PainChance "GasShellDamagePlayer", 18
   PainChance "Melee", 225
   PainChance "Sling", 255
   +SHADOW
@@ -333,8 +333,8 @@ ACTOR TSPSpectre : TSPDemon Replaces Spectre
 
 ACTOR TSPFatso Replaces Fatso
 {
-  PainChance "GasShellDamage", 8
-  DamageFactor "GasShellDamage", 0.52
+  PainChance "GasShellDamagePlayer", 8
+  DamageFactor "GasShellDamagePlayer", 0.52
   //+SEEINVISIBLE
   Health 600
   Radius 48
@@ -403,7 +403,7 @@ ACTOR TSPFatso Replaces Fatso
 }
 ACTOR TSPPainElemental Replaces PainElemental
 {
-  PainChance "GasShellDamage", 13
+  PainChance "GasShellDamagePlayer", 13
   //+SEEINVISIBLE
   Health 400
   Radius 31
@@ -467,7 +467,7 @@ ACTOR TSPPainElemental Replaces PainElemental
 }
 ACTOR TSPRevenant Replaces Revenant
 {
-  PainChance "GasShellDamage", 10
+  PainChance "GasShellDamagePlayer", 10
   //+SEEINVISIBLE
   Health 300
   Radius 20
@@ -543,7 +543,7 @@ ACTOR TSPRevenant Replaces Revenant
 
 ACTOR TSPArachnotron Replaces Arachnotron
 {
-  PainChance "GasShellDamage", 13
+  PainChance "GasShellDamagePlayer", 13
   //+SEEINVISIBLE
   Health 500
   Radius 64
@@ -615,8 +615,8 @@ ACTOR TSPArachnotron Replaces Arachnotron
 
 ACTOR TSPArchvile //Replaces Archvile
 {
-  PainChance "GasShellDamage", 0
-  DamageFactor "GasShellDamage", 0.52
+  PainChance "GasShellDamagePlayer", 0
+  DamageFactor "GasShellDamagePlayer", 0.52
   Health 700
   Radius 20
   Height 56
@@ -687,7 +687,7 @@ ACTOR TSPArchvile //Replaces Archvile
 ACTOR TSPCyberdemon Replaces Cyberdemon
 {
   +DONTRIP
-  DamageFactor "GasShellDamage", 0 //because boss and mouth too high for breathing poison
+  DamageFactor "GasShellDamagePlayer", 0 //because boss and mouth too high for breathing poison
   //+SEEINVISIBLE
   Health 4000
   Radius 40
@@ -758,7 +758,7 @@ ACTOR TSPCyberdemon Replaces Cyberdemon
 ACTOR TSPSpiderMastermind Replaces SpiderMastermind
 {
   +DONTRIP
-  DamageFactor "GasShellDamage", 0 //because boss and mouth too high for breathing poison
+  DamageFactor "GasShellDamagePlayer", 0 //because boss and mouth too high for breathing poison
   Health 3000
   Radius 100
   Height 100

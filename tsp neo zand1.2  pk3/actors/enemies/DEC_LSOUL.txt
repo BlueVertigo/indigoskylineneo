@@ -32,7 +32,7 @@ Actor LostSoulV1
   SeeSound "Forgotten/Sight"
   DeathSound "Forgotten/Death"
   ActiveSound "Forgotten/Active"
-  DamageFactor "GasShellDamage", 0 //because skeleton
+  DamageFactor "GasShellDamagePlayer", 0 //because skeleton
   Damage 3
   MONSTER
   +FLOORCLIP
@@ -113,7 +113,7 @@ Actor LostSoulV2
   SeeSound "Forgotten/Sight"
   DeathSound "Forgotten/Death"
   ActiveSound "Forgotten/Active"
-  DamageFactor "GasShellDamage", 0 //because skeleton
+  DamageFactor "GasShellDamagePlayer", 0 //because skeleton
   Damage 3
   MONSTER
   //+SEEINVISIBLE
@@ -194,7 +194,7 @@ Actor LostSoulV3
   SeeSound "Forgotten/Sight"
   DeathSound "Forgotten/Death"
   ActiveSound "Forgotten/Active"
-  DamageFactor "GasShellDamage", 0 //because skeleton
+  DamageFactor "GasShellDamagePlayer", 0 //because skeleton
   Damage 3
   MONSTER
   //+SEEINVISIBLE
@@ -279,7 +279,7 @@ actor TSPRictus
   deathsound "rictus/death"
   activesound "rictus/active"
   painsound "rictus/pain"
-  DamageFactor "GasShellDamage", 0 //because skeleton
+  DamageFactor "GasShellDamagePlayer", 0 //because skeleton
   MONSTER
   ////+SEEINVISIBLE
   +FLOAT
