@@ -74,6 +74,9 @@ script 857 (int which, int a1, int a2) clientside //shamelessly copied from sams
         if(GetCvar("tsp_toaster") == 1) { SetActorState(0,"Toaster1"); }
         if(GetCvar("tsp_toaster") == 2) { SetActorState(0,"Toaster2"); }
         break;   
+	  case 13:
+        result = GetCVar("sv_weaponstay");
+        break;
     }
     SetResultValue(result);
 }

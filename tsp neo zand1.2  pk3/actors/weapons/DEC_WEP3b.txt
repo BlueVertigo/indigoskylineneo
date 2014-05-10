@@ -354,20 +354,26 @@ ACTOR CrossbowPickup : CustomInventory
 	  TNT1 A 0 A_GiveInventory("MelDahliaCrossbow", 1)
 	  TNT1 A 0 A_GiveInventory("DahliaJustPickedUp", 1)
 	  TNT1 A 1 ACS_ExecuteAlways(859)
+	  TNT1 A 0 A_JumpIf(ACS_ExecuteWithResult(857,13) >= 1,"PickupFail")
+	  TNT1 A 1 
 	  Stop
 	MelPickup:
 	  TNT1 A 0 A_JumpIfInventory("MelDahliaCrossbow", 1, "AmmoCheck")
 	  TNT1 A 0 A_GiveInventory("MelDahliaCrossbow", 1)
 	  TNT1 A 0 A_GiveInventory("DahliaJustPickedUp", 1)
 	  TNT1 A 1 ACS_ExecuteAlways(859)
+	  TNT1 A 0 A_JumpIf(ACS_ExecuteWithResult(857,13) >= 1,"PickupFail")
+	  TNT1 A 1 
 	  Stop
 	AmmoCheck:
-      TNT1 A 0 A_JumpIfInventory("DahliaNormalAmmo", 0, "AmmoCheck2")
+      TNT1 A 1 A_JumpIf(ACS_ExecuteWithResult(857,13) >= 1,"PickupFail")
+	  TNT1 A 0 A_JumpIfInventory("DahliaNormalAmmo", 0, "AmmoCheck2")
 	  TNT1 A 0 A_GiveInventory("DahliaNormalAmmo", 10)
 	  TNT1 A 0 A_GiveInventory("DahliaExplosiveAmmo",5)
 	  Stop
 	AmmoCheck2:
-      TNT1 A 0 A_JumpIfInventory("DahliaExplosiveAmmo", 0, "PickupFail")
+      TNT1 A 1 A_JumpIf(ACS_ExecuteWithResult(857,13) >= 1,"PickupFail")
+	  TNT1 A 0 A_JumpIfInventory("DahliaExplosiveAmmo", 0, "PickupFail")
 	  TNT1 A 0 A_GiveInventory("DahliaNormalAmmo", 10)
 	  TNT1 A 0 A_GiveInventory("DahliaExplosiveAmmo",5)
 	  Stop
@@ -397,6 +403,8 @@ ACTOR CrossbowSSGPickup : CustomInventory Replaces SuperShotgun
 	  TNT1 A 0 A_GiveInventory("DahliaJustPickedUp", 1)
 	  TNT1 A 0 A_GiveInventory("DahliaExplosiveAmmo", 5)
 	  TNT1 A 1 ACS_ExecuteAlways(859)
+	  TNT1 A 0 A_JumpIf(ACS_ExecuteWithResult(857,13) >= 1,"PickupFail")
+	  TNT1 A 1 
 	  Stop
 	MelPickup:
 	  TNT1 A 0 A_JumpIfInventory("MelDahliaCrossbow", 1, "AmmoCheck")
@@ -404,14 +412,18 @@ ACTOR CrossbowSSGPickup : CustomInventory Replaces SuperShotgun
 	  TNT1 A 0 A_GiveInventory("DahliaJustPickedUp", 1)
 	  TNT1 A 0 A_GiveInventory("DahliaExplosiveAmmo", 5)
 	  TNT1 A 1 ACS_ExecuteAlways(859)
+	  TNT1 A 0 A_JumpIf(ACS_ExecuteWithResult(857,13) >= 1,"PickupFail")
+	  TNT1 A 1 
 	  Stop
 	AmmoCheck:
-      TNT1 A 0 A_JumpIfInventory("DahliaNormalAmmo", 0, "AmmoCheck2")
+      TNT1 A 1 A_JumpIf(ACS_ExecuteWithResult(857,13) >= 1,"PickupFail")
+	  TNT1 A 0 A_JumpIfInventory("DahliaNormalAmmo", 0, "AmmoCheck2")
 	  TNT1 A 0 A_GiveInventory("DahliaNormalAmmo", 10)
 	  TNT1 A 0 A_GiveInventory("DahliaExplosiveAmmo",10)
 	  Stop
 	AmmoCheck2:
-      TNT1 A 0 A_JumpIfInventory("DahliaExplosiveAmmo", 0, "PickupFail")
+      TNT1 A 1 A_JumpIf(ACS_ExecuteWithResult(857,13) >= 1,"PickupFail")
+	  TNT1 A 0 A_JumpIfInventory("DahliaExplosiveAmmo", 0, "PickupFail")
 	  TNT1 A 0 A_GiveInventory("DahliaNormalAmmo", 10)
 	  TNT1 A 0 A_GiveInventory("DahliaExplosiveAmmo",10)
 	  Stop
