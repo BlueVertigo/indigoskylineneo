@@ -1,21 +1,3 @@
-Sprite SM35A0, 21,23
-{
-	Offset 11,12
-	Patch SMK2B0, 0, 0
-	XScale 10
-	YScale 10
-}
-
-Sprite SM35B0, 25,19
-{
-	Offset 12,10
-	Patch SMK2A0, 0, 0
-	XScale 10
-	YScale 10
-}
-
-
-
 Graphic M_DOOM, 647, 273
 {
 	Offset 0, 0
@@ -30,7 +12,7 @@ Graphic M_DOOM, 647, 273
 Sprite HFT3A0, 30,26
 {
 	Offset 15,13
-	Patch HFTRB0, 0, 0
+	Patch HFTRA0, 0, 0
 	XScale 3.333333333
 	YScale 3.333333333
 }
@@ -38,7 +20,7 @@ Sprite HFT3A0, 30,26
 Sprite HFT3B0, 30,28
 {
 	Offset 15,14
-	Patch HFTRA0, 0, 0
+	Patch HFTRB0, 0, 0
 	XScale 3.333333333
 	YScale 3.333333333
 }
@@ -48,7 +30,7 @@ Sprite HFT3B0, 30,28
 Sprite HF35A0, 30,26
 {
 	Offset 15,13
-	Patch HFTRB0, 0, 0
+	Patch HFTRA0, 0, 0
 	XScale 2.85714
 	YScale 2.85714
 }
@@ -56,7 +38,7 @@ Sprite HF35A0, 30,26
 Sprite HF35B0, 30,28
 {
 	Offset 15,14
-	Patch HFTRA0, 0, 0
+	Patch HFTRB0, 0, 0
 	XScale 2.85714
 	YScale 2.85714
 }
@@ -66,7 +48,7 @@ Sprite HF35B0, 30,28
 Sprite HFT4A0, 30,26
 {
 	Offset 15,13
-	Patch HFTRB0, 0, 0
+	Patch HFTRA0, 0, 0
 	XScale 2.5
 	YScale 2.5
 }
@@ -74,7 +56,7 @@ Sprite HFT4A0, 30,26
 Sprite HFT4B0, 30,28
 {
 	Offset 15,14
-	Patch HFTRA0, 0, 0
+	Patch HFTRB0, 0, 0
 	XScale 2.5
 	YScale 2.5
 }
@@ -84,7 +66,7 @@ Sprite HFT4B0, 30,28
 Sprite HF45A0, 30,26
 {
 	Offset 15,13
-	Patch HFTRB0, 0, 0
+	Patch HFTRA0, 0, 0
 	XScale 2.222222222
 	YScale 2.222222222
 }
@@ -92,7 +74,7 @@ Sprite HF45A0, 30,26
 Sprite HF45B0, 30,28
 {
 	Offset 15,14
-	Patch HFTRA0, 0, 0
+	Patch HFTRB0, 0, 0
 	XScale 2.222222222
 	YScale 2.222222222
 }
@@ -102,7 +84,7 @@ Sprite HF45B0, 30,28
 Sprite HFT5A0, 30,26
 {
 	Offset 15,13
-	Patch HFTRB0, 0, 0
+	Patch HFTRA0, 0, 0
 	XScale 2
 	YScale 2
 }
@@ -110,7 +92,7 @@ Sprite HFT5A0, 30,26
 Sprite HFT5B0, 30,28
 {
 	Offset 15,14
-	Patch HFTRA0, 0, 0
+	Patch HFTRB0, 0, 0
 	XScale 2
 	YScale 2
 }
@@ -120,7 +102,7 @@ Sprite HFT5B0, 30,28
 Sprite HF55A0, 30,26
 {
 	Offset 15,13
-	Patch HFTRB0, 0, 0
+	Patch HFTRA0, 0, 0
 	XScale 1.818181818
 	YScale 1.818181818
 }
@@ -128,7 +110,7 @@ Sprite HF55A0, 30,26
 Sprite HF55B0, 30,28
 {
 	Offset 15,14
-	Patch HFTRA0, 0, 0
+	Patch HFTRB0, 0, 0
 	XScale 1.818181818
 	YScale 1.818181818
 }
@@ -138,7 +120,7 @@ Sprite HF55B0, 30,28
 Sprite HFT6A0, 30,26
 {
 	Offset 15,13
-	Patch HFTRB0, 0, 0
+	Patch HFTRA0, 0, 0
 	XScale 1.666666667
 	YScale 1.666666667
 }
@@ -146,7 +128,7 @@ Sprite HFT6A0, 30,26
 Sprite HFT6B0, 30,28
 {
 	Offset 15,14
-	Patch HFTRA0, 0, 0
+	Patch HFTRB0, 0, 0
 	XScale 1.666666667
 	YScale 1.666666667
 }
@@ -156,7 +138,7 @@ Sprite HFT6B0, 30,28
 Sprite HF65A0, 30,26
 {
 	Offset 15,13
-	Patch HFTRB0, 0, 0
+	Patch HFTRA0, 0, 0
 	XScale 1.8538461538
 	YScale 1.8538461538
 }
@@ -164,7 +146,7 @@ Sprite HF65A0, 30,26
 Sprite HF65B0, 30,28
 {
 	Offset 15,14
-	Patch HFTRA0, 0, 0
+	Patch HFTRB0, 0, 0
 	XScale 1.8538461538
 	YScale 1.8538461538
 }
@@ -174,7 +156,7 @@ Sprite HF65B0, 30,28
 Sprite HFT7A0, 30,26
 {
 	Offset 15,13
-	Patch HFTRB0, 0, 0
+	Patch HFTRA0, 0, 0
 	XScale 1.428571429
 	YScale 1.428571429
 }
@@ -182,7 +164,7 @@ Sprite HFT7A0, 30,26
 Sprite HFT7B0, 30,28
 {
 	Offset 15,14
-	Patch HFTRA0, 0, 0
+	Patch HFTRB0, 0, 0
 	XScale 1.428571429
 	YScale 1.428571429
 }
@@ -193,7 +175,7 @@ Sprite HFT7B0, 30,28
 Sprite SM00A0, 21,23
 {
 	Offset 11,12
-	Patch SMK2B0, 0, 0
+	Patch SMK2A0, 0, 0
 	XScale 1000
 	YScale 1000
 }
@@ -201,7 +183,7 @@ Sprite SM00A0, 21,23
 Sprite SM00B0, 25,19
 {
 	Offset 12,10
-	Patch SMK2A0, 0, 0
+	Patch SMK2B0, 0, 0
 	XScale 1000
 	YScale 1000
 }
@@ -211,7 +193,7 @@ Sprite SM00B0, 25,19
 Sprite SM05A0, 21,23
 {
 	Offset 11,12
-	Patch SMK2B0, 0, 0
+	Patch SMK2A0, 0, 0
 	XScale 20
 	YScale 20
 }
@@ -219,7 +201,7 @@ Sprite SM05A0, 21,23
 Sprite SM05B0, 25,19
 {
 	Offset 12,10
-	Patch SMK2A0, 0, 0
+	Patch SMK2B0, 0, 0
 	XScale 20
 	YScale 20
 }
@@ -229,7 +211,7 @@ Sprite SM05B0, 25,19
 Sprite SM10A0, 21,23
 {
 	Offset 11,12
-	Patch SMK2B0, 0, 0
+	Patch SMK2A0, 0, 0
 	XScale 10
 	YScale 10
 }
@@ -237,7 +219,7 @@ Sprite SM10A0, 21,23
 Sprite SM10B0, 25,19
 {
 	Offset 12,10
-	Patch SMK2A0, 0, 0
+	Patch SMK2B0, 0, 0
 	XScale 10
 	YScale 10
 }
@@ -247,7 +229,7 @@ Sprite SM10B0, 25,19
 Sprite SM15A0, 21,23
 {
 	Offset 11,12
-	Patch SMK2B0, 0, 0
+	Patch SMK2A0, 0, 0
 	XScale 6.666666667
 	YScale 6.666666667
 }
@@ -255,7 +237,7 @@ Sprite SM15A0, 21,23
 Sprite SM15B0, 25,19
 {
 	Offset 12,10
-	Patch SMK2A0, 0, 0
+	Patch SMK2B0, 0, 0
 	XScale 6.666666667
 	YScale 6.666666667
 }
@@ -265,7 +247,7 @@ Sprite SM15B0, 25,19
 Sprite SM20A0, 21,23
 {
 	Offset 11,12
-	Patch SMK2B0, 0, 0
+	Patch SMK2A0, 0, 0
 	XScale 5
 	YScale 5
 }
@@ -273,7 +255,7 @@ Sprite SM20A0, 21,23
 Sprite SM20B0, 25,19
 {
 	Offset 12,10
-	Patch SMK2A0, 0, 0
+	Patch SMK2B0, 0, 0
 	XScale 5
 	YScale 5
 }
@@ -283,7 +265,7 @@ Sprite SM20B0, 25,19
 Sprite SM25A0, 21,23
 {
 	Offset 11,12
-	Patch SMK2B0, 0, 0
+	Patch SMK2A0, 0, 0
 	XScale 4
 	YScale 4
 }
@@ -291,7 +273,7 @@ Sprite SM25A0, 21,23
 Sprite SM25B0, 25,19
 {
 	Offset 12,10
-	Patch SMK2A0, 0, 0
+	Patch SMK2B0, 0, 0
 	XScale 4
 	YScale 4
 }
@@ -301,7 +283,7 @@ Sprite SM25B0, 25,19
 Sprite SM30A0, 21,23
 {
 	Offset 11,12
-	Patch SMK2B0, 0, 0
+	Patch SMK2A0, 0, 0
 	XScale 3.333333333
 	YScale 3.333333333
 }
@@ -309,7 +291,7 @@ Sprite SM30A0, 21,23
 Sprite SM30B0, 25,19
 {
 	Offset 12,10
-	Patch SMK2A0, 0, 0
+	Patch SMK2B0, 0, 0
 	XScale 3.333333333
 	YScale 3.333333333
 }
@@ -320,7 +302,7 @@ Sprite SM30B0, 25,19
 Sprite SHA1A0, 5, 5
 {
 	Offset 2, 3
-	Patch SPBGD0, 0, 0
+	Patch SHAPA0, 0, 0
 	XScale 10
 	YScale 10
 }
@@ -328,7 +310,7 @@ Sprite SHA1A0, 5, 5
 Sprite SHA1B0, 5, 5
 {
 	Offset 2, 3
-	Patch SPBGD0, 0, 0
+	Patch SHAPB0, 0, 0
 	XScale 10
 	YScale 10
 }
@@ -336,7 +318,7 @@ Sprite SHA1B0, 5, 5
 Sprite SHA1C0, 3, 3
 {
 	Offset 1, 1
-	Patch SPBGD0, 0, 0
+	Patch SHAPC0, 0, 0
 	XScale 10
 	YScale 10
 }
@@ -346,7 +328,7 @@ Sprite SHA1C0, 3, 3
 Sprite SHA2A0, 5, 5
 {
 	Offset 2, 3
-	Patch SPBGD0, 0, 0
+	Patch SHAPA0, 0, 0
 	XScale 5
 	YScale 5
 }
@@ -354,7 +336,7 @@ Sprite SHA2A0, 5, 5
 Sprite SHA2B0, 5, 5
 {
 	Offset 2, 3
-	Patch SPBGD0, 0, 0
+	Patch SHAPB0, 0, 0
 	XScale 5
 	YScale 5
 }
@@ -362,7 +344,7 @@ Sprite SHA2B0, 5, 5
 Sprite SHA2C0, 3, 3
 {
 	Offset 1, 1
-	Patch SPBGD0, 0, 0
+	Patch SHAPC0, 0, 0
 	XScale 5
 	YScale 5
 }
@@ -372,7 +354,7 @@ Sprite SHA2C0, 3, 3
 Sprite SHA3A0, 5, 5
 {
 	Offset 2, 3
-	Patch SPBGD0, 0, 0
+	Patch SHAPA0, 0, 0
 	XScale 3.33333333333333
 	YScale 3.33333333333333
 }
@@ -380,7 +362,7 @@ Sprite SHA3A0, 5, 5
 Sprite SHA3B0, 5, 5
 {
 	Offset 2, 3
-	Patch SPBGD0, 0, 0
+	Patch SHAPB0, 0, 0
 	XScale 3.33333333333333
 	YScale 3.33333333333333
 }
@@ -388,7 +370,7 @@ Sprite SHA3B0, 5, 5
 Sprite SHA3C0, 3, 3
 {
 	Offset 1, 1
-	Patch SPBGD0, 0, 0
+	Patch SHAPC0, 0, 0
 	XScale 3.33333333333333
 	YScale 3.33333333333333
 }
@@ -398,7 +380,7 @@ Sprite SHA3C0, 3, 3
 Sprite SHA4A0, 5, 5
 {
 	Offset 2, 3
-	Patch SPBGD0, 0, 0
+	Patch SHAPA0, 0, 0
 	XScale 2.5
 	YScale 2.5
 }
@@ -406,7 +388,7 @@ Sprite SHA4A0, 5, 5
 Sprite SHA4B0, 5, 5
 {
 	Offset 2, 3
-	Patch SPBGD0, 0, 0
+	Patch SHAPB0, 0, 0
 	XScale 2.5
 	YScale 2.5
 }
@@ -414,7 +396,7 @@ Sprite SHA4B0, 5, 5
 Sprite SHA4C0, 3, 3
 {
 	Offset 1, 1
-	Patch SPBGD0, 0, 0
+	Patch SHAPC0, 0, 0
 	XScale 2.5
 	YScale 2.5
 }
@@ -424,7 +406,7 @@ Sprite SHA4C0, 3, 3
 Sprite SHA5A0, 5, 5
 {
 	Offset 2, 3
-	Patch SPBGD0, 0, 0
+	Patch SHAPA0, 0, 0
 	XScale 2
 	YScale 2
 }
@@ -432,7 +414,7 @@ Sprite SHA5A0, 5, 5
 Sprite SHA5B0, 5, 5
 {
 	Offset 2, 3
-	Patch SPBGD0, 0, 0
+	Patch SHAPB0, 0, 0
 	XScale 2
 	YScale 2
 }
@@ -440,7 +422,7 @@ Sprite SHA5B0, 5, 5
 Sprite SHA5C0, 3, 3
 {
 	Offset 1, 1
-	Patch SPBGD0, 0, 0
+	Patch SHAPC0, 0, 0
 	XScale 2
 	YScale 2
 }
