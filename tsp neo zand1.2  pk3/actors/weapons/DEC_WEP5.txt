@@ -1087,8 +1087,6 @@ actor ToolboxShrapnelMissile : FastProjectile
   Speed 50 //Doesn't actually do anything here
   Scale 0.4
   Projectile
-  MissileType "ShrapnelSparker"
-  MissileHeight 8
   RenderStyle "Add"
   Alpha 0.5
   +BLOODSPLATTER
@@ -1100,47 +1098,14 @@ actor ToolboxShrapnelMissile : FastProjectile
   States
   {
   Spawn:
-	SHAP A 0
-	SHAP A 0
-	SHAP A 0
-	SHAP A 0 A_ChangeFlag("THRUSPECIES",0)
-	SHAP A 1 Bright
-	Goto Spawn2
-  Spawn2:
-	SHAP A 1 Bright
+	SHAP A 1 Bright A_ChangeFlag("THRUSPECIES",0)
 	loop
   Death:
 	SHAP A 1 A_GiveToTarget("ShockCanDie", 1)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter1",0,0,0,cos(-pitch+Random(-90,90))*3,0,sin(-pitch+Random(-90,90))*3,Random(-180,180),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter1",0,0,0,cos(-pitch+Random(-90,90))*3,0,sin(-pitch+Random(-90,90))*3,Random(-180,180),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter1",0,0,0,cos(-pitch+Random(-90,90))*3,0,sin(-pitch+Random(-90,90))*3,Random(-180,180),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter1A",0,0,0,cos(-pitch+Random(-90,90))*3,0,sin(-pitch+Random(-90,90))*3,Random(-180,180),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter1A",0,0,0,cos(-pitch+Random(-90,90))*3,0,sin(-pitch+Random(-90,90))*3,Random(-180,180),SXF_NOCHECKPOSITION)
-	//SHAP A 0 A_SpawnItemEx("ShrapnelScatter1",0,0,0,cos(-pitch+Random(-90,90))*3,0,sin(-pitch+Random(-90,90))*3,Random(-180,180),SXF_NOCHECKPOSITION)
-	//SHAP A 0 A_SpawnItemEx("ShrapnelScatter1",0,0,0,cos(-pitch+Random(-90,90))*3,0,sin(-pitch+Random(-90,90))*3,Random(-180,180),SXF_NOCHECKPOSITION)
-
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,cos(-pitch+Random(-15,15))*3,0,sin(-pitch+Random(-15,15))*3,45+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,cos(-pitch+Random(-15,15)+22.5)*3,0,sin(-pitch+Random(-15,15)+22.5)*3,22.5+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,cos(-pitch+Random(-15,15)+45)*3,0,sin(-pitch+Random(-15,15)+45)*3,0+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,cos(-pitch+Random(-15,15)+22.5)*3,0,sin(-pitch+Random(-15,15)+22.5)*3,-22.5+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,cos(-pitch+Random(-15,15))*3,0,sin(-pitch+Random(-15,15))*3,-45+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,cos(-pitch+Random(-15,15)-22.5)*3,0,sin(-pitch+Random(-15,15)-22.5)*3,-22.5+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,cos(-pitch+Random(-15,15)-45)*3,0,sin(-pitch+Random(-15,15)-45)*3,0+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,cos(-pitch+Random(-15,15)-22.5)*3,0,sin(-pitch+Random(-15,15)-22.5)*3,22.5+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,-(cos(-pitch+Random(-15,15))*3),0,-(sin(-pitch+Random(-15,15))*3),-45+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,-(cos(-pitch+Random(-15,15)+22.5)*3),0,-(sin(-pitch+Random(-15,15)+22.5)*3),-22.5+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,-(cos(-pitch+Random(-15,15)+45)*3),0,-(sin(-pitch+Random(-15,15)+45)*3),0+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,-(cos(-pitch+Random(-15,15)+22.5)*3),0,-(sin(-pitch+Random(-15,15)+22.5)*3),22.5+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,-(cos(-pitch+Random(-15,15))*3),0,-(sin(-pitch+Random(-15,15))*3),45+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,-(cos(-pitch+Random(-15,15)-22.5)*3),0,-(sin(-pitch+Random(-15,15)-22.5)*3),22.5+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,-(cos(-pitch+Random(-15,15)-45)*3),0,-(sin(-pitch+Random(-15,15)-45)*3),0+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,-(cos(-pitch+Random(-15,15)-22.5)*3),0,-(sin(-pitch+Random(-15,15)-22.5)*3),-22.5+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,-(cos(-pitch+Random(-15,15)-90)*3),0,-(sin(-pitch+Random(-15,15)-90)*3),0+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,-(cos(-pitch+Random(-15,15)+90)*3),0,-(sin(-pitch+Random(-15,15)+90)*3),0+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,-(cos(-pitch+Random(-15,15))*3),0,-(sin(-pitch+Random(-15,15))*3),0+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,-(cos(-pitch+Random(-15,15))*3),0,-(sin(-pitch+Random(-15,15))*3),-180+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,-(cos(-pitch+Random(-15,15))*3),0,-(sin(-pitch+Random(-15,15))*3),90+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,-(cos(-pitch+Random(-15,15))*3),0,-(sin(-pitch+Random(-15,15))*3),-90+Random(-15,15),SXF_NOCHECKPOSITION)
+	
+	TNT1 A 0 A_SpawnItemEx("ShrapnelShooter1",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelShooter2",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelShooter3",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 
 	TNT1 A 0 A_Explode(2,130)
 	TNT1 A 0 A_Explode(2,130)
@@ -1151,36 +1116,10 @@ actor ToolboxShrapnelMissile : FastProjectile
 	stop
    XDeath:
 	SHAP A 1 A_GiveToTarget("ShockCanDie", 1)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter1",0,0,0,cos(-pitch+Random(-90,90))*3,0,sin(-pitch+Random(-90,90))*3,Random(-180,180),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter1",0,0,0,cos(-pitch+Random(-90,90))*3,0,sin(-pitch+Random(-90,90))*3,Random(-180,180),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter1",0,0,0,cos(-pitch+Random(-90,90))*3,0,sin(-pitch+Random(-90,90))*3,Random(-180,180),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter1A",0,0,0,cos(-pitch+Random(-90,90))*3,0,sin(-pitch+Random(-90,90))*3,Random(-180,180),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter1A",0,0,0,cos(-pitch+Random(-90,90))*3,0,sin(-pitch+Random(-90,90))*3,Random(-180,180),SXF_NOCHECKPOSITION)
-	//SHAP A 0 A_SpawnItemEx("ShrapnelScatter1",0,0,0,cos(-pitch+Random(-90,90))*3,0,sin(-pitch+Random(-90,90))*3,Random(-180,180),SXF_NOCHECKPOSITION)
-	//SHAP A 0 A_SpawnItemEx("ShrapnelScatter1",0,0,0,cos(-pitch+Random(-90,90))*3,0,sin(-pitch+Random(-90,90))*3,Random(-180,180),SXF_NOCHECKPOSITION)
-
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,cos(-pitch+Random(-15,15))*3,0,sin(-pitch+Random(-15,15))*3,45+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,cos(-pitch+Random(-15,15)+22.5)*3,0,sin(-pitch+Random(-15,15)+22.5)*3,22.5+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,cos(-pitch+Random(-15,15)+45)*3,0,sin(-pitch+Random(-15,15)+45)*3,0+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,cos(-pitch+Random(-15,15)+22.5)*3,0,sin(-pitch+Random(-15,15)+22.5)*3,-22.5+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,cos(-pitch+Random(-15,15))*3,0,sin(-pitch+Random(-15,15))*3,-45+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,cos(-pitch+Random(-15,15)-22.5)*3,0,sin(-pitch+Random(-15,15)-22.5)*3,-22.5+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,cos(-pitch+Random(-15,15)-45)*3,0,sin(-pitch+Random(-15,15)-45)*3,0+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,cos(-pitch+Random(-15,15)-22.5)*3,0,sin(-pitch+Random(-15,15)-22.5)*3,22.5+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,-(cos(-pitch+Random(-15,15))*3),0,-(sin(-pitch+Random(-15,15))*3),-45+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,-(cos(-pitch+Random(-15,15)+22.5)*3),0,-(sin(-pitch+Random(-15,15)+22.5)*3),-22.5+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,-(cos(-pitch+Random(-15,15)+45)*3),0,-(sin(-pitch+Random(-15,15)+45)*3),0+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,-(cos(-pitch+Random(-15,15)+22.5)*3),0,-(sin(-pitch+Random(-15,15)+22.5)*3),22.5+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,-(cos(-pitch+Random(-15,15))*3),0,-(sin(-pitch+Random(-15,15))*3),45+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,-(cos(-pitch+Random(-15,15)-22.5)*3),0,-(sin(-pitch+Random(-15,15)-22.5)*3),22.5+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,-(cos(-pitch+Random(-15,15)-45)*3),0,-(sin(-pitch+Random(-15,15)-45)*3),0+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,-(cos(-pitch+Random(-15,15)-22.5)*3),0,-(sin(-pitch+Random(-15,15)-22.5)*3),-22.5+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,-(cos(-pitch+Random(-15,15)-90)*3),0,-(sin(-pitch+Random(-15,15)-90)*3),0+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,-(cos(-pitch+Random(-15,15)+90)*3),0,-(sin(-pitch+Random(-15,15)+90)*3),0+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,-(cos(-pitch+Random(-15,15))*3),0,-(sin(-pitch+Random(-15,15))*3),0+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,-(cos(-pitch+Random(-15,15))*3),0,-(sin(-pitch+Random(-15,15))*3),-180+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3",0,0,0,-(cos(-pitch+Random(-15,15))*3),0,-(sin(-pitch+Random(-15,15))*3),90+Random(-15,15),SXF_NOCHECKPOSITION)
-	SHAP A 0 A_SpawnItemEx("ShrapnelScatter3A",0,0,0,-(cos(-pitch+Random(-15,15))*3),0,-(sin(-pitch+Random(-15,15))*3),-90+Random(-15,15),SXF_NOCHECKPOSITION)
+	
+	TNT1 A 0 A_SpawnItemEx("ShrapnelShooter1",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelShooter2",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelShooter3",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 
 	TNT1 A 0 A_Explode(2,130)
 	TNT1 A 0 A_Explode(2,130)
@@ -1201,15 +1140,110 @@ actor ToolboxShrapnelMissileCoop : ToolboxShrapnelMissile
   States
   {
   Spawn:
-	SHAP A 0
-	SHAP A 0
-	SHAP A 0
-	SHAP A 0 //A_ChangeFlag("THRUSPECIES",0)
-	SHAP A 1 Bright
-	Goto Spawn2
-  Spawn2:
 	SHAP A 1 Bright
 	loop
+  }
+}
+
+ACTOR ShrapnelShooter1
+{
+  +NOINTERACTION
+  +THRUACTORS
+  +NOCLIP
+  States
+  {
+  Spawn:
+    TNT1 A 0
+	TNT1 A 0
+	TNT1 A 0
+	SHAP A 0 A_SpawnItemEx("ShrapnelScatter1",0,0,0,cos(-pitch+Random(-90,90))*3,0,sin(-pitch+Random(-90,90))*3,Random(-180,180),SXF_NOCHECKPOSITION)
+	SHAP A 0 A_SpawnItemEx("ShrapnelScatter1",0,0,0,cos(-pitch+Random(-90,90))*3,0,sin(-pitch+Random(-90,90))*3,Random(-180,180),SXF_NOCHECKPOSITION)
+	SHAP A 0 A_SpawnItemEx("ShrapnelScatter1",0,0,0,cos(-pitch+Random(-90,90))*3,0,sin(-pitch+Random(-90,90))*3,Random(-180,180),SXF_NOCHECKPOSITION)
+    TNT1 A 2
+	Stop
+  }
+}
+
+ACTOR ShrapnelShooter2
+{
+  +NOINTERACTION
+  +THRUACTORS
+  +NOCLIP
+  States
+  {
+  Spawn:
+    TNT1 A 0 
+	TNT1 A 0 
+	TNT1 A 0
+	TNT1 A 0
+	TNT1 A 0 ACS_ExecuteWithResult(857,12)
+	//TNT1 A 0 A_JumpIf(ACS_ExecuteWithResult(857,11) == 1,"Toaster1")
+	//TNT1 A 0 A_JumpIf(ACS_ExecuteWithResult(857,11) >= 2,"Toaster2")
+	Goto SpawnAfterScript
+  Toaster1:
+    Goto SpawnAfterScript
+  Toaster2:
+    TNT1 A 0
+	Stop
+  SpawnAfterScript:
+    TNT1 A 0
+	TNT1 A 0
+	TNT1 A 0
+	TNT1 A 0 A_SpawnItemEx("ShrapnelScatter2",0,0,0,cos(-pitch+Random(-15,15)+22.5)*3,0,sin(-pitch+Random(-15,15)+22.5)*3,22.5+Random(-15,15),SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelScatter2",0,0,0,cos(-pitch+Random(-15,15)+22.5)*3,0,sin(-pitch+Random(-15,15)+22.5)*3,-22.5+Random(-15,15),SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelScatter2",0,0,0,cos(-pitch+Random(-15,15)-22.5)*3,0,sin(-pitch+Random(-15,15)-22.5)*3,-22.5+Random(-15,15),SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelScatter2",0,0,0,cos(-pitch+Random(-15,15)-22.5)*3,0,sin(-pitch+Random(-15,15)-22.5)*3,22.5+Random(-15,15),SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelScatter2",0,0,0,-(cos(-pitch+Random(-15,15)+22.5)*3),0,-(sin(-pitch+Random(-15,15)+22.5)*3),-22.5+Random(-15,15),SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelScatter2",0,0,0,-(cos(-pitch+Random(-15,15)+22.5)*3),0,-(sin(-pitch+Random(-15,15)+22.5)*3),22.5+Random(-15,15),SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelScatter2",0,0,0,-(cos(-pitch+Random(-15,15)-22.5)*3),0,-(sin(-pitch+Random(-15,15)-22.5)*3),22.5+Random(-15,15),SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelScatter2",0,0,0,-(cos(-pitch+Random(-15,15)-22.5)*3),0,-(sin(-pitch+Random(-15,15)-22.5)*3),-22.5+Random(-15,15),SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelScatter2",0,0,0,-(cos(-pitch+Random(-15,15)+90)*3),0,-(sin(-pitch+Random(-15,15)+90)*3),0+Random(-15,15),SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelScatter2",0,0,0,-(cos(-pitch+Random(-15,15))*3),0,-(sin(-pitch+Random(-15,15))*3),-180+Random(-15,15),SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelScatter2",0,0,0,-(cos(-pitch+Random(-15,15))*3),0,-(sin(-pitch+Random(-15,15))*3),-90+Random(-15,15),SXF_NOCHECKPOSITION)
+    TNT1 A 2
+	Stop
+  }
+}
+
+ACTOR ShrapnelShooter3
+{
+  +NOINTERACTION
+  +THRUACTORS
+  +NOCLIP
+  States
+  {
+  Spawn:
+    TNT1 A 0 
+	TNT1 A 0 
+	TNT1 A 0
+	TNT1 A 0
+	TNT1 A 0 ACS_ExecuteWithResult(857,12)
+	//TNT1 A 0 A_JumpIf(ACS_ExecuteWithResult(857,11) == 1,"Toaster1")
+	//TNT1 A 0 A_JumpIf(ACS_ExecuteWithResult(857,11) >= 2,"Toaster2")
+	Goto SpawnAfterScript
+  Toaster1:
+    TNT1 A 0
+	Stop
+  Toaster2:
+    TNT1 A 0
+	Stop
+  SpawnAfterScript:
+    TNT1 A 0
+	TNT1 A 0
+	TNT1 A 0
+	TNT1 A 0 A_SpawnItemEx("ShrapnelScatter2",0,0,0,cos(-pitch+Random(-15,15))*3,0,sin(-pitch+Random(-15,15))*3,45+Random(-15,15),SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelScatter2",0,0,0,cos(-pitch+Random(-15,15)+45)*3,0,sin(-pitch+Random(-15,15)+45)*3,0+Random(-15,15),SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelScatter2",0,0,0,cos(-pitch+Random(-15,15))*3,0,sin(-pitch+Random(-15,15))*3,-45+Random(-15,15),SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelScatter2",0,0,0,cos(-pitch+Random(-15,15)-45)*3,0,sin(-pitch+Random(-15,15)-45)*3,0+Random(-15,15),SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelScatter2",0,0,0,-(cos(-pitch+Random(-15,15))*3),0,-(sin(-pitch+Random(-15,15))*3),-45+Random(-15,15),SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelScatter2",0,0,0,-(cos(-pitch+Random(-15,15)+45)*3),0,-(sin(-pitch+Random(-15,15)+45)*3),0+Random(-15,15),SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelScatter2",0,0,0,-(cos(-pitch+Random(-15,15))*3),0,-(sin(-pitch+Random(-15,15))*3),45+Random(-15,15),SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelScatter2",0,0,0,-(cos(-pitch+Random(-15,15)-45)*3),0,-(sin(-pitch+Random(-15,15)-45)*3),0+Random(-15,15),SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelScatter2",0,0,0,-(cos(-pitch+Random(-15,15)-90)*3),0,-(sin(-pitch+Random(-15,15)-90)*3),0+Random(-15,15),SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelScatter2",0,0,0,-(cos(-pitch+Random(-15,15))*3),0,-(sin(-pitch+Random(-15,15))*3),0+Random(-15,15),SXF_NOCHECKPOSITION)
+	TNT1 A 0 A_SpawnItemEx("ShrapnelScatter2",0,0,0,-(cos(-pitch+Random(-15,15))*3),0,-(sin(-pitch+Random(-15,15))*3),90+Random(-15,15),SXF_NOCHECKPOSITION)
+    TNT1 A 2
+	Stop
   }
 }
 
@@ -1248,263 +1282,59 @@ actor ShrapnelTrail3 : ShrapnelTrail
   Scale 0.1
 }
 
-actor ShrapnelScatter1 : FastProjectile
+actor ShrapnelScatter1
 {
   +CLIENTSIDEONLY
   +NOINTERACTION
+  +BRIGHT
   RenderStyle "Add"
   Alpha 0.5
-  MissileType "ShrapnelScatterTrail"
-  MissileHeight 8
-  +BRIGHT
-  +NOGRAVITY
   Radius 1
   Height 1
-  //Scale 0.2
   States
   {
   Spawn:
-    TNT1 A 0 
-	TNT1 A 0 
-	TNT1 A 0
-	TNT1 A 0
-	TNT1 A 0 ACS_ExecuteWithResult(857,12)
-	//TNT1 A 0 A_JumpIf(ACS_ExecuteWithResult(857,11) == 1,"Toaster1")
-	//TNT1 A 0 A_JumpIf(ACS_ExecuteWithResult(857,11) >= 2,"Toaster2")
-	Goto SpawnAfterScript
-  Toaster1:
-    Goto SpawnAfterScript
-  Toaster2:
-    Goto SpawnAfterScript
-  SpawnAfterScript:
-	SHAP A 0 A_Jump(128,"Spawn2")
-	SHAP A 0 //A_ScaleVelocity(1.5)
+	SHAP A 0
+	SHAP A 0
+	SHAP A 0
+	SHA2 A 0 A_ScaleVelocity(0.5)
 	SHA2 A 1
-	SHA2 A 1 //A_ChangeVelocity (momx+(random(-20,20)/10),momy+(random(-20,20)/10),momz+(random(-20,20)/10), 0)
 	SHA2 A 1
-	SHA2 A 1 //A_ChangeVelocity (momx+(random(-20,20)/10),momy+(random(-20,20)/10),momz+(random(-20,20)/10), 0)
 	SHA2 A 1
-	Stop
-  Spawn2:
-	SHA3 A 0 //A_ScaleVelocity(1.5)
-	SHA3 A 1
-	SHA3 A 1 //A_ChangeVelocity (momx+(random(-20,20)/10),momy+(random(-20,20)/10),momz+(random(-20,20)/10), 0)
-	SHA3 A 1
-	SHA3 A 1 //A_ChangeVelocity (momx+(random(-20,20)/10),momy+(random(-20,20)/10),momz+(random(-20,20)/10), 0)
-	SHA3 A 1
-	Stop
-  }
-}
-
-ACTOR ShrapnelScatter1A : ShrapnelScatter1
-{
-  States
-  {
-  Toaster1:
-    TNT1 A 0
-	Stop
-  Toaster2:
-    TNT1 A 0
-	Stop
-  }
-}
-
-ACTOR ShrapnelScatter1B : ShrapnelScatter1
-{
-  States
-  {
-  Spawn:
-    TNT1 A 0 
-	TNT1 A 0 
-	TNT1 A 0
-	TNT1 A 0
-	SHAP A 0 A_Jump(128,"Spawn2")
-	SHAP A 0 //A_ScaleVelocity(1.5)
 	SHA2 A 1
-	SHA2 A 1 A_ChangeVelocity (momx+(random(-20,20)/10),momy+(random(-20,20)/10),momz+(random(-20,20)/10), 0)
-	SHA2 A 1
-	SHA2 A 1 A_ChangeVelocity (momx+(random(-20,20)/10),momy+(random(-20,20)/10),momz+(random(-20,20)/10), 0)
 	SHA2 A 1
 	Stop
   }
 }
-
 
 actor ShrapnelScatter2
 {
   +CLIENTSIDEONLY
   +NOINTERACTION
-  MissileType "ShrapnelScatterTrail"
-  MissileHeight 8
+  +BRIGHT
   RenderStyle "Add"
   Alpha 0.5
-  +THRUACTORS
-  +BRIGHT
   Radius 1
   Height 1
-  //Scale 0.2
   States
   {
   Spawn:
 	SHAP A 0
 	SHAP A 0
 	SHAP A 0
-	SHAP A 0
-	SHAP A 0 A_Jump(85,"Spawn2")
-	SHAP A 0 A_Jump(128,"Spawn3")
-	SHA2 A 5
+	SHAP A 0 A_Jump(90,"Death")
+	SHAP A 0 A_Jump(256,"Spawn2","Spawn3")
 	Goto Spawn2
   Spawn2:
-	SHA3 A 5
+	SHA2 A 0 A_ScaleVelocity(2)
+	SHA1 AAAAA 1
 	Stop
   Spawn3:
-	SHA4 A 5
-	Stop
-  }
-}
-
-actor ShrapnelScatter3
-{
-  +CLIENTSIDEONLY
-  +NOINTERACTION
-  +BRIGHT
-  Radius 1
-  Height 1
-  //Scale 0.2
-  States
-  {
-  Spawn:
-    TNT1 A 0 
-	TNT1 A 0 
-	TNT1 A 0
-	TNT1 A 0
-	TNT1 A 0 ACS_ExecuteWithResult(857,12)
-	//TNT1 A 0 A_JumpIf(ACS_ExecuteWithResult(857,11) == 1,"Toaster1")
-	//TNT1 A 0 A_JumpIf(ACS_ExecuteWithResult(857,11) >= 2,"Toaster2")
-	Goto SpawnAfterScript
-  Toaster1:
-    Goto SpawnAfterScript
-  Toaster2:
-    TNT1 A 0
-    Stop
-  SpawnAfterScript:
-	SHAP A 0
-	SHAP A 0
-	SHAP A 0
-	SHAP A 0 A_Jump(50,"Death")
-	SHAP A 0 A_Jump(128,"Spawn2")
 	SHA2 A 0 A_ScaleVelocity(2)
-	SHA1 A 1
-	SHA1 A 1 A_ChangeVelocity (momx+(random(-20,20)/10),momy+(random(-20,20)/10),momz+(random(-20,20)/10), 0)
-	SHA1 A 1
-	SHA1 A 1 A_ChangeVelocity (momx+(random(-20,20)/10),momy+(random(-20,20)/10),momz+(random(-20,20)/10), 0)
-	SHA1 A 1
-	Stop
-  Spawn2:
-	SHA2 A 0 A_ScaleVelocity(2)
-	SHA2 A 1
-	SHA2 A 1 A_ChangeVelocity (momx+(random(-20,20)/10),momy+(random(-20,20)/10),momz+(random(-20,20)/10), 0)
-	SHA2 A 1
-	SHA2 A 1 A_ChangeVelocity (momx+(random(-20,20)/10),momy+(random(-20,20)/10),momz+(random(-20,20)/10), 0)
-	SHA2 A 1
+	SHA2 AAAAA 1
 	Stop
   Death:
 	SHAP A 0
-	Stop
-  }
-}
-
-ACTOR ShrapnelScatter3A : ShrapnelScatter3
-{
-  States
-  {
-  Toaster1:
-    TNT1 A 0
-	Stop
-  }
-}
-
-actor ShrapnelScatterTrail
-{
-  +CLIENTSIDEONLY
-  +NOINTERACTION
-  +BRIGHT
-  Radius 1
-  Height 1
-  Scale 0.25
-  RenderStyle "Add"
-  Alpha 0.5
-  States
-  {
-  Spawn:
-	SHAP B 0
-	SHAP B 0
-	SHAP B 0
-	SHAP B 1
-	Stop
-  }
-}
-
-actor ShrapnelSparker
-{
-  +CLIENTSIDEONLY
-  +NOINTERACTION
-  +BRIGHT
-  Radius 1
-  Height 1
-  States
-  {
-  Spawn:
-	TNT1 A 0
-	TNT1 A 0
-	TNT1 A 0
-	TNT1 A 0 A_Jump(215,"Death")
-	TNT1 A 0 A_SpawnItemEx("ShrapnelSpark",Random(-3,-2),Random(-1,1),Random(-1,1),Random(-1,0),Random(-1,1),Random(0,1),0,SXF_NOCHECKPOSITION)
-	Stop
-  Death:
-	TNT1 A 0
-	Stop
-  }
-}
-
-actor ShrapnelSpark
-{
-  +CLIENTSIDEONLY
-  +THRUACTORS
-  +BRIGHT
-  +CORPSE
-  Radius 1
-  Height 1
-  Scale 0.1
-  Gravity 0.25
-  States
-  {
-  Spawn:
-    TNT1 A 0 
-	TNT1 A 0 
-	TNT1 A 0
-	TNT1 A 0
-	TNT1 A 0 ACS_ExecuteWithResult(857,12)
-	//TNT1 A 0 A_JumpIf(ACS_ExecuteWithResult(857,11) == 1,"Toaster1")
-	//TNT1 A 0 A_JumpIf(ACS_ExecuteWithResult(857,11) >= 2,"Toaster2")
-	Goto SpawnAfterScript
-  Toaster1:
-    Goto SpawnAfterScript
-  Toaster2:
-    TNT1 A 0
-    Stop
-  SpawnAfterScript:
-	SHAP C 0
-	SHAP C 0
-	SHAP C 0
-	SHAP C 0 A_ScaleVelocity(0.5)
-	SHAP C 2
-	Goto Spawn2
-  Spawn2:
-	SHAP C 1 A_Jump(40,"Crash") 
-	Loop
-  Crash:
-	SHAP C 0
 	Stop
   }
 }
