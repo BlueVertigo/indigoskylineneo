@@ -6,11 +6,11 @@ statusbar fullscreen, fullscreenoffsets
     drawimage "MDK1A0", 20, -2, centerbottom;
 	InInventory not Over100Health
     {
-			drawnumber 3, DBIGFONT, Gold, health, drawshadow, 86, -19, 0, Red, 50, DarkGreen, 75;
+			drawnumber 3, TSPHUDF, Gold, health, drawshadow, 86, -19, 0, Red, 50, DarkGreen, 75;
 	}
 	InInventory Over100Health
     {
-			drawnumber 3, DBIGFONT, Blue, health, drawshadow, 86, -19;
+			drawnumber 3, TSPHUDF, Blue, health, drawshadow, 86, -19;
 	}
 	drawimage armoricon, 20, -24, centerbottom;
 	//DrawSwitchableImage armortype TSPBlueArmor, "", "PSRMA0", 20, -24, centerbottom;
@@ -18,25 +18,25 @@ statusbar fullscreen, fullscreenoffsets
 	//DrawSwitchableImage armortype TSPMegaSphereBlueArmor, "", "PSRMA0", 20, -24, centerbottom;
 	//DrawSwitchableImage armortype TSPArmorBonus, "", "ARSDD0", 20, -24, centerbottom;
 	//DrawSwitchableImage armortype BlueArmorForMegasphere, "", "FLRMA0", 20, -24, centerbottom;
-	drawnumber 3, DBIGFONT, Green, armor, drawshadow, whennotzero, 86, -39, 0, Green, 50, LightBlue, 101;
+	drawnumber 3, TSPHUDF, Green, armor, drawshadow, whennotzero, 86, -39, 0, Green, 50, LightBlue, 101;
     drawimage ammoicon1, -14, -4, centerbottom;
-    drawnumber 3, DBIGFONT, DarkGreen, ammo1, drawshadow, -25, -20;
+    drawnumber 3, TSPHUDF, DarkGreen, ammo1, drawshadow, -25, -20;
     usesammo
     {
         usessecondaryammo
         {
             drawimage ammoicon2, -14, -22, centerbottom;
-            drawnumber 3, DBIGFONT, green, ammo2, drawshadow, -25, -37;
+            drawnumber 3, TSPHUDF, green, ammo2, drawshadow, -25, -37;
             inventorybarnotvisible
             {
-                drawselectedinventory centerbottom, drawshadow, alwaysshowcounter, DBIGFONT, -14, -39, -26, -56, untranslated;
+                drawselectedinventory centerbottom, drawshadow, alwaysshowcounter, TSPHUDF, -14, -39, -26, -56, untranslated;
             }
         }
         usessecondaryammo not
         {
             inventorybarnotvisible
             {
-                drawselectedinventory centerbottom, drawshadow, alwaysshowcounter, DBIGFONT, -14, -21, -26, -38, untranslated;
+                drawselectedinventory centerbottom, drawshadow, alwaysshowcounter, TSPHUDF, -14, -21, -26, -38, untranslated;
             }
         }
     }
@@ -45,7 +45,7 @@ statusbar fullscreen, fullscreenoffsets
 		InInventory BuckshotLoaded
 		{
 			drawimage "SHLHUD2", -14, -39, centerbottom;
-			drawnumber 3, DBIGFONT, Red, BuckShotShell, drawshadow, -25, -54;
+			drawnumber 3, TSPHUDF, Red, BuckShotShell, drawshadow, -25, -54;
 			drawimage "1SHLE0", -14, -56, centerbottom;
 			drawnumber 3, smallfont, LightBlue, ElectricShell, drawshadow, -25, -64;
 			drawimage "3SHLE0", -14, -65, centerbottom;
@@ -56,7 +56,7 @@ statusbar fullscreen, fullscreenoffsets
 		InInventory HellFireLoaded
 		{
 			drawimage "SHLHUD4", -14, -39, centerbottom;
-			drawnumber 3, DBIGFONT, Gold, HellFireShell, drawshadow, -25, -54;
+			drawnumber 3, TSPHUDF, Gold, HellFireShell, drawshadow, -25, -54;
 			drawimage "1SHLE0", -14, -56, centerbottom;
 			drawnumber 3, smallfont, LightBlue, ElectricShell, drawshadow, -25, -64;		
 			drawimage "3SHLE0", -14, -65, centerbottom;
@@ -67,7 +67,7 @@ statusbar fullscreen, fullscreenoffsets
 		InInventory PoisonLoaded
 		{
 			drawimage "SHLHUD3", -14, -39, centerbottom;
-			drawnumber 3, DBIGFONT, DarkGreen, PoisonShell, drawshadow, -25, -54;		
+			drawnumber 3, TSPHUDF, DarkGreen, PoisonShell, drawshadow, -25, -54;		
 			drawimage "1SHLE0", -14, -56, centerbottom;
 			drawnumber 3, smallfont, LightBlue, ElectricShell, drawshadow, -25, -64;				
 			drawimage "4SHLE0", -14, -65, centerbottom;
@@ -78,7 +78,7 @@ statusbar fullscreen, fullscreenoffsets
 		InInventory ElectricLoaded
 		{
 			drawimage "SHLHUD1", -14, -39, centerbottom;
-			drawnumber 3, DBIGFONT, LightBlue, ElectricShell, drawshadow, -25, -54;	
+			drawnumber 3, TSPHUDF, LightBlue, ElectricShell, drawshadow, -25, -54;	
 			drawimage "3SHLE0", -14, -56, centerbottom;
 			drawnumber 3, smallfont, DarkGreen, PoisonShell, drawshadow, -25, -64;
 			drawimage "4SHLE0", -14, -65, centerbottom;
@@ -111,12 +111,12 @@ statusbar fullscreen, fullscreenoffsets
     {
         inventorybarnotvisible
         {
-            drawselectedinventory centerbottom, drawshadow, alwaysshowcounter, DBIGFONT, -14, -3, -26, -20, untranslated;
+            drawselectedinventory centerbottom, drawshadow, alwaysshowcounter, TSPHUDF, -14, -3, -26, -20, untranslated;
         }
     }
     gamemode deathmatch
     {
-        drawnumber 2, DBIGFONT, green, frags, drawshadow, -3, 1;
+        drawnumber 2, TSPHUDF, green, frags, drawshadow, -3, 1;
     }
     gamemode singleplayer, cooperative, teamgame
     {
@@ -129,9 +129,9 @@ statusbar normal
     drawimage "STBAR", 0, 168;
     drawimage "STTPRCNT", 90, 171;
     drawimage "STTPRCNT", 221, 171;
-    drawnumber 3, DBIGFONT, untranslated, ammo1, 44, 171;
-    drawnumber 3, DBIGFONT, untranslated, health, 90, 171;
-    drawnumber 3, DBIGFONT, untranslated, armor, 221, 171;
+    drawnumber 3, TSPHUDF, untranslated, ammo1, 44, 171;
+    drawnumber 3, TSPHUDF, untranslated, health, 90, 171;
+    drawnumber 3, TSPHUDF, untranslated, armor, 221, 171;
     drawswitchableimage keyslot 2 && 5, "nullimage", "STKEYS0", "STKEYS3", "STKEYS6", 239, 171;
     drawswitchableimage keyslot 3 && 6, "nullimage", "STKEYS1", "STKEYS4", "STKEYS7", 239, 181;
     drawswitchableimage keyslot 1 && 4, "nullimage", "STKEYS2", "STKEYS5", "STKEYS8", 239, 191;
@@ -145,7 +145,7 @@ statusbar normal
     drawnumber 3, INDEXFONT, gold, ammocapacity AmmoBoxAmmo, 314, 191;
     gamemode deathmatch, teamgame
     {
-        drawnumber 2, DBIGFONT, untranslated, frags, 138, 171;
+        drawnumber 2, TSPHUDF, untranslated, frags, 138, 171;
     }
     gamemode cooperative, singleplayer
     {
