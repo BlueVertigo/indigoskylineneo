@@ -37,7 +37,7 @@ ACTOR MelZekeShotgun : Weapon
 	Ready:
       TNT1 A 0 A_TakeInventory("ShotgunLoading", 9)
 	  TNT1 A 0 A_TakeInventory("AltFirePressed", 1)
-	  TNT1 A 0 A_JumpIfInventory("MeleePressed",1,"SPMelee")
+	  TNT1 A 0 A_JumpIfInventory("MeleePressed",1,"SPMeleeShotgun")
 	  TNT1 A 0 A_JumpIfInventory("DropShellsActor",1,"DropCurrentShellsCheck")
 	  TNT1 A 0 A_JumpIfInventory("Reloading",1,"Reload")
       STGG A 1 A_WeaponReady
@@ -842,7 +842,7 @@ ACTOR MelZekeShotgun : Weapon
 	AltFlashPoison:
 	  TNT1 A 25 ACS_ExecuteAlways(857,0,10) //"[Poison Shells Selected]"
 	  Stop
-	SPMelee:
+	SPMeleeShotgun:
 	  STGG A 1
 	  STGM ABBCC 1
 	  TNT1 A 0 A_PlaySound("strongmelee/miss", 5)
