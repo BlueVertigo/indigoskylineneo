@@ -31,7 +31,7 @@ script 856 OPEN
 	}
 }
 
-script 857 (int which, int a1, int a2) clientside //shamelessly copied from samsara's bloody hell scripts
+script 857 (int which, int a1, int a2) clientside //shamelessly copied from samsara's ijon wizardry
 {
     int result;
 	
@@ -68,14 +68,36 @@ script 857 (int which, int a1, int a2) clientside //shamelessly copied from sams
         hudmessage (s:"[Poison Shells Selected]";HUDMSG_PLAIN,2,CR_DARKGREEN,1.5,0.375,0.7142857143);
         Terminate;
 	  case 11:
-        result = GetCVar("tsp_toaster");
+        result = GetCVar("tsp_toaster"); //shamelessly copied from samsara's bloody hell scripts
         break;
       case 12:
         if(GetCvar("tsp_toaster") == 1) { SetActorState(0,"Toaster1"); }
         if(GetCvar("tsp_toaster") == 2) { SetActorState(0,"Toaster2"); }
         break;   
 	  case 13:
-        result = GetCVar("sv_weaponstay");
+        hudmessage (s:"[Makoto Type 919 Mod.0] [Class: Pistol, Slot 2]";HUDMSG_PLAIN|HUDMSG_LOG,2,CR_RED,0.0,0.0,1.0);
+		GiveInventory("TSPWeaponPickupNoise",1);
+		FadeRange(255,255,0,0.1,0,0,0,0.0,2.0/35);
+        break;
+	  case 14:
+        hudmessage (s:"[Blackwood Arms 240 Zeke] [Class: Shotgun, Slot 3]";HUDMSG_PLAIN|HUDMSG_LOG,2,CR_RED,0.0,0.0,1.0);
+		GiveInventory("TSPWeaponPickupNoise",1);
+		FadeRange(255,255,0,0.1,0,0,0,0.0,2.0/35);
+        break;
+	  case 15:
+        hudmessage (s:"[''Dahlia'' Custom Concealable Weapon] [Class: Bow, Slot 3]";HUDMSG_PLAIN|HUDMSG_LOG,2,CR_RED,0.0,0.0,1.0);
+		GiveInventory("TSPWeaponPickupNoise",1);
+		FadeRange(255,255,0,0.1,0,0,0,0.0,2.0/35);
+        break;
+	  case 16:
+        hudmessage (s:"[Kurdd & Schaumers AB-50] [Class: Sub-Machine Gun, Slot 4]";HUDMSG_PLAIN|HUDMSG_LOG,2,CR_RED,0.0,0.0,1.0);
+		GiveInventory("TSPWeaponPickupNoise",1);
+		FadeRange(255,255,0,0.1,0,0,0,0.0,2.0/35);
+        break;
+	  case 17:
+        hudmessage (s:"[Marston Arms RPG-2090 (The Toolbox)] [Class: Projectile Weapon, Slot 5]";HUDMSG_PLAIN|HUDMSG_LOG,2,CR_RED,0.0,0.0,1.0);
+		GiveInventory("TSPWeaponPickupNoise",1);
+		FadeRange(255,255,0,0.1,0,0,0,0.0,2.0/35);
         break;
     }
     SetResultValue(result);

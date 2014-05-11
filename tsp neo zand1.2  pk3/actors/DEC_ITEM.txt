@@ -378,3 +378,15 @@ ACTOR SPSplosiveBarrel : ExplosiveBarrel Replaces ExplosiveBarrel
 	  Goto Spawn
     }
 }
+
+ACTOR TSPWeaponPickupNoise : PowerProtection
+{
+  DamageFactor "none", 1.0
+  SeeSound "misc/w_pkup"
+}
+
+ACTOR TSPItemPickupNoise : PowerProtection
+{
+  DamageFactor "none", 1.0
+  SeeSound "misc/i_pkup"
+}
