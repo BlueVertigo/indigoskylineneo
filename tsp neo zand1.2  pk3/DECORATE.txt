@@ -14,6 +14,8 @@ Actor DropShellsActor : Boolean {}
 
 Actor GameIsCoop : Boolean {}
 
+Actor ItemAlreadySpawned : Boolean {}
+
 ACTOR MeleeSelected : Boolean {}
 ACTOR 919Selected : Boolean {}
 ACTOR ZekeSelected : Boolean {}
