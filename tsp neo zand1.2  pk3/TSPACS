@@ -3,6 +3,16 @@
 
 script 855 ENTER clientside
 {
+	if (!GetCVar("tsp_toaster")) 
+	{ 
+		ConsoleCommand("set tsp_toaster 0"); 
+		ConsoleCommand("archivecvar tsp_toaster");
+	}
+	if (!GetCVar("tsp_leavehud")) 
+	{ 
+		ConsoleCommand("set tsp_leavehud 0"); 
+		ConsoleCommand("archivecvar tsp_leavehud");
+	}
 	if(GetActorProperty( 0, APROP_Health) >= 101)
     {
         GiveInventory("Over100Health",1);
@@ -17,7 +27,7 @@ script 855 ENTER clientside
     }
 }
 
-script 856 OPEN 
+script 856 OPEN clientside
 { 
 	if (!GetCVar("tsp_toaster")) 
 	{ 
@@ -105,16 +115,6 @@ script 857 (int which, int a1, int a2) clientside //shamelessly copied from sams
 
 script 858 ENTER
 {
-	if (!GetCVar("tsp_toaster")) 
-	{ 
-		ConsoleCommand("set tsp_toaster 0"); 
-		ConsoleCommand("archivecvar tsp_toaster");
-	}
-	if (!GetCVar("tsp_leavehud")) 
-	{ 
-		ConsoleCommand("set tsp_leavehud 0"); 
-		ConsoleCommand("archivecvar tsp_leavehud");
-	}
 	if(GameType() == GAME_NET_COOPERATIVE)
     {
 		GiveInventory("GameIsCoop", 1);
