@@ -105,6 +105,16 @@ script 857 (int which, int a1, int a2) clientside //shamelessly copied from sams
 
 script 858 ENTER
 {
+	if (!GetCVar("tsp_toaster")) 
+	{ 
+		ConsoleCommand("set tsp_toaster 0"); 
+		ConsoleCommand("archivecvar tsp_toaster");
+	}
+	if (!GetCVar("tsp_leavehud")) 
+	{ 
+		ConsoleCommand("set tsp_leavehud 0"); 
+		ConsoleCommand("archivecvar tsp_leavehud");
+	}
 	if(GameType() == GAME_NET_COOPERATIVE)
     {
 		GiveInventory("GameIsCoop", 1);
