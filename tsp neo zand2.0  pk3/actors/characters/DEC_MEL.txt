@@ -32,6 +32,7 @@ ACTOR SpacePirate : DoomPlayer
     Species "Player"
 	+THRUSPECIES
 	DamageFactor "Poison", 2.0
+	DamageFactor "Player", 0.0
 	//DamageFactor "GasShellDamage", 1.5
 	//DamageFactor "Shrapnel", 0.5
 }
