@@ -55,6 +55,9 @@ ACTOR MelToolbox : Weapon
       RNLG A 1 A_Raise
 	  Loop
    Fire:
+	  TNT1 A 0 A_JumpIfInventory("ToolBoxMag", 1, "Fire2")
+	  Goto Reload
+   Fire2:
       TNT1 A 0 A_JumpIfNoAmmo("Empty")
 	  TNT1 A 0 A_JumpIfInventory("ToolBoxFired", 5, "Empty")
       RNLF A 0 A_JumpIfInventory("ToolboxHeld", 4, "FireHold4") // WHAT IS THIS?!
@@ -177,6 +180,9 @@ ACTOR MelToolbox : Weapon
 	  RNLG A 3
 	  Goto Ready
    AltFire:
+	  TNT1 A 0 A_JumpIfInventory("ToolBoxMag", 1, "AltFire2")
+	  Goto Reload
+   AltFire2:
 	  TNT1 A 0 A_JumpIfInventory("ToolBoxFired", 5, "Empty")
 	  TNT1 A 0 A_PlaySound("toolbox/grind", 6)
 	  RNLE ABCDABCDA 2
