@@ -281,4 +281,4 @@ ACTOR MelToolboxPickupItem : CustomInventory
 #include "Actors/DEC_ITEM.txt"
 
 //Zand Coop Compatibility 
-#include "Actors/COOP_COMPAT.txt"
+//#include "Actors/COOP_COMPAT.txt"
