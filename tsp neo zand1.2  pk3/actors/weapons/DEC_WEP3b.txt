@@ -449,7 +449,7 @@ ACTOR CrossbowSSGPickup : CustomInventory Replaces SuperShotgun
 ACTOR CrossbowBoltBlue : FastProjectile //The second crossbow voxel voxelbro made; to edit the scale look in voxeldef
 {
    Radius 3
-   Height 6
+   Height 3
    Speed 120
    Damage 7
    PROJECTILE
