@@ -450,7 +450,7 @@ actor DummyShrapnel
 	PUFF A 0
 	PUFF A 0
 	PUFF A 0 A_Jump(256, "Shoot50", "Shoot51", "Shoot52", "Shoot53", "Shoot54", "Shoot55", "Shoot56", "Shoot57", "Shoot58", "Shoot59", "Shoot60")
-	Loop
+	Goto Shoot55
   Shoot30:
 	PUFF A 0 A_SpawnItemEx ("ToolboxShrapnelMissile",0,0,0,cos(-pitch)*30,0,sin(-pitch)*30,0,SXF_TRANSFERPITCH|SXF_NOCHECKPOSITION)
 	PUFF A 0 A_SpawnItemEx ("ShrapnelTrail",-1,0,(sin(pitch)*1),cos(-pitch)*30,0,sin(-pitch)*30,0,SXF_TRANSFERPITCH|SXF_NOCHECKPOSITION)
