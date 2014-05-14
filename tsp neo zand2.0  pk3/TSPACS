@@ -3,6 +3,16 @@
 
 script 855 ENTER clientside
 {
+	if (!GetCVar("tsp_toaster")) 
+	{ 
+		ConsoleCommand("set tsp_toaster 0"); 
+		ConsoleCommand("archivecvar tsp_toaster");
+	}
+	if (!GetCVar("tsp_leavehud")) 
+	{ 
+		ConsoleCommand("set tsp_leavehud 0"); 
+		ConsoleCommand("archivecvar tsp_leavehud");
+	}
 	if(GetActorProperty( 0, APROP_Health) >= 101)
     {
         GiveInventory("Over100Health",1);
@@ -17,7 +27,7 @@ script 855 ENTER clientside
     }
 }
 
-script 856 OPEN 
+script 856 OPEN clientside
 { 
 	if (!GetCVar("tsp_toaster")) 
 	{ 
@@ -31,7 +41,7 @@ script 856 OPEN
 	}
 }
 
-script 857 (int which, int a1, int a2) clientside //shamelessly copied from samsara's bloody hell scripts
+script 857 (int which, int a1, int a2) clientside //shamelessly copied from samsara's ijon wizardry
 {
     int result;
 	
@@ -68,23 +78,51 @@ script 857 (int which, int a1, int a2) clientside //shamelessly copied from sams
         hudmessage (s:"[Poison Shells Selected]";HUDMSG_PLAIN,2,CR_DARKGREEN,1.5,0.375,0.7142857143);
         Terminate;
 	  case 11:
-        result = GetCVar("tsp_toaster");
+        result = GetCVar("tsp_toaster"); //shamelessly copied from samsara's bloody hell scripts
         break;
       case 12:
         if(GetCvar("tsp_toaster") == 1) { SetActorState(0,"Toaster1"); }
         if(GetCvar("tsp_toaster") == 2) { SetActorState(0,"Toaster2"); }
         break;   
+	  case 13:
+        hudmessage (s:"[Makoto Type 919 Mod.0] [Class: Pistol, Slot 2]";HUDMSG_PLAIN|HUDMSG_LOG,2,CR_RED,0.0,0.0,1.0);
+		GiveInventory("TSPWeaponPickupNoise",1);
+		FadeRange(255,255,0,0.1,0,0,0,0.0,2.0/35);
+        break;
+	  case 14:
+        hudmessage (s:"[Blackwood Arms 240 Zeke] [Class: Shotgun, Slot 3]";HUDMSG_PLAIN|HUDMSG_LOG,2,CR_RED,0.0,0.0,1.0);
+		GiveInventory("TSPWeaponPickupNoise",1);
+		FadeRange(255,255,0,0.1,0,0,0,0.0,2.0/35);
+        break;
+	  case 15:
+        hudmessage (s:"[''Dahlia'' Custom Concealable Weapon] [Class: Bow, Slot 3]";HUDMSG_PLAIN|HUDMSG_LOG,2,CR_RED,0.0,0.0,1.0);
+		GiveInventory("TSPWeaponPickupNoise",1);
+		FadeRange(255,255,0,0.1,0,0,0,0.0,2.0/35);
+        break;
+	  case 16:
+        hudmessage (s:"[Kurdd & Schaumers AB-50] [Class: Sub-Machine Gun, Slot 4]";HUDMSG_PLAIN|HUDMSG_LOG,2,CR_RED,0.0,0.0,1.0);
+		GiveInventory("TSPWeaponPickupNoise",1);
+		FadeRange(255,255,0,0.1,0,0,0,0.0,2.0/35);
+        break;
+	  case 17:
+        hudmessage (s:"[Marston Arms RPG-2090 (The Toolbox)] [Class: Projectile Weapon, Slot 5]";HUDMSG_PLAIN|HUDMSG_LOG,2,CR_RED,0.0,0.0,1.0);
+		GiveInventory("TSPWeaponPickupNoise",1);
+		FadeRange(255,255,0,0.1,0,0,0,0.0,2.0/35);
+        break;
     }
     SetResultValue(result);
 }
 
 script 858 ENTER
 {
+	if(GameType() == GAME_SINGLE_PLAYER)
+    {
+		GiveInventory("GameIsSinglePlayer", 1);
+	}
 	if(GameType() == GAME_NET_COOPERATIVE)
     {
 		GiveInventory("GameIsCoop", 1);
 	}
-
 	//Print(s:"Blue Vertigo Presents: The Space Pirate\n \nCvars:\n \ntsp_shellpool - If set to true/1 (default), all shell types share the same ammo pool. IF set to false/0, they do not and each has a separate ammo pool.");
 	hudmessage (s:"Blue Vertigo Presents: The Space Pirate\n\nTo turn off the scaled (large) HUD type 'hud_scale 0'\nTo prevent TSP from scaling it again type 'tsp_leavehud 1'\n\nCvars:\n\ntsp_toaster - If set to 0 (default), all effect actors are displayed. If set to 1, less effect actors are displayed. If set to 2, even less actors are displayed. For those with slower computers.\n\n\ntsp_leavehud - If set to 0/false (default), TSP will turn on the scaled (large) HUD at startup. If set to 1/true TSP will not change HUD scaling setting.";HUDMSG_PLAIN|HUDMSG_LOG,2,CR_GREEN,1.5,0.375,0.1);
 	//Print(s:" ");
@@ -94,6 +132,19 @@ script 858 ENTER
 		ConsoleCommand("hud_scale 1");
 	}
 	Terminate;
+}
+
+script 860 (int which, int a1, int a2)
+{
+    int result;
+	
+	switch (which)
+    {
+	  case 1:
+        result = GetCVar("sv_weaponstay");
+        break;
+    }
+    SetResultValue(result);
 }
 
 script 859 (void)
